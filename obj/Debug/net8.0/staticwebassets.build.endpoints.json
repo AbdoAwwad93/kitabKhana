@@ -85,7 +85,1729 @@
       ]
     },
     {
-      "Route": "css/site.c2tiyv64ts.css",
+      "Route": "Images/Authors/أحمد_خالد_توفيق.jpg",
+      "AssetFile": "Images/Authors/أحمد_خالد_توفيق.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17401"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vJIDRx2d5wCeyuX8DC0yC4xkmhikzNtsnOqUyCT2r48=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 09:15:54 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vJIDRx2d5wCeyuX8DC0yC4xkmhikzNtsnOqUyCT2r48="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Authors/أحمد_خالد_توفيق.wlj8wmaqvc.jpg",
+      "AssetFile": "Images/Authors/أحمد_خالد_توفيق.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17401"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vJIDRx2d5wCeyuX8DC0yC4xkmhikzNtsnOqUyCT2r48=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 09:15:54 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wlj8wmaqvc"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vJIDRx2d5wCeyuX8DC0yC4xkmhikzNtsnOqUyCT2r48="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Authors/أحمد_خالد_توفيق.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Authors/إبراهيم السكران.jpeg",
+      "AssetFile": "Images/Authors/إبراهيم السكران.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25636"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oIIvb2l/dq2t9UXZepFsj32h4uvtZdaW6y6jHZopiOs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 09:26:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oIIvb2l/dq2t9UXZepFsj32h4uvtZdaW6y6jHZopiOs="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Authors/إبراهيم السكران.o2kncjc13n.jpeg",
+      "AssetFile": "Images/Authors/إبراهيم السكران.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25636"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oIIvb2l/dq2t9UXZepFsj32h4uvtZdaW6y6jHZopiOs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 09:26:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o2kncjc13n"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oIIvb2l/dq2t9UXZepFsj32h4uvtZdaW6y6jHZopiOs="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Authors/إبراهيم السكران.jpeg"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Authors/احمد مراد.jpg",
+      "AssetFile": "Images/Authors/احمد مراد.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13561"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RZFbgmYzbBARKGeFf7J7o1amiVxkuUl5Tf4hRPv/cXc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 09:25:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RZFbgmYzbBARKGeFf7J7o1amiVxkuUl5Tf4hRPv/cXc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Authors/احمد مراد.x108zjzqha.jpg",
+      "AssetFile": "Images/Authors/احمد مراد.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13561"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RZFbgmYzbBARKGeFf7J7o1amiVxkuUl5Tf4hRPv/cXc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 09:25:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x108zjzqha"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RZFbgmYzbBARKGeFf7J7o1amiVxkuUl5Tf4hRPv/cXc="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Authors/احمد مراد.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Authors/مصطفى محمود.jpg",
+      "AssetFile": "Images/Authors/مصطفى محمود.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57186"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EuTbFL2V4OeeiBt7aRhAGiX4zZA2deNIdWA0xPMBfIw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 09:19:19 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EuTbFL2V4OeeiBt7aRhAGiX4zZA2deNIdWA0xPMBfIw="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Authors/مصطفى محمود.qleowjn418.jpg",
+      "AssetFile": "Images/Authors/مصطفى محمود.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57186"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EuTbFL2V4OeeiBt7aRhAGiX4zZA2deNIdWA0xPMBfIw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 09:19:19 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qleowjn418"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EuTbFL2V4OeeiBt7aRhAGiX4zZA2deNIdWA0xPMBfIw="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Authors/مصطفى محمود.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/1919.6dnw7b7djl.jpeg",
+      "AssetFile": "Images/Books/1919.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11709"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tp42Hj3rm6jdUjpjCt1zc3fufGjdnlNMWh2CRWbIPkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 10:11:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6dnw7b7djl"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tp42Hj3rm6jdUjpjCt1zc3fufGjdnlNMWh2CRWbIPkU="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/1919.jpeg"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/1919.jpeg",
+      "AssetFile": "Images/Books/1919.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11709"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tp42Hj3rm6jdUjpjCt1zc3fufGjdnlNMWh2CRWbIPkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 10:11:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tp42Hj3rm6jdUjpjCt1zc3fufGjdnlNMWh2CRWbIPkU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/Al-Feel_al-Azraq.1hprmb5ee4.jpg",
+      "AssetFile": "Images/Books/Al-Feel_al-Azraq.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30940"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tWuNh7f6HeEBtPKp7sjYwStMTWbSRJE2i7dx3c8vRtg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 10:08:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1hprmb5ee4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tWuNh7f6HeEBtPKp7sjYwStMTWbSRJE2i7dx3c8vRtg="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/Al-Feel_al-Azraq.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/Al-Feel_al-Azraq.jpg",
+      "AssetFile": "Images/Books/Al-Feel_al-Azraq.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30940"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tWuNh7f6HeEBtPKp7sjYwStMTWbSRJE2i7dx3c8vRtg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 10:08:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tWuNh7f6HeEBtPKp7sjYwStMTWbSRJE2i7dx3c8vRtg="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/الماجريات.duqcu5vmaf.webp",
+      "AssetFile": "Images/Books/الماجريات.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6248"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5ZThhEHDEJMpSansNyWJftzkqLGxzOfQMzaUDmMHBYA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 09:27:32 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "duqcu5vmaf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5ZThhEHDEJMpSansNyWJftzkqLGxzOfQMzaUDmMHBYA="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/الماجريات.webp"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/الماجريات.webp",
+      "AssetFile": "Images/Books/الماجريات.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6248"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5ZThhEHDEJMpSansNyWJftzkqLGxzOfQMzaUDmMHBYA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 09:27:32 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5ZThhEHDEJMpSansNyWJftzkqLGxzOfQMzaUDmMHBYA="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/تراب الماس.81be4ylkn1.webp",
+      "AssetFile": "Images/Books/تراب الماس.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "194708"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 09:34:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "81be4ylkn1"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/تراب الماس.webp"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/تراب الماس.webp",
+      "AssetFile": "Images/Books/تراب الماس.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "194708"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 09:34:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/حكايات الغرفة 207.8wwaktba66.webp",
+      "AssetFile": "Images/Books/حكايات الغرفة 207.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3600"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CB3/ElHxVbI32p0Zus2ksEGw2m34qdms5+U+UQqbfw4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:19:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8wwaktba66"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CB3/ElHxVbI32p0Zus2ksEGw2m34qdms5+U+UQqbfw4="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/حكايات الغرفة 207.webp"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/حكايات الغرفة 207.webp",
+      "AssetFile": "Images/Books/حكايات الغرفة 207.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3600"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CB3/ElHxVbI32p0Zus2ksEGw2m34qdms5+U+UQqbfw4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:19:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CB3/ElHxVbI32p0Zus2ksEGw2m34qdms5+U+UQqbfw4="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/رجال في الشمس.jpg",
+      "AssetFile": "Images/Books/رجال في الشمس.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21305"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OJeU8HyRdB4w8k6/b+Q1CC+UFY+H6mUAhKhaHmaznQU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 14:09:42 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OJeU8HyRdB4w8k6/b+Q1CC+UFY+H6mUAhKhaHmaznQU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/رجال في الشمس.wmoaottiox.jpg",
+      "AssetFile": "Images/Books/رجال في الشمس.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21305"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OJeU8HyRdB4w8k6/b+Q1CC+UFY+H6mUAhKhaHmaznQU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 14:09:42 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wmoaottiox"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OJeU8HyRdB4w8k6/b+Q1CC+UFY+H6mUAhKhaHmaznQU="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/رجال في الشمس.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/رحلتي من الشك إلى الأيمان.jpg",
+      "AssetFile": "Images/Books/رحلتي من الشك إلى الأيمان.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "235332"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+rIsvgXWDfKKZdGm4LxjLqibt6ge+Iy04M/ki2Vd19c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 14:09:42 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+rIsvgXWDfKKZdGm4LxjLqibt6ge+Iy04M/ki2Vd19c="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/رحلتي من الشك إلى الأيمان.qz4fqnfy3g.jpg",
+      "AssetFile": "Images/Books/رحلتي من الشك إلى الأيمان.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "235332"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+rIsvgXWDfKKZdGm4LxjLqibt6ge+Iy04M/ki2Vd19c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 14:09:42 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qz4fqnfy3g"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+rIsvgXWDfKKZdGm4LxjLqibt6ge+Iy04M/ki2Vd19c="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/رحلتي من الشك إلى الأيمان.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/رفقاء الليل.18l5zjbxpt.webp",
+      "AssetFile": "Images/Books/رفقاء الليل.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16408"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sRlIder0nSA7b9exriI3spjYj3PVRDUZoIchAOtTpcg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:21:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "18l5zjbxpt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sRlIder0nSA7b9exriI3spjYj3PVRDUZoIchAOtTpcg="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/رفقاء الليل.webp"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/رفقاء الليل.webp",
+      "AssetFile": "Images/Books/رفقاء الليل.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16408"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sRlIder0nSA7b9exriI3spjYj3PVRDUZoIchAOtTpcg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:21:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sRlIder0nSA7b9exriI3spjYj3PVRDUZoIchAOtTpcg="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/رقائق القرأن.kvc76zwi7a.webp",
+      "AssetFile": "Images/Books/رقائق القرأن.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8O7kRW5ZuU0OZ8XHMWcmlBQNSUdJB4DLldWQAtFhk8I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 09:27:13 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kvc76zwi7a"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8O7kRW5ZuU0OZ8XHMWcmlBQNSUdJB4DLldWQAtFhk8I="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/رقائق القرأن.webp"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/رقائق القرأن.webp",
+      "AssetFile": "Images/Books/رقائق القرأن.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8O7kRW5ZuU0OZ8XHMWcmlBQNSUdJB4DLldWQAtFhk8I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 09:27:13 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8O7kRW5ZuU0OZ8XHMWcmlBQNSUdJB4DLldWQAtFhk8I="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/رواية_العنكبوت.jpg",
+      "AssetFile": "Images/Books/رواية_العنكبوت.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37003"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fly4l+cOs/g7FhAUOUQr2nERU1z2nQt5DIqMtI0yyps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 14:09:42 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fly4l+cOs/g7FhAUOUQr2nERU1z2nQt5DIqMtI0yyps="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/رواية_العنكبوت.yprrvmsxwh.jpg",
+      "AssetFile": "Images/Books/رواية_العنكبوت.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37003"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fly4l+cOs/g7FhAUOUQr2nERU1z2nQt5DIqMtI0yyps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 14:09:42 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yprrvmsxwh"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fly4l+cOs/g7FhAUOUQr2nERU1z2nQt5DIqMtI0yyps="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/رواية_العنكبوت.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/رياض الصالحين.aoyn6sy27v.webp",
+      "AssetFile": "Images/Books/رياض الصالحين.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28014"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SmVUp9HwDolwyZ8hj2HEyiYzi4FF1CiINwTkk7Za5ao=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 07:40:46 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aoyn6sy27v"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SmVUp9HwDolwyZ8hj2HEyiYzi4FF1CiINwTkk7Za5ao="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/رياض الصالحين.webp"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/رياض الصالحين.webp",
+      "AssetFile": "Images/Books/رياض الصالحين.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28014"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SmVUp9HwDolwyZ8hj2HEyiYzi4FF1CiINwTkk7Za5ao=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 07:40:46 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SmVUp9HwDolwyZ8hj2HEyiYzi4FF1CiINwTkk7Za5ao="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/عقل بلا جسد.0kxihcjntn.webp",
+      "AssetFile": "Images/Books/عقل بلا جسد.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7976"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oDRgJDt8dpWbJ215W0lpJwgeSLwOMJW6AT8K1dyr7Fg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:20:56 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0kxihcjntn"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oDRgJDt8dpWbJ215W0lpJwgeSLwOMJW6AT8K1dyr7Fg="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/عقل بلا جسد.webp"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/عقل بلا جسد.webp",
+      "AssetFile": "Images/Books/عقل بلا جسد.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7976"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oDRgJDt8dpWbJ215W0lpJwgeSLwOMJW6AT8K1dyr7Fg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:20:56 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oDRgJDt8dpWbJ215W0lpJwgeSLwOMJW6AT8K1dyr7Fg="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/فن الحياة.jpg",
+      "AssetFile": "Images/Books/فن الحياة.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "122831"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"et3iGGakNxOURt/D/cLWSbWjrN/h0iiH9p+/9ZJIjm0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 14:09:42 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-et3iGGakNxOURt/D/cLWSbWjrN/h0iiH9p+/9ZJIjm0="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/فن الحياة.ue3d0k438c.jpg",
+      "AssetFile": "Images/Books/فن الحياة.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "122831"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"et3iGGakNxOURt/D/cLWSbWjrN/h0iiH9p+/9ZJIjm0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 14:09:42 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ue3d0k438c"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-et3iGGakNxOURt/D/cLWSbWjrN/h0iiH9p+/9ZJIjm0="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/فن الحياة.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/في ممر الفئران.e4i0jil3a2.webp",
+      "AssetFile": "Images/Books/في ممر الفئران.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QhnwY3KpgGnWd3LW7Owj6HIVuBI8gSy97oWqR9mEmAE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:21:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e4i0jil3a2"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QhnwY3KpgGnWd3LW7Owj6HIVuBI8gSy97oWqR9mEmAE="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/في ممر الفئران.webp"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/في ممر الفئران.webp",
+      "AssetFile": "Images/Books/في ممر الفئران.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QhnwY3KpgGnWd3LW7Owj6HIVuBI8gSy97oWqR9mEmAE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:21:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QhnwY3KpgGnWd3LW7Owj6HIVuBI8gSy97oWqR9mEmAE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/مدارج السالكين.jpg",
+      "AssetFile": "Images/Books/مدارج السالكين.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tDzY+2yU1G+MvacAbnudsYaamFSWRTFu1tDIksdnxJQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 07:45:34 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tDzY+2yU1G+MvacAbnudsYaamFSWRTFu1tDIksdnxJQ="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/مدارج السالكين.o5c3nz4pr6.jpg",
+      "AssetFile": "Images/Books/مدارج السالكين.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tDzY+2yU1G+MvacAbnudsYaamFSWRTFu1tDIksdnxJQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 07:45:34 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o5c3nz4pr6"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tDzY+2yU1G+MvacAbnudsYaamFSWRTFu1tDIksdnxJQ="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/مدارج السالكين.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/مسلكيات.avif",
+      "AssetFile": "Images/Books/مسلكيات.avif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74595"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u/niKK0HKmkdNhIyozUuhqsAA4XCsRWy8xEVLmawbQI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 09:28:34 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u/niKK0HKmkdNhIyozUuhqsAA4XCsRWy8xEVLmawbQI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/مسلكيات.z60jehwbnx.avif",
+      "AssetFile": "Images/Books/مسلكيات.avif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74595"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u/niKK0HKmkdNhIyozUuhqsAA4XCsRWy8xEVLmawbQI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 09:28:34 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z60jehwbnx"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u/niKK0HKmkdNhIyozUuhqsAA4XCsRWy8xEVLmawbQI="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/مسلكيات.avif"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/يوتوبيا.webp",
+      "AssetFile": "Images/Books/يوتوبيا.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11882"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bRZynazCIwacjfVRHacGngW/A1V93mSU6ONW6TWeU6c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:20:22 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bRZynazCIwacjfVRHacGngW/A1V93mSU6ONW6TWeU6c="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/يوتوبيا.zsgehf19py.webp",
+      "AssetFile": "Images/Books/يوتوبيا.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11882"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bRZynazCIwacjfVRHacGngW/A1V93mSU6ONW6TWeU6c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:20:22 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zsgehf19py"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bRZynazCIwacjfVRHacGngW/A1V93mSU6ONW6TWeU6c="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/يوتوبيا.webp"
+        }
+      ]
+    },
+    {
+      "Route": "css/site.4e6ay2kqu2.css",
       "AssetFile": "css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -99,7 +1821,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "10253"
         },
         {
           "Name": "Content-Type",
@@ -107,21 +1829,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"JFdGgVdyDu/TQSL7SwNPO1TQPwC9WKVGP9KUaj8Tf+8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 05 Apr 2025 07:06:44 GMT"
+          "Value": "Sun, 01 Jun 2025 07:16:22 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "c2tiyv64ts"
+          "Value": "4e6ay2kqu2"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-JFdGgVdyDu/TQSL7SwNPO1TQPwC9WKVGP9KUaj8Tf+8="
         },
         {
           "Name": "label",
@@ -144,7 +1866,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "10253"
         },
         {
           "Name": "Content-Type",
@@ -152,17 +1874,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"JFdGgVdyDu/TQSL7SwNPO1TQPwC9WKVGP9KUaj8Tf+8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 05 Apr 2025 07:06:44 GMT"
+          "Value": "Sun, 01 Jun 2025 07:16:22 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-JFdGgVdyDu/TQSL7SwNPO1TQPwC9WKVGP9KUaj8Tf+8="
         }
       ]
     },
@@ -263,7 +1985,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "231"
+          "Value": "6534"
         },
         {
           "Name": "Content-Type",
@@ -271,22 +1993,22 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "\"KN9yxLxNRMfhKMSDSe/ztWF+rt06SsE66MCzwEVL0MA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 05 Apr 2025 07:06:44 GMT"
+          "Value": "Sun, 01 Jun 2025 07:16:20 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-KN9yxLxNRMfhKMSDSe/ztWF+rt06SsE66MCzwEVL0MA="
         }
       ]
     },
     {
-      "Route": "js/site.xtxxf3hu2r.js",
+      "Route": "js/site.owoba5d6it.js",
       "AssetFile": "js/site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -300,7 +2022,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "231"
+          "Value": "6534"
         },
         {
           "Name": "Content-Type",
@@ -308,21 +2030,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "\"KN9yxLxNRMfhKMSDSe/ztWF+rt06SsE66MCzwEVL0MA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 05 Apr 2025 07:06:44 GMT"
+          "Value": "Sun, 01 Jun 2025 07:16:20 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xtxxf3hu2r"
+          "Value": "owoba5d6it"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-KN9yxLxNRMfhKMSDSe/ztWF+rt06SsE66MCzwEVL0MA="
         },
         {
           "Name": "label",

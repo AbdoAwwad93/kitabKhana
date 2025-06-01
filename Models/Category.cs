@@ -1,14 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Bookstore.Models
 {
-    //[PrimaryKey(propertyName:"Id")]
-    public class Category
+    public enum Category
     {
-        public int Id { set; get; }
-        public string Name { set; get; }
-        public string Description { set; get; }
-        public List<Book> Books{ get; set; }
+        [Display (Name ="كتب تاريخ")]
+        History,
+        [Display(Name = "كتب دينية")]
+        Religious,
+        [Display(Name = "أدب")]
+        Literature
     }
 }

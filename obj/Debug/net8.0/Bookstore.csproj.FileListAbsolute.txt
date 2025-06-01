@@ -170,10 +170,10 @@ E:\projects\Bookstore\Bookstore\obj\Debug\net8.0\staticwebassets\msbuild.build.B
 E:\projects\Bookstore\Bookstore\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Bookstore.props
 E:\projects\Bookstore\Bookstore\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Bookstore.props
 E:\projects\Bookstore\Bookstore\obj\Debug\net8.0\staticwebassets.pack.json
-E:\projects\Bookstore\Bookstore\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 E:\projects\Bookstore\Bookstore\obj\Debug\net8.0\Bookstore.csproj.Up2Date
 E:\projects\Bookstore\Bookstore\obj\Debug\net8.0\Bookstore.dll
 E:\projects\Bookstore\Bookstore\obj\Debug\net8.0\refint\Bookstore.dll
 E:\projects\Bookstore\Bookstore\obj\Debug\net8.0\Bookstore.pdb
 E:\projects\Bookstore\Bookstore\obj\Debug\net8.0\Bookstore.genruntimeconfig.cache
 E:\projects\Bookstore\Bookstore\obj\Debug\net8.0\ref\Bookstore.dll
+E:\projects\Bookstore\Bookstore\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

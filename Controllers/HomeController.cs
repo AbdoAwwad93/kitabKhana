@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Bookstore.Models;
+using Bookstore.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bookstore.Controllers
@@ -7,15 +8,16 @@ namespace Bookstore.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IRepository bookRepo;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IRepository bookRepo)
         {
             _logger = logger;
+            this.bookRepo=bookRepo;
         }
-
         public IActionResult Index()
         {
-            return View();
+            return View(bookRepo.GetAll());
         }
 
         public IActionResult Privacy()

@@ -2,7 +2,6 @@
 
 namespace Bookstore.Models
 {
-    [PrimaryKey("BookId", "AuthorId")]
     public class BookAuthor
     {
         public int BookId { get; set; }

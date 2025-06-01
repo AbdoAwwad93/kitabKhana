@@ -4,9 +4,14 @@ using Bookstore.Models;
 
 namespace Bookstore.Repositories
 {
-    public class BookRepository : IRepository<Book>
+    public class BookRepository : IRepository
     {
-        AppDBContext context = new AppDBContext();
+        private readonly AppDBContext context;
+
+        public BookRepository(AppDBContext _Context)
+        {
+            context=_Context;
+        }
 
         public void Add(Book entity)
         {
@@ -36,12 +41,6 @@ namespace Bookstore.Repositories
 
         public void Update(Book entity)
         {
-            //Book bookFromDb = context.Books.FirstOrDefault(x => x.Id==entity.Id)!;
-            //bookFromDb.Title = entity.Title;
-            //bookFromDb.Description = entity.Description;
-            //bookFromDb.CategoryId = entity.CategoryId;
-            //bookFromDb.ImageURL = entity.ImageURL;
-            //bookFromDb.Type = entity.Type;
             context.Update(entity);
         }
     }

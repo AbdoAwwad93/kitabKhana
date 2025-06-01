@@ -1,5 +1,26 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\Images\Authors\إبراهيم السكران.jpeg
+wwwroot\Images\Authors\احمد مراد.jpg
+wwwroot\Images\Authors\أحمد_خالد_توفيق.jpg
+wwwroot\Images\Authors\مصطفى محمود.jpg
+wwwroot\Images\Books\1919.jpeg
+wwwroot\Images\Books\Al-Feel_al-Azraq.jpg
+wwwroot\Images\Books\الماجريات.webp
+wwwroot\Images\Books\تراب الماس.webp
+wwwroot\Images\Books\حكايات الغرفة 207.webp
+wwwroot\Images\Books\رجال في الشمس.jpg
+wwwroot\Images\Books\رحلتي من الشك إلى الأيمان.jpg
+wwwroot\Images\Books\رفقاء الليل.webp
+wwwroot\Images\Books\رقائق القرأن.webp
+wwwroot\Images\Books\رواية_العنكبوت.jpg
+wwwroot\Images\Books\رياض الصالحين.webp
+wwwroot\Images\Books\عقل بلا جسد.webp
+wwwroot\Images\Books\فن الحياة.jpg
+wwwroot\Images\Books\في ممر الفئران.webp
+wwwroot\Images\Books\مدارج السالكين.jpg
+wwwroot\Images\Books\مسلكيات.avif
+wwwroot\Images\Books\يوتوبيا.webp
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

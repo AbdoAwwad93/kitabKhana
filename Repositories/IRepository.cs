@@ -1,11 +1,13 @@
-﻿namespace Bookstore.Repositories
+﻿using Bookstore.Models;
+
+namespace Bookstore.Repositories
 {
-    public interface IRepository<T> where T : class
+    public interface IRepository
     {
-        List<T> GetAll();
-        T GetById(int id);
-        void Add(T entity);
-        void Update(T entity);
+        List<Book> GetAll();
+        Book GetById(int id);
+        void Add(Book entity);
+        void Update(Book entity);
         void Delete(int id);
         void SaveChanges();
     }
