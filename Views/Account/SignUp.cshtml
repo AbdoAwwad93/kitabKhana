@@ -1,0 +1,174 @@
+﻿    @model SignUpViewModel
+    @{
+            ViewData["Title"] = "إنشاء حساب جديد";
+            ViewData["HideAuthNav"] = true;
+    }
+
+    <link rel="stylesheet" href="~/css/signup.css" asp-append-version="true" />
+
+    <div class="signup-container">
+        <div class="signup-wrapper">
+            <div class="signup-card">
+                <!-- Header Section -->
+                <div class="signup-header">
+                    <div class="signup-logo">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h1 class="signup-title">إنشاء حساب جديد</h1>
+                    <p class="signup-subtitle">انضم إلى كتابخانة واكتشف عالم الكتب</p>
+                </div>
+
+                <!-- Form Section -->
+                <div class="signup-form-container">
+                    <form asp-action="SignUp" method="post" class="signup-form" id="signupForm">
+                        <div asp-validation-summary="ModelOnly" class="validation-summary"></div>
+
+                        <!-- Full Name Field -->
+                        <div class="form-group">
+                            <label asp-for="FullName" class="form-label">
+                                <i class="fas fa-user"></i>
+                                @Html.DisplayNameFor(m => m.FullName)
+                            </label>
+                            <div class="input-wrapper">
+                                <input asp-for="FullName" class="form-control" placeholder="أدخل اسمك الكامل" />
+                            </div>
+                            <span asp-validation-for="FullName" class="validation-error"></span>
+                        </div>
+
+                        <!-- Username Field -->
+                        <div class="form-group">
+                            <label asp-for="UserName" class="form-label">
+                                <i class="fas fa-at"></i>
+                                @Html.DisplayNameFor(m => m.UserName)
+                            </label>
+                            <div class="input-wrapper">
+                                <input asp-for="UserName" class="form-control" placeholder="أدخل اسم المستخدم" />
+                            </div>
+                            <span asp-validation-for="UserName" class="validation-error"></span>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="form-group">
+                            <label asp-for="Email" class="form-label">
+                                <i class="fas fa-envelope"></i>
+                                @Html.DisplayNameFor(m => m.Email)
+                            </label>
+                            <div class="input-wrapper">
+                                <input asp-for="Email" class="form-control" placeholder="example@domain.com" />
+                            </div>
+                            <span asp-validation-for="Email" class="validation-error"></span>
+                        </div>
+
+                        <!-- Phone Number Field -->
+                        <div class="form-group">
+                            <label asp-for="PhoneNumber" class="form-label">
+                                <i class="fas fa-phone"></i>
+                                @Html.DisplayNameFor(m => m.PhoneNumber)
+                            </label>
+                            <div class="input-wrapper">
+                                <input asp-for="PhoneNumber" class="form-control" placeholder="رقم الهاتف" />
+                            </div>
+                            <span asp-validation-for="PhoneNumber" class="validation-error"></span>
+                        </div>
+
+                        <!-- Address Field -->
+                        <div class="form-group">
+                            <label asp-for="Address" class="form-label">
+                                <i class="fas fa-map-marker-alt"></i>
+                                @Html.DisplayNameFor(m => m.Address)
+                            </label>
+                            <div class="input-wrapper">
+                                <input asp-for="Address" class="form-control" placeholder="العنوان" />
+                            </div>
+                            <span asp-validation-for="Address" class="validation-error"></span>
+                        </div>
+
+                        <!-- Password Field -->
+                        <div class="form-group">
+                            <label asp-for="Password" class="form-label">
+                                <i class="fas fa-lock"></i>
+                                @Html.DisplayNameFor(m => m.Password)
+                            </label>
+                            <div class="input-wrapper">
+                                <input asp-for="Password" class="form-control password-input" placeholder="أدخل كلمة مرور قوية" />
+                                <button type="button" class="password-toggle" data-target="Password">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                            <div class="password-strength">
+                                <div class="strength-bar">
+                                    <div class="strength-fill"></div>
+                                </div>
+                                <span class="strength-text">قوة كلمة المرور</span>
+                            </div>
+                            <span asp-validation-for="Password" class="validation-error"></span>
+                        </div>
+
+                        <!-- Confirm Password Field -->
+                        <div class="form-group">
+                            <label asp-for="ConfirmPassword" class="form-label">
+                                <i class="fas fa-lock"></i>
+                                @Html.DisplayNameFor(m => m.ConfirmPassword)
+                            </label>
+                            <div class="input-wrapper">
+                                <input asp-for="ConfirmPassword" class="form-control password-input" placeholder="أعد إدخال كلمة المرور" />
+                                <button type="button" class="password-toggle" data-target="ConfirmPassword">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                            <span asp-validation-for="ConfirmPassword" class="validation-error"></span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="form-group">
+                            <button type="submit" class="signup-btn" id="submitBtn">
+                                <span class="btn-text">
+                                    <i class="fas fa-user-plus"></i>
+                                    إنشاء حساب
+                                </span>
+                                <span class="btn-loading" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    جاري الإنشاء...
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Social Signup -->
+                    <div class="social-signup">
+                        <div class="divider">
+                            <span>أو سجل باستخدام</span>
+                        </div>
+                        <div class="social-buttons">
+                            <button class="social-btn facebook" type="button">
+                                <i class="fab fa-facebook-f"></i>
+                                فيسبوك
+                            </button>
+                            <button class="social-btn google" type="button">
+                                <i class="fab fa-google"></i>
+                                جوجل
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Login Link -->
+                    <div class="login-link">
+                        <p>لديك حساب بالفعل؟ <a asp-action="LoginView" class="login-link-btn">تسجيل الدخول</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side Image -->
+            <div class="signup-image">
+                <img src="~/Images/lib.jpg" />
+                <div class="overlay-content">
+                    <h2>انضم إلينا اليوم!</h2>
+                    <p>ابدأ رحلتك في عالم الكتب مع كتابخانة</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts {
+        <script src="~/js/signup.js" asp-append-version="true"></script>
+    }

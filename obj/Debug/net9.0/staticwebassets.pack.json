@@ -1,0 +1,537 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Authors\\default-avatar-male.jpg",
+      "PackagePath": "staticwebassets\\Images\\Authors\\default-avatar-male.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Authors\\أحمد_خالد_توفيق.jpg",
+      "PackagePath": "staticwebassets\\Images\\Authors\\أحمد_خالد_توفيق.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Authors\\إبراهيم السكران.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Authors\\إبراهيم السكران.jpeg"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Authors\\إرنستو-ساباتو.webp",
+      "PackagePath": "staticwebassets\\Images\\Authors\\إرنستو-ساباتو.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Authors\\إسماعيل-مرسي.webp",
+      "PackagePath": "staticwebassets\\Images\\Authors\\إسماعيل-مرسي.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Authors\\ابن-خلدون.webp",
+      "PackagePath": "staticwebassets\\Images\\Authors\\ابن-خلدون.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Authors\\احمد مراد.jpg",
+      "PackagePath": "staticwebassets\\Images\\Authors\\احمد مراد.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Authors\\جيمس-كلير.webp",
+      "PackagePath": "staticwebassets\\Images\\Authors\\جيمس-كلير.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Authors\\ستيفن-آر-كوفي.webp",
+      "PackagePath": "staticwebassets\\Images\\Authors\\ستيفن-آر-كوفي.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Authors\\عمار-علي-حسن.webp",
+      "PackagePath": "staticwebassets\\Images\\Authors\\عمار-علي-حسن.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Authors\\غسان كنفاني.png",
+      "PackagePath": "staticwebassets\\Images\\Authors\\غسان كنفاني.png"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Authors\\مارك-مانسون.webp",
+      "PackagePath": "staticwebassets\\Images\\Authors\\مارك-مانسون.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Authors\\محمد بن صالح العثيمين.jpg",
+      "PackagePath": "staticwebassets\\Images\\Authors\\محمد بن صالح العثيمين.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Authors\\مصطفى محمود.jpg",
+      "PackagePath": "staticwebassets\\Images\\Authors\\مصطفى محمود.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\1919.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Books\\1919.jpeg"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\Al-Feel_al-Azraq.jpg",
+      "PackagePath": "staticwebassets\\Images\\Books\\Al-Feel_al-Azraq.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\أزمات-الحكم-في-الدولة-العثمانية-2-55722-250x375-webp.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\أزمات-الحكم-في-الدولة-العثمانية-2-55722-250x375-webp.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\أساطير-عربية-1-53295-250x375-webp.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\أساطير-عربية-1-53295-250x375-webp.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\الأندلس-درة-التاريخ-الإسلامي-الفردوس-المفقودة-55627-250x375-webp.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\الأندلس-درة-التاريخ-الإسلامي-الفردوس-المفقودة-55627-250x375-webp.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\الان أفهم.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\الان أفهم.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\العادات-الذرية-608-250x375-webp.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\العادات-الذرية-608-250x375-webp.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\العادات-السبع-للمراهقين-الأكثر-فعالية-1424-250x375-webp.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\العادات-السبع-للمراهقين-الأكثر-فعالية-1424-250x375-webp.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\العادات-السبع-للناس-الأكثر-فعالية-1425-250x375-webp.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\العادات-السبع-للناس-الأكثر-فعالية-1425-250x375-webp.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\الكاتب-وأشباحه-45805-250x375-webp.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\الكاتب-وأشباحه-45805-250x375-webp.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\الماجريات.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\الماجريات.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\النص-والسلطة-والمجتمع-2-52185-250x375-webp.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\النص-والسلطة-والمجتمع-2-52185-250x375-webp.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\تراب الماس.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\تراب الماس.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\حظك اليم.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\حظك اليم.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\حكايات الغرفة 207.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\حكايات الغرفة 207.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\خراب-كتاب-عن-الأمل-2159-250x375-webp.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\خراب-كتاب-عن-الأمل-2159-250x375-webp.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رجال في الشمس.jpg",
+      "PackagePath": "staticwebassets\\Images\\Books\\رجال في الشمس.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رحلتي من الشك إلى الإيمان.jpg",
+      "PackagePath": "staticwebassets\\Images\\Books\\رحلتي من الشك إلى الإيمان.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رفقاء الليل.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\رفقاء الليل.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رقائق القرآن.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\رقائق القرآن.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رواية_العنكبوت.jpg",
+      "PackagePath": "staticwebassets\\Images\\Books\\رواية_العنكبوت.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رياض الصالحين.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\رياض الصالحين.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح ألفية ابن مالك.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\شرح ألفية ابن مالك.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح الأربعين النووية.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\شرح الأربعين النووية.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح ثلاثة الأصول.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\شرح ثلاثة الأصول.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح رياض الصالحين.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\شرح رياض الصالحين.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح صحيح البخاري.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\شرح صحيح البخاري.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\عصر-التنظيمات-والإصلاحات-العثمانية-55652-250x375-webp.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\عصر-التنظيمات-والإصلاحات-العثمانية-55652-250x375-webp.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\عقل بلا جسد.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\عقل بلا جسد.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\فن الحياة.jpg",
+      "PackagePath": "staticwebassets\\Images\\Books\\فن الحياة.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\فن-الامبالاة-30158-250x375-webp.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\فن-الامبالاة-30158-250x375-webp.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\فن-اللامبالاة-لعيش-حياة-تخالف-المألوف-2160-250x375-webp.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\فن-اللامبالاة-لعيش-حياة-تخالف-المألوف-2160-250x375-webp.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\في ممر الفئران.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\في ممر الفئران.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\فيرتيجو.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\فيرتيجو.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مدارج السالكين.jpg",
+      "PackagePath": "staticwebassets\\Images\\Books\\مدارج السالكين.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مسلكيات.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Books\\مسلكيات.jpeg"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مسلكيات.jpg",
+      "PackagePath": "staticwebassets\\Images\\Books\\مسلكيات.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مصطلح الحديث.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\مصطلح الحديث.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مقدمة-ابن-خلدون-5-49901-250x375-webp.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\مقدمة-ابن-خلدون-5-49901-250x375-webp.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\يوتوبيا.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\يوتوبيا.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\lib.jpg",
+      "PackagePath": "staticwebassets\\Images\\lib.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\Authors.css",
+      "PackagePath": "staticwebassets\\css\\Authors.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\authordetails.css",
+      "PackagePath": "staticwebassets\\css\\authordetails.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\bookdetails.css",
+      "PackagePath": "staticwebassets\\css\\bookdetails.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\books.css",
+      "PackagePath": "staticwebassets\\css\\books.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\profile.css",
+      "PackagePath": "staticwebassets\\css\\profile.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\signup.css",
+      "PackagePath": "staticwebassets\\css\\signup.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\Authors.js",
+      "PackagePath": "staticwebassets\\js\\Authors.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\authordetails.js",
+      "PackagePath": "staticwebassets\\js\\authordetails.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\bookdetails.js",
+      "PackagePath": "staticwebassets\\js\\bookdetails.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\books.js",
+      "PackagePath": "staticwebassets\\js\\books.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\login.js",
+      "PackagePath": "staticwebassets\\js\\login.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\signup.js",
+      "PackagePath": "staticwebassets\\js\\signup.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Bookstore.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Bookstore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.Bookstore.props",
+      "PackagePath": "build\\Bookstore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.Bookstore.props",
+      "PackagePath": "buildMultiTargeting\\Bookstore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.Bookstore.props",
+      "PackagePath": "buildTransitive\\Bookstore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,278 @@
+﻿@model Book
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/bookdetails.css" asp-append-version="true" />
+}
+
+<!-- Breadcrumb -->
+<section class="breadcrumb-section">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">الرئيسية</a></li>
+                <li class="breadcrumb-item"><a href="@Url.Action("Index", "Book")">الكتب</a></li>
+                <li class="breadcrumb-item active" aria-current="page">@Model.Title</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<!-- Book Details Section -->
+<section class="book-details-section">
+    <div class="container">
+        <div class="row">
+            <!-- Book Image -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="book-image-wrapper">
+                    @{
+                        var imageUrl = ResolveImageUrl(Model.ImageURL);
+                    }
+                    <img src="@imageUrl" alt="@Model.Title" class="book-main-image"
+                         onerror="this.src='@Url.Content("~/Images/default-book.jpg")'">
+                    <div class="book-actions">
+                        <button class="btn btn-primary btn-lg add-to-cart-btn" data-book-id="@Model.Id">
+                            <i class="fas fa-cart-plus"><a href="@Url.Action("AddToCart","Cart")">أضف إلى السلة</a> </i> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book Information -->
+            <div class="col-lg-8 col-md-6">
+                <div class="book-info-wrapper">
+                    <div class="book-header">
+                        <h1 class="book-title">@Model.Title</h1>
+                        <div class="book-category">
+                            <span class="category-badge">@GetCategoryDisplayName(Model.Category)</span>
+                        </div>
+                    </div>
+
+                    <!-- Authors Section -->
+                    @if (Model.Authors != null && Model.Authors.Any())
+                    {
+                        <div class="authors-section">
+                            <h3 class="section-title">
+                                <i class="fas fa-user-edit"></i> المؤلفون
+                            </h3>
+                            <div class="authors-list">
+                                @foreach (var author in Model.Authors)
+                                {
+                                    <div class="author-card">
+                                        <div class="author-image">
+                                            @{
+                                                var authorImageUrl = ResolveImageUrl(author.ImageURL);
+                                            }
+                                            <img src="@authorImageUrl" alt="@author.Name"
+                                                 onerror="this.src='@Url.Content("~/Images/default-author.jpg")'">
+                                        </div>
+                                        <div class="author-info">
+                                            <h4 class="author-name">@author.Name</h4>
+                                            <p class="author-about">@author.About</p>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
+
+                    <!-- Book Meta Information -->
+                    <div class="book-meta-section">
+                        <div class="meta-item">
+                            <i class="fas fa-file-alt"></i>
+                            <span class="meta-label">عدد الصفحات:</span>
+                            <span class="meta-value">@Model.NumberOfPages صفحة</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-bookmark"></i>
+                            <span class="meta-label">التصنيف:</span>
+                            <span class="meta-value">@GetCategoryDisplayName(Model.Category)</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-tag"></i>
+                            <span class="meta-label">السعر:</span>
+                            <span class="meta-value">@Model.Price جنية</span>
+                        </div>
+                        @if (Model.Comments != null && Model.Comments.Any())
+                        {
+                            <div class="meta-item">
+                                <i class="fas fa-star"></i>
+                                <span class="meta-label">التقييم:</span>
+                                <div class="rating-display">
+                                    <div class="stars">
+                                        @for (int i = 1; i <= 5; i++)
+                                        {
+                                            <i class="fas fa-star @(i <= 4 ? "filled" : "")"></i>
+                                        }
+                                    </div>
+                                    <span class="rating-text">(@Model.Comments.Count تقييم)</span>
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+                    <!-- Book Description -->
+                    <div class="book-description-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-align-right"></i> وصف الكتاب
+                        </h3>
+                        <div class="book-description">
+                            <p>@Model.Description</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Comments Section -->
+@if (Model.Comments != null && Model.Comments.Any())
+{
+    <section class="comments-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="section-title">
+                        <i class="fas fa-comments"></i> التعليقات والمراجعات
+                        <span class="comments-count">(@Model.Comments.Count)</span>
+                    </h3>
+
+                    <div class="comments-list">
+                        @foreach (var comment in Model.Comments)
+                        {
+                            <div class="comment-card">
+                                <div class="comment-header">
+                                    <div class="commenter-info">
+                                        <div class="commenter-avatar">
+                                            <i class="fas fa-user-circle"></i>
+                                        </div>
+                                        <div class="commenter-details">
+                                            <h5 class="commenter-name">مستخدم مجهول</h5>
+                                            <div class="comment-rating">
+                                                @for (int i = 1; i <= 5; i++)
+                                                {
+                                                    <i class="fas fa-star @(i <= 4 ? "filled" : "")"></i>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-date">
+                                        <i class="fas fa-clock"></i>
+                                        <span>منذ يومين</span>
+                                    </div>
+                                </div>
+                                <div class="comment-content">
+                                    <p>@comment.CommentText</p>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+
+<!-- Add Comment Section -->
+<section class="add-comment-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="add-comment-card">
+                    <h3 class="section-title">
+                        <i class="fas fa-plus-circle"></i> أضف تعليقك
+                    </h3>
+                    <form id="commentForm" class="comment-form">
+                        <div class="rating-input">
+                            <label class="form-label">تقييمك للكتاب:</label>
+                            <div class="star-rating">
+                                <input type="radio" name="rating" value="5" id="star5">
+                                <label for="star5"><i class="fas fa-star"></i></label>
+                                <input type="radio" name="rating" value="4" id="star4">
+                                <label for="star4"><i class="fas fa-star"></i></label>
+                                <input type="radio" name="rating" value="3" id="star3">
+                                <label for="star3"><i class="fas fa-star"></i></label>
+                                <input type="radio" name="rating" value="2" id="star2">
+                                <label for="star2"><i class="fas fa-star"></i></label>
+                                <input type="radio" name="rating" value="1" id="star1">
+                                <label for="star1"><i class="fas fa-star"></i></label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="commentText" class="form-label">تعليقك:</label>
+                            <textarea class="form-control" id="commentText" rows="4"
+                                      placeholder="شاركنا رأيك في هذا الكتاب..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> إرسال التعليق
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Related Books Section -->
+<section class="related-books-section">
+    <div class="container">
+        <h3 class="section-title">
+            <i class="fas fa-book-open"></i> كتب ذات صلة
+        </h3>
+        <div class="related-books-slider">
+            <!-- This would be populated with related books from the same category -->
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center text-muted">سيتم عرض الكتب ذات الصلة هنا</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script src="~/js/bookdetails.js" asp-append-version="true"></script>
+}
+
+@functions {
+    private string ResolveImageUrl(string imageUrl)
+    {
+        if (string.IsNullOrEmpty(imageUrl))
+        {
+            return Url.Content("~/Images/default-book.jpg");
+        }
+
+        if (imageUrl.StartsWith("~/"))
+        {
+            return Url.Content(imageUrl);
+        }
+
+        if (imageUrl.StartsWith("http://") || imageUrl.StartsWith("https://"))
+        {
+            return imageUrl;
+        }
+
+        if (!imageUrl.StartsWith("/"))
+        {
+            return Url.Content("~/" + imageUrl);
+        }
+
+        return imageUrl;
+    }
+
+    private string GetCategoryDisplayName(Bookstore.Models.Category category)
+    {
+        return category switch
+        {
+            Bookstore.Models.Category.Religious => "الكتب الدينية",
+            Bookstore.Models.Category.Literature => "الروايات",
+            Bookstore.Models.Category.History => "التاريخ",
+            Bookstore.Models.Category.SelfDevelopment => "التنمية الذاتية وعلم النفس",
+            Bookstore.Models.Category.Miscellaneous => "كتب متنوعة",
+            _ => category.ToString()
+        };
+    }
+}

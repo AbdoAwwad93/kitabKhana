@@ -19,8 +19,8 @@ html {
 
 body {
   margin-bottom: 60px;
+  padding-top: 80px;
 }
-/* Arabic Theme CSS */
 :root {
     --primary-gold: #D4AF37;
     --secondary-gold: #B8860B;
@@ -49,7 +49,11 @@ body {
 .arabic-header {
     background: linear-gradient(135deg, var(--deep-blue) 0%, var(--primary-gold) 100%);
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
     .arabic-header::before {
@@ -500,3 +504,76 @@ body {
     ::-webkit-scrollbar-thumb:hover {
         background: var(--secondary-gold);
     }
+
+/* Auth Buttons Styles - Theme Matching Only */
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.login-btn, .signup-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.login-btn {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.login-btn:hover {
+    background: white;
+    color: var(--deep-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.signup-btn {
+    background: linear-gradient(135deg, var(--primary-gold), var(--emerald));
+    border: none;
+    color: white;
+}
+
+.signup-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.login-btn i, .signup-btn i {
+    font-size: 1rem;
+}
+
+@media (max-width: 992px) {
+    .auth-buttons {
+        margin: 1rem 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .login-btn, .signup-btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .auth-buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .login-btn, .signup-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,84 @@
+@model ProfileViewModel
+@{
+    ViewData["Title"] = "تعديل الملف الشخصي";
+}
+<link rel="stylesheet" href="~/css/profile.css" asp-append-version="true" />
+
+<div class="profile-container">
+    <div class="profile-wrapper">
+        <div class="profile-card">
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    <i class="fas fa-user-edit"></i>
+                </div>
+                <h3 class="profile-title">تعديل الملف الشخصي</h3>
+            </div>
+
+            <form asp-action="Edit" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-4"></div>
+
+                <div class="profile-info">
+                    <div class="info-group">
+                        <label asp-for="FullName" class="info-label">
+                            <i class="fas fa-user"></i>
+                            الاسم الكامل
+                        </label>
+                        <input asp-for="FullName" class="info-value" />
+                        <span asp-validation-for="FullName" class="text-danger"></span>
+                    </div>
+
+                    <div class="info-group">
+                        <label asp-for="UserName" class="info-label">
+                            <i class="fas fa-at"></i>
+                            اسم المستخدم
+                        </label>
+                        <input asp-for="UserName" class="info-value" />
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+
+                    <div class="info-group">
+                        <label asp-for="Email" class="info-label">
+                            <i class="fas fa-envelope"></i>
+                            البريد الإلكتروني
+                        </label>
+                        <input asp-for="Email" class="info-value" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="info-group">
+                        <label asp-for="PhoneNumber" class="info-label">
+                            <i class="fas fa-phone"></i>
+                            رقم الهاتف
+                        </label>
+                        <input asp-for="PhoneNumber" class="info-value" />
+                        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                    </div>
+
+                    <div class="info-group">
+                        <label asp-for="Address" class="info-label">
+                            <i class="fas fa-map-marker-alt"></i>
+                            العنوان
+                        </label>
+                        <textarea asp-for="Address" class="info-value" rows="3"></textarea>
+                        <span asp-validation-for="Address" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="profile-actions">
+                    <a asp-action="Profile" class="edit-profile-btn" style="background: var(--deep-blue);">
+                        <i class="fas fa-arrow-right"></i>
+                        عودة
+                    </a>
+                    <button type="submit" class="edit-profile-btn">
+                        <i class="fas fa-save"></i>
+                        حفظ التغييرات
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -170,7 +170,7 @@ const loadingStyles = `
     }
     
     body:not(.loaded)::after {
-        content: 'مكتبة الحكمة';
+        content: 'كتابخانة';
         position: fixed;
         top: 50%;
         left: 50%;

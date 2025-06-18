@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\Images\\Authors\\احمد مراد.jpg"
     },
     {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Authors\\محمد بن صالح العثيمين.jpg",
+      "PackagePath": "staticwebassets\\Images\\Authors\\محمد بن صالح العثيمين.jpg"
+    },
+    {
       "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Authors\\مصطفى محمود.jpg",
       "PackagePath": "staticwebassets\\Images\\Authors\\مصطفى محمود.jpg"
     },
@@ -29,12 +33,24 @@
       "PackagePath": "staticwebassets\\Images\\Books\\Al-Feel_al-Azraq.jpg"
     },
     {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\default-book.jpg",
+      "PackagePath": "staticwebassets\\Images\\Books\\default-book.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\الان أفهم.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\الان أفهم.webp"
+    },
+    {
       "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\الماجريات.webp",
       "PackagePath": "staticwebassets\\Images\\Books\\الماجريات.webp"
     },
     {
       "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\تراب الماس.webp",
       "PackagePath": "staticwebassets\\Images\\Books\\تراب الماس.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\حظك اليم.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\حظك اليم.webp"
     },
     {
       "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\حكايات الغرفة 207.webp",
@@ -45,16 +61,16 @@
       "PackagePath": "staticwebassets\\Images\\Books\\رجال في الشمس.jpg"
     },
     {
-      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رحلتي من الشك إلى الأيمان.jpg",
-      "PackagePath": "staticwebassets\\Images\\Books\\رحلتي من الشك إلى الأيمان.jpg"
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رحلتي من الشك إلى الإيمان.jpg",
+      "PackagePath": "staticwebassets\\Images\\Books\\رحلتي من الشك إلى الإيمان.jpg"
     },
     {
       "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رفقاء الليل.webp",
       "PackagePath": "staticwebassets\\Images\\Books\\رفقاء الليل.webp"
     },
     {
-      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رقائق القرأن.webp",
-      "PackagePath": "staticwebassets\\Images\\Books\\رقائق القرأن.webp"
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رقائق القرآن.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\رقائق القرآن.webp"
     },
     {
       "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رواية_العنكبوت.jpg",
@@ -63,6 +79,26 @@
     {
       "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رياض الصالحين.webp",
       "PackagePath": "staticwebassets\\Images\\Books\\رياض الصالحين.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح ألفية ابن مالك.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\شرح ألفية ابن مالك.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح الأربعين النووية.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\شرح الأربعين النووية.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح ثلاثة الأصول.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\شرح ثلاثة الأصول.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح رياض الصالحين.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\شرح رياض الصالحين.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح صحيح البخاري.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\شرح صحيح البخاري.webp"
     },
     {
       "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\عقل بلا جسد.webp",
@@ -77,16 +113,52 @@
       "PackagePath": "staticwebassets\\Images\\Books\\في ممر الفئران.webp"
     },
     {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\فيرتيجو.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\فيرتيجو.webp"
+    },
+    {
       "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مدارج السالكين.jpg",
       "PackagePath": "staticwebassets\\Images\\Books\\مدارج السالكين.jpg"
     },
     {
-      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مسلكيات.avif",
-      "PackagePath": "staticwebassets\\Images\\Books\\مسلكيات.avif"
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مسلكيات.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Books\\مسلكيات.jpeg"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مسلكيات.jpg",
+      "PackagePath": "staticwebassets\\Images\\Books\\مسلكيات.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مصطلح الحديث.webp",
+      "PackagePath": "staticwebassets\\Images\\Books\\مصطلح الحديث.webp"
     },
     {
       "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\يوتوبيا.webp",
       "PackagePath": "staticwebassets\\Images\\Books\\يوتوبيا.webp"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\default-book.jpg",
+      "PackagePath": "staticwebassets\\Images\\default-book.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\Authors.css",
+      "PackagePath": "staticwebassets\\css\\Authors.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\authordetails.css",
+      "PackagePath": "staticwebassets\\css\\authordetails.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\bookdetails.css",
+      "PackagePath": "staticwebassets\\css\\bookdetails.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\books.css",
+      "PackagePath": "staticwebassets\\css\\books.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\signup.css",
+      "PackagePath": "staticwebassets\\css\\signup.css"
     },
     {
       "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\site.css",
@@ -95,6 +167,26 @@
     {
       "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\Authors.js",
+      "PackagePath": "staticwebassets\\js\\Authors.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\authordetails.js",
+      "PackagePath": "staticwebassets\\js\\authordetails.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\bookdetails.js",
+      "PackagePath": "staticwebassets\\js\\bookdetails.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\books.js",
+      "PackagePath": "staticwebassets\\js\\books.js"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\signup.js",
+      "PackagePath": "staticwebassets\\js\\signup.js"
     },
     {
       "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\site.js",

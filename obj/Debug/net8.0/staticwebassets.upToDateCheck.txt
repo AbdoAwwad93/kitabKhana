@@ -1,26 +1,49 @@
+wwwroot\css\authordetails.css
+wwwroot\css\Authors.css
+wwwroot\css\bookdetails.css
+wwwroot\css\books.css
+wwwroot\css\signup.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\Images\Authors\إبراهيم السكران.jpeg
 wwwroot\Images\Authors\احمد مراد.jpg
 wwwroot\Images\Authors\أحمد_خالد_توفيق.jpg
+wwwroot\Images\Authors\محمد بن صالح العثيمين.jpg
 wwwroot\Images\Authors\مصطفى محمود.jpg
 wwwroot\Images\Books\1919.jpeg
 wwwroot\Images\Books\Al-Feel_al-Azraq.jpg
+wwwroot\Images\Books\default-book.jpg
+wwwroot\Images\Books\الان أفهم.webp
 wwwroot\Images\Books\الماجريات.webp
 wwwroot\Images\Books\تراب الماس.webp
+wwwroot\Images\Books\حظك اليم.webp
 wwwroot\Images\Books\حكايات الغرفة 207.webp
 wwwroot\Images\Books\رجال في الشمس.jpg
-wwwroot\Images\Books\رحلتي من الشك إلى الأيمان.jpg
+wwwroot\Images\Books\رحلتي من الشك إلى الإيمان.jpg
 wwwroot\Images\Books\رفقاء الليل.webp
-wwwroot\Images\Books\رقائق القرأن.webp
+wwwroot\Images\Books\رقائق القرآن.webp
 wwwroot\Images\Books\رواية_العنكبوت.jpg
 wwwroot\Images\Books\رياض الصالحين.webp
+wwwroot\Images\Books\شرح الأربعين النووية.webp
+wwwroot\Images\Books\شرح ألفية ابن مالك.webp
+wwwroot\Images\Books\شرح ثلاثة الأصول.webp
+wwwroot\Images\Books\شرح رياض الصالحين.webp
+wwwroot\Images\Books\شرح صحيح البخاري.webp
 wwwroot\Images\Books\عقل بلا جسد.webp
 wwwroot\Images\Books\فن الحياة.jpg
 wwwroot\Images\Books\في ممر الفئران.webp
+wwwroot\Images\Books\فيرتيجو.webp
 wwwroot\Images\Books\مدارج السالكين.jpg
-wwwroot\Images\Books\مسلكيات.avif
+wwwroot\Images\Books\مسلكيات.jpeg
+wwwroot\Images\Books\مسلكيات.jpg
+wwwroot\Images\Books\مصطلح الحديث.webp
 wwwroot\Images\Books\يوتوبيا.webp
+wwwroot\Images\default-book.jpg
+wwwroot\js\authordetails.js
+wwwroot\js\Authors.js
+wwwroot\js\bookdetails.js
+wwwroot\js\books.js
+wwwroot\js\signup.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

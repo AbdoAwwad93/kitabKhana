@@ -1,0 +1,71 @@
+﻿@model ProfileViewModel
+@{
+    ViewData["Title"] = "الملف الشخصي";
+}
+
+<link rel="stylesheet" href="~/css/profile.css" asp-append-version="true" />
+
+<div class="profile-container">
+    <div class="profile-wrapper">
+        <div class="profile-card">
+            <!-- Header Section -->
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <h1 class="profile-title">الملف الشخصي</h1>
+            </div>
+
+            <!-- Profile Information -->
+            <div class="profile-info">
+                <div class="info-group">
+                    <label class="info-label">
+                        <i class="fas fa-user"></i>
+                        @Html.DisplayNameFor(m => m.FullName)
+                    </label>
+                    <div class="info-value">@Model.FullName</div>
+                </div>
+
+                <div class="info-group">
+                    <label class="info-label">
+                        <i class="fas fa-at"></i>
+                        @Html.DisplayNameFor(m => m.UserName)
+                    </label>
+                    <div class="info-value">@Model.UserName</div>
+                </div>
+
+                <div class="info-group">
+                    <label class="info-label">
+                        <i class="fas fa-envelope"></i>
+                        @Html.DisplayNameFor(m => m.Email)
+                    </label>
+                    <div class="info-value">@Model.Email</div>
+                </div>
+
+                <div class="info-group">
+                    <label class="info-label">
+                        <i class="fas fa-phone"></i>
+                        @Html.DisplayNameFor(m => m.PhoneNumber)
+                    </label>
+                    <div class="info-value">@Model.PhoneNumber</div>
+                </div>
+
+                <div class="info-group">
+                    <label class="info-label">
+                        <i class="fas fa-map-marker-alt"></i>
+                        @Html.DisplayNameFor(m => m.Address)
+                    </label>
+                    <div class="info-value">@Model.Address</div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="profile-actions">
+                <a href="@Url.Action("EditView", "Account")" class="btn btn-primary edit-profile-btn">
+                    <i class="fas fa-edit"></i> تعديل الملف الشخصي
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+

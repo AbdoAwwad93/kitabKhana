@@ -1,0 +1,200 @@
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+E:\projects\Bookstore\Bookstore\wwwroot\lib\jquery\dist\jquery.js
+E:\projects\Bookstore\Bookstore\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+E:\projects\Bookstore\Bookstore\wwwroot\lib\jquery\dist\jquery.min.map
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+E:\projects\Bookstore\Bookstore\wwwroot\favicon.ico
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+E:\projects\Bookstore\Bookstore\wwwroot\js\site.js
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+E:\projects\Bookstore\Bookstore\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+E:\projects\Bookstore\Bookstore\wwwroot\css\profile.css
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+E:\projects\Bookstore\Bookstore\wwwroot\js\login.js
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+E:\projects\Bookstore\Bookstore\wwwroot\js\books.js
+E:\projects\Bookstore\Bookstore\wwwroot\js\Authors.js
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+E:\projects\Bookstore\Bookstore\wwwroot\css\signup.css
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+E:\projects\Bookstore\Bookstore\wwwroot\js\authordetails.js
+E:\projects\Bookstore\Bookstore\wwwroot\css\site.css
+E:\projects\Bookstore\Bookstore\wwwroot\css\books.css
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+E:\projects\Bookstore\Bookstore\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+E:\projects\Bookstore\Bookstore\wwwroot\js\signup.js
+E:\projects\Bookstore\Bookstore\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+E:\projects\Bookstore\Bookstore\wwwroot\css\login.css
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+E:\projects\Bookstore\Bookstore\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+E:\projects\Bookstore\Bookstore\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+E:\projects\Bookstore\Bookstore\wwwroot\lib\jquery-validation\dist\additional-methods.js
+E:\projects\Bookstore\Bookstore\wwwroot\css\bookdetails.css
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+E:\projects\Bookstore\Bookstore\wwwroot\css\authordetails.css
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+E:\projects\Bookstore\Bookstore\wwwroot\css\Authors.css
+E:\projects\Bookstore\Bookstore\wwwroot\lib\jquery\dist\jquery.min.js
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+E:\projects\Bookstore\Bookstore\wwwroot\lib\jquery\LICENSE.txt
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+E:\projects\Bookstore\Bookstore\wwwroot\js\bookdetails.js
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+E:\projects\Bookstore\Bookstore\wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\css\authordetails.css
+wwwroot\css\Authors.css
+wwwroot\css\bookdetails.css
+wwwroot\css\books.css
+wwwroot\css\login.css
+wwwroot\css\profile.css
+wwwroot\css\signup.css
+wwwroot\css\site.css
+wwwroot\favicon.ico
+wwwroot\Images\Authors\default-avatar-male.jpg
+wwwroot\Images\Authors\إبراهيم السكران.jpeg
+wwwroot\Images\Authors\ابن-خلدون.webp
+wwwroot\Images\Authors\احمد مراد.jpg
+wwwroot\Images\Authors\أحمد_خالد_توفيق.jpg
+wwwroot\Images\Authors\إرنستو-ساباتو.webp
+wwwroot\Images\Authors\إسماعيل-مرسي.webp
+wwwroot\Images\Authors\جيمس-كلير.webp
+wwwroot\Images\Authors\ستيفن-آر-كوفي.webp
+wwwroot\Images\Authors\عمار-علي-حسن.webp
+wwwroot\Images\Authors\غسان كنفاني.png
+wwwroot\Images\Authors\مارك-مانسون.webp
+wwwroot\Images\Authors\محمد بن صالح العثيمين.jpg
+wwwroot\Images\Authors\مصطفى محمود.jpg
+wwwroot\Images\Books\1919.jpeg
+wwwroot\Images\Books\Al-Feel_al-Azraq.jpg
+wwwroot\Images\Books\أزمات-الحكم-في-الدولة-العثمانية-2-55722-250x375-webp.webp
+wwwroot\Images\Books\أساطير-عربية-1-53295-250x375-webp.webp
+wwwroot\Images\Books\الان أفهم.webp
+wwwroot\Images\Books\الأندلس-درة-التاريخ-الإسلامي-الفردوس-المفقودة-55627-250x375-webp.webp
+wwwroot\Images\Books\العادات-الذرية-608-250x375-webp.webp
+wwwroot\Images\Books\العادات-السبع-للمراهقين-الأكثر-فعالية-1424-250x375-webp.webp
+wwwroot\Images\Books\العادات-السبع-للناس-الأكثر-فعالية-1425-250x375-webp.webp
+wwwroot\Images\Books\الكاتب-وأشباحه-45805-250x375-webp.webp
+wwwroot\Images\Books\الماجريات.webp
+wwwroot\Images\Books\النص-والسلطة-والمجتمع-2-52185-250x375-webp.webp
+wwwroot\Images\Books\تراب الماس.webp
+wwwroot\Images\Books\حظك اليم.webp
+wwwroot\Images\Books\حكايات الغرفة 207.webp
+wwwroot\Images\Books\خراب-كتاب-عن-الأمل-2159-250x375-webp.webp
+wwwroot\Images\Books\رجال في الشمس.jpg
+wwwroot\Images\Books\رحلتي من الشك إلى الإيمان.jpg
+wwwroot\Images\Books\رفقاء الليل.webp
+wwwroot\Images\Books\رقائق القرآن.webp
+wwwroot\Images\Books\رواية_العنكبوت.jpg
+wwwroot\Images\Books\رياض الصالحين.webp
+wwwroot\Images\Books\شرح الأربعين النووية.webp
+wwwroot\Images\Books\شرح ألفية ابن مالك.webp
+wwwroot\Images\Books\شرح ثلاثة الأصول.webp
+wwwroot\Images\Books\شرح رياض الصالحين.webp
+wwwroot\Images\Books\شرح صحيح البخاري.webp
+wwwroot\Images\Books\عصر-التنظيمات-والإصلاحات-العثمانية-55652-250x375-webp.webp
+wwwroot\Images\Books\عقل بلا جسد.webp
+wwwroot\Images\Books\فن الحياة.jpg
+wwwroot\Images\Books\فن-الامبالاة-30158-250x375-webp.webp
+wwwroot\Images\Books\فن-اللامبالاة-لعيش-حياة-تخالف-المألوف-2160-250x375-webp.webp
+wwwroot\Images\Books\في ممر الفئران.webp
+wwwroot\Images\Books\فيرتيجو.webp
+wwwroot\Images\Books\مدارج السالكين.jpg
+wwwroot\Images\Books\مسلكيات.jpeg
+wwwroot\Images\Books\مسلكيات.jpg
+wwwroot\Images\Books\مصطلح الحديث.webp
+wwwroot\Images\Books\مقدمة-ابن-خلدون-5-49901-250x375-webp.webp
+wwwroot\Images\Books\يوتوبيا.webp
+wwwroot\Images\lib.jpg
+wwwroot\js\authordetails.js
+wwwroot\js\Authors.js
+wwwroot\js\bookdetails.js
+wwwroot\js\books.js
+wwwroot\js\login.js
+wwwroot\js\signup.js
+wwwroot\js\site.js
+wwwroot\lib\bootstrap\dist\css\bootstrap.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+wwwroot\lib\bootstrap\LICENSE
+wwwroot\lib\jquery\dist\jquery.js
+wwwroot\lib\jquery\dist\jquery.min.js
+wwwroot\lib\jquery\dist\jquery.min.map
+wwwroot\lib\jquery\LICENSE.txt
+wwwroot\lib\jquery-validation\dist\additional-methods.js
+wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt

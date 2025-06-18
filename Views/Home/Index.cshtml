@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<Book>
+@{
     ViewData["Title"] = "الرئيسية";
 }
 
@@ -9,10 +10,10 @@
         <div class="row align-items-center min-vh-100">
             <div class="col-lg-6">
                 <div class="hero-content">
-                    <h1 class="hero-title">مرحباً بك في مكتبة الحكمة</h1>
+                    <h1 class="hero-title">مرحبًا بك في كتابخانة</h1>
                     <p class="hero-subtitle">اكتشف عالماً من المعرفة والثقافة من خلال مجموعتنا المتنوعة من الكتب العربية والعالمية</p>
                     <div class="hero-buttons">
-                        <a href="#books" class="btn btn-primary btn-lg">تصفح الكتب</a>
+                        <a asp-action="Index" asp-controller ="Book" class="btn btn-primary btn-lg">تصفح الكتب</a>
                         <a href="#categories" class="btn btn-outline-light btn-lg">التصنيفات</a>
                     </div>
                 </div>
@@ -35,7 +36,7 @@
     <div class="container">
         <div class="row text-center mb-5">
             <div class="col-12">
-                <h2 class="section-title">لماذا تختار مكتبة الحكمة؟</h2>
+                <h2 class="section-title">لماذا تختار كتابخانة؟</h2>
                 <p class="section-subtitle">نقدم لك تجربة فريدة في عالم الكتب والمعرفة</p>
             </div>
         </div>
@@ -71,52 +72,83 @@
     </div>
 </section>
 
-<!-- Categories Section -->
-<section class="categories-section" id="categories">
+<!-- Books Section -->
+<section class="books-content py-5">
     <div class="container">
         <div class="row text-center mb-5">
             <div class="col-12">
-                <h2 class="section-title">تصنيفات الكتب</h2>
-                <p class="section-subtitle">اختر من بين مجموعة واسعة من التصنيفات</p>
+                <h2 class="section-title">أحدث الكتب</h2>
+                <p class="section-subtitle">اكتشف مجموعتنا المميزة من الكتب الجديدة</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-mosque"></i>
-                    </div>
-                    <h5>الكتب الدينية</h5>
-                    <p>القرآن الكريم والتفاسير والكتب الإسلامية</p>
+        
+        <div class="row books-grid">
+            @foreach (var book in Model.Take(8))
+            {
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <a href="@Url.Action("Details","Book",new {id=book.Id})" class="text-decoration-none text-dark">
+                        <div class="book-card" data-book-id="@book.Id">
+                            <div class="book-image-container">
+                                @{
+                                    var imageUrl = ResolveImageUrl(book.ImageURL);
+                                }
+                                <img src="@imageUrl" alt="@book.Title" class="book-image" 
+                                     onerror="this.src='@Url.Content("~/Images/default-book.jpg")'">
+                                <div class="book-overlay">
+                                </div>
+                            </div>
+                            
+                            <div class="book-info">
+                                <h5 class="book-title">@book.Title</h5>
+                               
+                                @if (book.Authors != null && book.Authors.Any())
+                                {
+                                    <div class="book-authors">
+                                        <i class="fas fa-user-edit"></i>
+                                        @string.Join("، ", book.Authors.Select(a => a.Name))
+                                    </div>
+                                }
+                                
+                                <p class="book-description">
+                                    @(book.Description.Length > 100 ? book.Description.Substring(0, 100) + "..." : book.Description)
+                                </p>
+             
+                                <div class="book-meta">
+                                    <span class="pages-count">
+                                        <i class="fas fa-file-alt"></i>
+                                        @book.NumberOfPages صفحة
+                                    </span>
+                                    <span class="category-badge">@GetCategoryDisplayName(book.Category)</span>
+                                </div>
+                                
+                                <div class="book-price">
+                                    <i class="fas fa-tag"></i>
+                                    <span>@book.Price جنية</span>
+                                </div>
+                                
+                                @if (book.Comments != null && book.Comments.Any())
+                                {
+                                    <div class="book-rating">
+                                        <div class="stars">
+                                            @for (int i = 1; i <= 5; i++)
+                                            {
+                                                <i class="fas fa-star @(i <= 4 ? "filled" : "")"></i>
+                                            }
+                                        </div>
+                                        <span class="rating-text">(@book.Comments.Count تقييم)</span>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-scroll"></i>
-                    </div>
-                    <h5>الأدب العربي</h5>
-                    <p>الشعر والنثر والروايات العربية الكلاسيكية</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-flask"></i>
-                    </div>
-                    <h5>العلوم</h5>
-                    <p>كتب الفيزياء والكيمياء والرياضيات</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-landmark"></i>
-                    </div>
-                    <h5>التاريخ</h5>
-                    <p>التاريخ الإسلامي والعربي والعالمي</p>
-                </div>
-            </div>
+            }
+        </div>
+
+        <div class="text-center mt-4">
+            <a asp-action="Index" asp-controller="Book" class="btn btn-primary btn-lg">
+                عرض جميع الكتب <i class="fas fa-arrow-left ms-2"></i>
+            </a>
         </div>
     </div>
 </section>
@@ -138,3 +170,44 @@
         </div>
     </div>
 </section>
+@section Styles {
+    <link rel="stylesheet" href="~/css/books.css" asp-append-version="true" />
+}
+
+@functions {
+    private string ResolveImageUrl(string imageUrl)
+    {
+        if (string.IsNullOrEmpty(imageUrl))
+        {
+            return Url.Content("~/Images/default-book.jpg");
+        }
+        
+        if (imageUrl.StartsWith("~/"))
+        {
+            return Url.Content(imageUrl);
+        }
+        
+        if (imageUrl.StartsWith("http://") || imageUrl.StartsWith("https://"))
+        {
+            return imageUrl;
+        }
+        
+        if (!imageUrl.StartsWith("/"))
+        {
+            return Url.Content("~/" + imageUrl);
+        }
+        
+        return imageUrl;
+    }
+
+    private string GetCategoryDisplayName(Bookstore.Models.Category category)
+    {
+        return category switch
+        {
+            Bookstore.Models.Category.Religious => "الكتب الدينية",
+            Bookstore.Models.Category.Literature => "الروايات",
+            Bookstore.Models.Category.History => "الكتب التاريخية",
+            _ => category.ToString()
+        };
+    }
+}

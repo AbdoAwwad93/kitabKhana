@@ -1,11 +1,14 @@
 ﻿using Bookstore.Configuration;
 using Bookstore.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.General;
 
 namespace Bookstore.DBContext
 {
-    public class AppDBContext : DbContext
+    public class AppDBContext : IdentityDbContext<Customer,IdentityRole,string>
     {
         public AppDBContext(DbContextOptions <AppDBContext> options)
         :base(options)
@@ -23,7 +26,12 @@ namespace Bookstore.DBContext
         public DbSet<BookAuthor> BookAuthors { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(BookConfiguration).Assembly);
+        }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseLazyLoadingProxies();
         }
     }
 }

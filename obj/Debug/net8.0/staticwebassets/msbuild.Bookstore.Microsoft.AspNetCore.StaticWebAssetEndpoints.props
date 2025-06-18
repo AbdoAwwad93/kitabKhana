@@ -12,17 +12,77 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ge4sihvmw8"},{"Name":"integrity","Value":"sha256-uFSNcp7g6AKL7zv1CjzbLXDRqbWHYhz9UFYZfj4r6zM="},{"Name":"label","Value":"_content/Bookstore/Bookstore.bundle.scp.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1127"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022uFSNcp7g6AKL7zv1CjzbLXDRqbWHYhz9UFYZfj4r6zM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Apr 2025 14:22:43 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Bookstore/css/site.4e6ay2kqu2.css">
+    <StaticWebAssetEndpoint Include="_content/Bookstore/css/authordetails.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\authordetails.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3A1D\u002BUIAvOkTpkaLXDQ55qqBH/yHeqdWEane83hP8tI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"12603"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223A1D\u002BUIAvOkTpkaLXDQ55qqBH/yHeqdWEane83hP8tI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Jun 2025 16:40:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/css/authordetails.wf2mw6uqxy.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\authordetails.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wf2mw6uqxy"},{"Name":"integrity","Value":"sha256-3A1D\u002BUIAvOkTpkaLXDQ55qqBH/yHeqdWEane83hP8tI="},{"Name":"label","Value":"_content/Bookstore/css/authordetails.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12603"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223A1D\u002BUIAvOkTpkaLXDQ55qqBH/yHeqdWEane83hP8tI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Jun 2025 16:40:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/css/Authors.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Authors.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-EtDJ4WAM9XH\u002BVMFy8USCqIKnSaFcv4qBscRbYLXPxok="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"10184"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022EtDJ4WAM9XH\u002BVMFy8USCqIKnSaFcv4qBscRbYLXPxok=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Jun 2025 14:15:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/css/Authors.uornore8iu.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Authors.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"uornore8iu"},{"Name":"integrity","Value":"sha256-EtDJ4WAM9XH\u002BVMFy8USCqIKnSaFcv4qBscRbYLXPxok="},{"Name":"label","Value":"_content/Bookstore/css/Authors.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"10184"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022EtDJ4WAM9XH\u002BVMFy8USCqIKnSaFcv4qBscRbYLXPxok=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Jun 2025 14:15:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/css/bookdetails.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\bookdetails.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-KaBgsac5ApoI6pX0nZOAKTMPrF1WJ4exlD\u002BCpRfVa8U="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"9930"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022KaBgsac5ApoI6pX0nZOAKTMPrF1WJ4exlD\u002BCpRfVa8U=\u0022"},{"Name":"Last-Modified","Value":"Fri, 06 Jun 2025 16:12:37 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/css/bookdetails.dfsdjnq6me.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\bookdetails.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dfsdjnq6me"},{"Name":"integrity","Value":"sha256-KaBgsac5ApoI6pX0nZOAKTMPrF1WJ4exlD\u002BCpRfVa8U="},{"Name":"label","Value":"_content/Bookstore/css/bookdetails.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9930"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022KaBgsac5ApoI6pX0nZOAKTMPrF1WJ4exlD\u002BCpRfVa8U=\u0022"},{"Name":"Last-Modified","Value":"Fri, 06 Jun 2025 16:12:37 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/css/books.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\books.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-QnSGkcct6WST1Qd1upG5W8aSPTqyAr26dpdulk\u002BnAyY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"9171"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022QnSGkcct6WST1Qd1upG5W8aSPTqyAr26dpdulk\u002BnAyY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 16:22:29 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/css/books.yv0xtvbd2o.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\books.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"yv0xtvbd2o"},{"Name":"integrity","Value":"sha256-QnSGkcct6WST1Qd1upG5W8aSPTqyAr26dpdulk\u002BnAyY="},{"Name":"label","Value":"_content/Bookstore/css/books.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9171"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022QnSGkcct6WST1Qd1upG5W8aSPTqyAr26dpdulk\u002BnAyY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 16:22:29 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/css/signup.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\signup.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6yOG\u002B\u002BMcUExRkCA5sy4AiZKqmHbhMWWszvd15EtDEkA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"9122"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00226yOG\u002B\u002BMcUExRkCA5sy4AiZKqmHbhMWWszvd15EtDEkA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 08 Jun 2025 13:38:25 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/css/signup.j2xmbagayk.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\signup.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"j2xmbagayk"},{"Name":"integrity","Value":"sha256-6yOG\u002B\u002BMcUExRkCA5sy4AiZKqmHbhMWWszvd15EtDEkA="},{"Name":"label","Value":"_content/Bookstore/css/signup.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9122"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00226yOG\u002B\u002BMcUExRkCA5sy4AiZKqmHbhMWWszvd15EtDEkA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 08 Jun 2025 13:38:25 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/css/site.6aogt50xum.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4e6ay2kqu2"},{"Name":"integrity","Value":"sha256-JFdGgVdyDu/TQSL7SwNPO1TQPwC9WKVGP9KUaj8Tf\u002B8="},{"Name":"label","Value":"_content/Bookstore/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"10253"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022JFdGgVdyDu/TQSL7SwNPO1TQPwC9WKVGP9KUaj8Tf\u002B8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 07:16:22 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6aogt50xum"},{"Name":"integrity","Value":"sha256-7o/UsUVysFAqW\u002BAW3bAqsjfaAhwBJ/2c/x7UPBHdjcI="},{"Name":"label","Value":"_content/Bookstore/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12047"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00227o/UsUVysFAqW\u002BAW3bAqsjfaAhwBJ/2c/x7UPBHdjcI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Jun 2025 19:24:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Bookstore/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-JFdGgVdyDu/TQSL7SwNPO1TQPwC9WKVGP9KUaj8Tf\u002B8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"10253"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022JFdGgVdyDu/TQSL7SwNPO1TQPwC9WKVGP9KUaj8Tf\u002B8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 07:16:22 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-7o/UsUVysFAqW\u002BAW3bAqsjfaAhwBJ/2c/x7UPBHdjcI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"12047"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00227o/UsUVysFAqW\u002BAW3bAqsjfaAhwBJ/2c/x7UPBHdjcI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Jun 2025 19:24:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Bookstore/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
@@ -72,6 +132,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x108zjzqha"},{"Name":"integrity","Value":"sha256-RZFbgmYzbBARKGeFf7J7o1amiVxkuUl5Tf4hRPv/cXc="},{"Name":"label","Value":"_content/Bookstore/Images/Authors/\u0627\u062D\u0645\u062F \u0645\u0631\u0627\u062F.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"13561"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022RZFbgmYzbBARKGeFf7J7o1amiVxkuUl5Tf4hRPv/cXc=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 09:25:03 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Authors/محمد بن صالح العثيمين.09cr5vnsvp.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Authors\محمد بن صالح العثيمين.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"09cr5vnsvp"},{"Name":"integrity","Value":"sha256-PBg26CyDX4\u002ByThuJT395R996Kcy742b4hjhx9aOvMbA="},{"Name":"label","Value":"_content/Bookstore/Images/Authors/\u0645\u062D\u0645\u062F \u0628\u0646 \u0635\u0627\u0644\u062D \u0627\u0644\u0639\u062B\u064A\u0645\u064A\u0646.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"22421"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022PBg26CyDX4\u002ByThuJT395R996Kcy742b4hjhx9aOvMbA=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 12:02:29 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Authors/محمد بن صالح العثيمين.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Authors\محمد بن صالح العثيمين.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-PBg26CyDX4\u002ByThuJT395R996Kcy742b4hjhx9aOvMbA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"22421"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022PBg26CyDX4\u002ByThuJT395R996Kcy742b4hjhx9aOvMbA=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 12:02:29 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Authors/مصطفى محمود.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Authors\مصطفى محمود.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -108,6 +180,30 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-tWuNh7f6HeEBtPKp7sjYwStMTWbSRJE2i7dx3c8vRtg="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"30940"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022tWuNh7f6HeEBtPKp7sjYwStMTWbSRJE2i7dx3c8vRtg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 10:08:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/default-book.81be4ylkn1.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\default-book.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"81be4ylkn1"},{"Name":"integrity","Value":"sha256-XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo="},{"Name":"label","Value":"_content/Bookstore/Images/Books/default-book.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"194708"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 09:34:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/default-book.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\default-book.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"194708"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 09:34:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/الان أفهم.3ojvfioi7r.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\الان أفهم.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3ojvfioi7r"},{"Name":"integrity","Value":"sha256-rZOc\u002BEWB2LORRXuC9UpRVHk64/iX9EIl6cO8tEaBG9o="},{"Name":"label","Value":"_content/Bookstore/Images/Books/\u0627\u0644\u0627\u0646 \u0623\u0641\u0647\u0645.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8868"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022rZOc\u002BEWB2LORRXuC9UpRVHk64/iX9EIl6cO8tEaBG9o=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 11:17:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/الان أفهم.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\الان أفهم.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-rZOc\u002BEWB2LORRXuC9UpRVHk64/iX9EIl6cO8tEaBG9o="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"8868"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022rZOc\u002BEWB2LORRXuC9UpRVHk64/iX9EIl6cO8tEaBG9o=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 11:17:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/الماجريات.duqcu5vmaf.webp">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\الماجريات.webp'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -131,6 +227,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"194708"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 09:34:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/حظك اليم.qzamnbtbxh.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\حظك اليم.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qzamnbtbxh"},{"Name":"integrity","Value":"sha256-2gtXx163RQCSFRPm3nkV/Qcua3ZZelnszWNCodwMIE4="},{"Name":"label","Value":"_content/Bookstore/Images/Books/\u062D\u0638\u0643 \u0627\u0644\u064A\u0645.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"16222"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u00222gtXx163RQCSFRPm3nkV/Qcua3ZZelnszWNCodwMIE4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 11:17:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/حظك اليم.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\حظك اليم.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-2gtXx163RQCSFRPm3nkV/Qcua3ZZelnszWNCodwMIE4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"16222"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u00222gtXx163RQCSFRPm3nkV/Qcua3ZZelnszWNCodwMIE4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 11:17:49 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/حكايات الغرفة 207.8wwaktba66.webp">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\حكايات الغرفة 207.webp'))</AssetFile>
@@ -156,16 +264,16 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wmoaottiox"},{"Name":"integrity","Value":"sha256-OJeU8HyRdB4w8k6/b\u002BQ1CC\u002BUFY\u002BH6mUAhKhaHmaznQU="},{"Name":"label","Value":"_content/Bookstore/Images/Books/\u0631\u062C\u0627\u0644 \u0641\u064A \u0627\u0644\u0634\u0645\u0633.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"21305"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022OJeU8HyRdB4w8k6/b\u002BQ1CC\u002BUFY\u002BH6mUAhKhaHmaznQU=\u0022"},{"Name":"Last-Modified","Value":"Fri, 16 May 2025 14:09:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/رحلتي من الشك إلى الأيمان.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\رحلتي من الشك إلى الأيمان.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/رحلتي من الشك إلى الإيمان.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\رحلتي من الشك إلى الإيمان.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-\u002BrIsvgXWDfKKZdGm4LxjLqibt6ge\u002BIy04M/ki2Vd19c="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"235332"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022\u002BrIsvgXWDfKKZdGm4LxjLqibt6ge\u002BIy04M/ki2Vd19c=\u0022"},{"Name":"Last-Modified","Value":"Fri, 16 May 2025 14:09:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/رحلتي من الشك إلى الأيمان.qz4fqnfy3g.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\رحلتي من الشك إلى الأيمان.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/رحلتي من الشك إلى الإيمان.qz4fqnfy3g.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\رحلتي من الشك إلى الإيمان.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qz4fqnfy3g"},{"Name":"integrity","Value":"sha256-\u002BrIsvgXWDfKKZdGm4LxjLqibt6ge\u002BIy04M/ki2Vd19c="},{"Name":"label","Value":"_content/Bookstore/Images/Books/\u0631\u062D\u0644\u062A\u064A \u0645\u0646 \u0627\u0644\u0634\u0643 \u0625\u0644\u0649 \u0627\u0644\u0623\u064A\u0645\u0627\u0646.jpg"}]]]></EndpointProperties>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qz4fqnfy3g"},{"Name":"integrity","Value":"sha256-\u002BrIsvgXWDfKKZdGm4LxjLqibt6ge\u002BIy04M/ki2Vd19c="},{"Name":"label","Value":"_content/Bookstore/Images/Books/\u0631\u062D\u0644\u062A\u064A \u0645\u0646 \u0627\u0644\u0634\u0643 \u0625\u0644\u0649 \u0627\u0644\u0625\u064A\u0645\u0627\u0646.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"235332"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022\u002BrIsvgXWDfKKZdGm4LxjLqibt6ge\u002BIy04M/ki2Vd19c=\u0022"},{"Name":"Last-Modified","Value":"Fri, 16 May 2025 14:09:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/رفقاء الليل.18l5zjbxpt.webp">
@@ -180,14 +288,14 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-sRlIder0nSA7b9exriI3spjYj3PVRDUZoIchAOtTpcg="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"16408"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022sRlIder0nSA7b9exriI3spjYj3PVRDUZoIchAOtTpcg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:21:59 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/رقائق القرأن.kvc76zwi7a.webp">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\رقائق القرأن.webp'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/رقائق القرآن.kvc76zwi7a.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\رقائق القرآن.webp'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kvc76zwi7a"},{"Name":"integrity","Value":"sha256-8O7kRW5ZuU0OZ8XHMWcmlBQNSUdJB4DLldWQAtFhk8I="},{"Name":"label","Value":"_content/Bookstore/Images/Books/\u0631\u0642\u0627\u0626\u0642 \u0627\u0644\u0642\u0631\u0623\u0646.webp"}]]]></EndpointProperties>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kvc76zwi7a"},{"Name":"integrity","Value":"sha256-8O7kRW5ZuU0OZ8XHMWcmlBQNSUdJB4DLldWQAtFhk8I="},{"Name":"label","Value":"_content/Bookstore/Images/Books/\u0631\u0642\u0627\u0626\u0642 \u0627\u0644\u0642\u0631\u0622\u0646.webp"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4944"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u00228O7kRW5ZuU0OZ8XHMWcmlBQNSUdJB4DLldWQAtFhk8I=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 09:27:13 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/رقائق القرأن.webp">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\رقائق القرأن.webp'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/رقائق القرآن.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\رقائق القرآن.webp'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8O7kRW5ZuU0OZ8XHMWcmlBQNSUdJB4DLldWQAtFhk8I="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"4944"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u00228O7kRW5ZuU0OZ8XHMWcmlBQNSUdJB4DLldWQAtFhk8I=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 09:27:13 GMT"}]]]></ResponseHeaders>
@@ -215,6 +323,66 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SmVUp9HwDolwyZ8hj2HEyiYzi4FF1CiINwTkk7Za5ao="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"28014"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022SmVUp9HwDolwyZ8hj2HEyiYzi4FF1CiINwTkk7Za5ao=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 07:40:46 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/شرح ألفية ابن مالك.ddfst3kpyg.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\شرح ألفية ابن مالك.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ddfst3kpyg"},{"Name":"integrity","Value":"sha256-LxpRjCCFBvOHiGMDGCUDqJgf6eTp7eS88jjqXBWjdq0="},{"Name":"label","Value":"_content/Bookstore/Images/Books/\u0634\u0631\u062D \u0623\u0644\u0641\u064A\u0629 \u0627\u0628\u0646 \u0645\u0627\u0644\u0643.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"38844"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022LxpRjCCFBvOHiGMDGCUDqJgf6eTp7eS88jjqXBWjdq0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 11:19:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/شرح ألفية ابن مالك.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\شرح ألفية ابن مالك.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-LxpRjCCFBvOHiGMDGCUDqJgf6eTp7eS88jjqXBWjdq0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"38844"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022LxpRjCCFBvOHiGMDGCUDqJgf6eTp7eS88jjqXBWjdq0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 11:19:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/شرح الأربعين النووية.tubyqkqkc0.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\شرح الأربعين النووية.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tubyqkqkc0"},{"Name":"integrity","Value":"sha256-e8WHWIdGC4vWIg8yDSyK0P7Qz0DSpHqMM78yPdwL91M="},{"Name":"label","Value":"_content/Bookstore/Images/Books/\u0634\u0631\u062D \u0627\u0644\u0623\u0631\u0628\u0639\u064A\u0646 \u0627\u0644\u0646\u0648\u0648\u064A\u0629.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"18070"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022e8WHWIdGC4vWIg8yDSyK0P7Qz0DSpHqMM78yPdwL91M=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 11:18:50 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/شرح الأربعين النووية.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\شرح الأربعين النووية.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-e8WHWIdGC4vWIg8yDSyK0P7Qz0DSpHqMM78yPdwL91M="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"18070"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022e8WHWIdGC4vWIg8yDSyK0P7Qz0DSpHqMM78yPdwL91M=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 11:18:50 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/شرح ثلاثة الأصول.7ogf6xbrff.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\شرح ثلاثة الأصول.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7ogf6xbrff"},{"Name":"integrity","Value":"sha256-J1yVjHMMivtS1DZG2Ew2vl88olDCXolppHGaJrfpx1w="},{"Name":"label","Value":"_content/Bookstore/Images/Books/\u0634\u0631\u062D \u062B\u0644\u0627\u062B\u0629 \u0627\u0644\u0623\u0635\u0648\u0644.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"29038"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022J1yVjHMMivtS1DZG2Ew2vl88olDCXolppHGaJrfpx1w=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 11:20:38 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/شرح ثلاثة الأصول.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\شرح ثلاثة الأصول.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-J1yVjHMMivtS1DZG2Ew2vl88olDCXolppHGaJrfpx1w="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"29038"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022J1yVjHMMivtS1DZG2Ew2vl88olDCXolppHGaJrfpx1w=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 11:20:38 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/شرح رياض الصالحين.ss5wp3r56e.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\شرح رياض الصالحين.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ss5wp3r56e"},{"Name":"integrity","Value":"sha256-pIUcyyIE\u002B3/Qu/jz9XkT4vMRanj\u002BMYbDvAMLpkOkQsk="},{"Name":"label","Value":"_content/Bookstore/Images/Books/\u0634\u0631\u062D \u0631\u064A\u0627\u0636 \u0627\u0644\u0635\u0627\u0644\u062D\u064A\u0646.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"27132"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022pIUcyyIE\u002B3/Qu/jz9XkT4vMRanj\u002BMYbDvAMLpkOkQsk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 11:18:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/شرح رياض الصالحين.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\شرح رياض الصالحين.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-pIUcyyIE\u002B3/Qu/jz9XkT4vMRanj\u002BMYbDvAMLpkOkQsk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"27132"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022pIUcyyIE\u002B3/Qu/jz9XkT4vMRanj\u002BMYbDvAMLpkOkQsk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 11:18:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/شرح صحيح البخاري.4bk8jgpx46.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\شرح صحيح البخاري.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4bk8jgpx46"},{"Name":"integrity","Value":"sha256-MOS97IVnDeWl8MZXGfn\u002BegUNUvbmc1i9ldTIWjav0Ng="},{"Name":"label","Value":"_content/Bookstore/Images/Books/\u0634\u0631\u062D \u0635\u062D\u064A\u062D \u0627\u0644\u0628\u062E\u0627\u0631\u064A.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"22236"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022MOS97IVnDeWl8MZXGfn\u002BegUNUvbmc1i9ldTIWjav0Ng=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 11:19:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/شرح صحيح البخاري.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\شرح صحيح البخاري.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-MOS97IVnDeWl8MZXGfn\u002BegUNUvbmc1i9ldTIWjav0Ng="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"22236"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022MOS97IVnDeWl8MZXGfn\u002BegUNUvbmc1i9ldTIWjav0Ng=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 11:19:41 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/عقل بلا جسد.0kxihcjntn.webp">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\عقل بلا جسد.webp'))</AssetFile>
@@ -252,6 +420,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-QhnwY3KpgGnWd3LW7Owj6HIVuBI8gSy97oWqR9mEmAE="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"6848"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022QhnwY3KpgGnWd3LW7Owj6HIVuBI8gSy97oWqR9mEmAE=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:21:17 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/فيرتيجو.95wlmfro4c.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\فيرتيجو.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"95wlmfro4c"},{"Name":"integrity","Value":"sha256-A0gsT8vVcA3w7n9FdQL8lHCyU\u002Be\u002Bl0ZSckGlqjuIPi8="},{"Name":"label","Value":"_content/Bookstore/Images/Books/\u0641\u064A\u0631\u062A\u064A\u062C\u0648.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"13968"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022A0gsT8vVcA3w7n9FdQL8lHCyU\u002Be\u002Bl0ZSckGlqjuIPi8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 11:21:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/فيرتيجو.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\فيرتيجو.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-A0gsT8vVcA3w7n9FdQL8lHCyU\u002Be\u002Bl0ZSckGlqjuIPi8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"13968"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022A0gsT8vVcA3w7n9FdQL8lHCyU\u002Be\u002Bl0ZSckGlqjuIPi8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 11:21:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/مدارج السالكين.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\مدارج السالكين.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -264,17 +444,41 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"o5c3nz4pr6"},{"Name":"integrity","Value":"sha256-tDzY\u002B2yU1G\u002BMvacAbnudsYaamFSWRTFu1tDIksdnxJQ="},{"Name":"label","Value":"_content/Bookstore/Images/Books/\u0645\u062F\u0627\u0631\u062C \u0627\u0644\u0633\u0627\u0644\u0643\u064A\u0646.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"33879"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022tDzY\u002B2yU1G\u002BMvacAbnudsYaamFSWRTFu1tDIksdnxJQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 07:45:34 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/مسلكيات.avif">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\مسلكيات.avif'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/مسلكيات.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\مسلكيات.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-P5Uqf9tYkd9xxRijm3cVswuNcEhybqtLME2YXIEDf9g="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"281474"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022P5Uqf9tYkd9xxRijm3cVswuNcEhybqtLME2YXIEDf9g=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 14:44:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/مسلكيات.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\مسلكيات.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-u/niKK0HKmkdNhIyozUuhqsAA4XCsRWy8xEVLmawbQI="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"74595"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022u/niKK0HKmkdNhIyozUuhqsAA4XCsRWy8xEVLmawbQI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 09:28:34 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"74595"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022u/niKK0HKmkdNhIyozUuhqsAA4XCsRWy8xEVLmawbQI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 09:28:34 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/مسلكيات.z60jehwbnx.avif">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\مسلكيات.avif'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/مسلكيات.z60jehwbnx.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\مسلكيات.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"z60jehwbnx"},{"Name":"integrity","Value":"sha256-u/niKK0HKmkdNhIyozUuhqsAA4XCsRWy8xEVLmawbQI="},{"Name":"label","Value":"_content/Bookstore/Images/Books/\u0645\u0633\u0644\u0643\u064A\u0627\u062A.avif"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"74595"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022u/niKK0HKmkdNhIyozUuhqsAA4XCsRWy8xEVLmawbQI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 09:28:34 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"z60jehwbnx"},{"Name":"integrity","Value":"sha256-u/niKK0HKmkdNhIyozUuhqsAA4XCsRWy8xEVLmawbQI="},{"Name":"label","Value":"_content/Bookstore/Images/Books/\u0645\u0633\u0644\u0643\u064A\u0627\u062A.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"74595"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022u/niKK0HKmkdNhIyozUuhqsAA4XCsRWy8xEVLmawbQI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 09:28:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/مسلكيات.zfo29dvvb8.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\مسلكيات.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zfo29dvvb8"},{"Name":"integrity","Value":"sha256-P5Uqf9tYkd9xxRijm3cVswuNcEhybqtLME2YXIEDf9g="},{"Name":"label","Value":"_content/Bookstore/Images/Books/\u0645\u0633\u0644\u0643\u064A\u0627\u062A.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"281474"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022P5Uqf9tYkd9xxRijm3cVswuNcEhybqtLME2YXIEDf9g=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 14:44:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/مصطلح الحديث.voiab72n2l.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\مصطلح الحديث.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"voiab72n2l"},{"Name":"integrity","Value":"sha256-H8RX2cJRUu18Yx7YTtYU8g9fZLyxrLJK/ghIpNHjek8="},{"Name":"label","Value":"_content/Bookstore/Images/Books/\u0645\u0635\u0637\u0644\u062D \u0627\u0644\u062D\u062F\u064A\u062B.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9188"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022H8RX2cJRUu18Yx7YTtYU8g9fZLyxrLJK/ghIpNHjek8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 11:19:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/مصطلح الحديث.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\مصطلح الحديث.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-H8RX2cJRUu18Yx7YTtYU8g9fZLyxrLJK/ghIpNHjek8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9188"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022H8RX2cJRUu18Yx7YTtYU8g9fZLyxrLJK/ghIpNHjek8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Jun 2025 11:19:58 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Bookstore/Images/Books/يوتوبيا.webp">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Books\يوتوبيا.webp'))</AssetFile>
@@ -287,6 +491,78 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zsgehf19py"},{"Name":"integrity","Value":"sha256-bRZynazCIwacjfVRHacGngW/A1V93mSU6ONW6TWeU6c="},{"Name":"label","Value":"_content/Bookstore/Images/Books/\u064A\u0648\u062A\u0648\u0628\u064A\u0627.webp"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11882"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022bRZynazCIwacjfVRHacGngW/A1V93mSU6ONW6TWeU6c=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:20:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/default-book.81be4ylkn1.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\default-book.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"81be4ylkn1"},{"Name":"integrity","Value":"sha256-XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo="},{"Name":"label","Value":"_content/Bookstore/Images/default-book.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"194708"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 09:34:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/Images/default-book.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\default-book.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"194708"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 09:34:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/js/authordetails.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\authordetails.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-/My2eQZZRB6mndmZT8U\u002BwfZDnY9q4NXdcxNoPjPI63s="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"12714"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022/My2eQZZRB6mndmZT8U\u002BwfZDnY9q4NXdcxNoPjPI63s=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Jun 2025 16:40:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/js/authordetails.wth3yt4qwj.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\authordetails.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wth3yt4qwj"},{"Name":"integrity","Value":"sha256-/My2eQZZRB6mndmZT8U\u002BwfZDnY9q4NXdcxNoPjPI63s="},{"Name":"label","Value":"_content/Bookstore/js/authordetails.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12714"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022/My2eQZZRB6mndmZT8U\u002BwfZDnY9q4NXdcxNoPjPI63s=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Jun 2025 16:40:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/js/Authors.0nb5bqth1u.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Authors.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0nb5bqth1u"},{"Name":"integrity","Value":"sha256-1JJNOnl7fq2Hz\u002BZlV6O09fxx0vtNUAx2ln0F4AAymZ0="},{"Name":"label","Value":"_content/Bookstore/js/Authors.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11930"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00221JJNOnl7fq2Hz\u002BZlV6O09fxx0vtNUAx2ln0F4AAymZ0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Jun 2025 14:15:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/js/Authors.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Authors.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1JJNOnl7fq2Hz\u002BZlV6O09fxx0vtNUAx2ln0F4AAymZ0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"11930"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00221JJNOnl7fq2Hz\u002BZlV6O09fxx0vtNUAx2ln0F4AAymZ0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Jun 2025 14:15:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/js/bookdetails.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\bookdetails.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-m9Unn9UmX/itM6VHuJ1q7pWWt6sE1TE\u002BDa35zYah4Ro="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"11911"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022m9Unn9UmX/itM6VHuJ1q7pWWt6sE1TE\u002BDa35zYah4Ro=\u0022"},{"Name":"Last-Modified","Value":"Fri, 06 Jun 2025 16:12:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/js/bookdetails.xhi3u79zoa.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\bookdetails.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xhi3u79zoa"},{"Name":"integrity","Value":"sha256-m9Unn9UmX/itM6VHuJ1q7pWWt6sE1TE\u002BDa35zYah4Ro="},{"Name":"label","Value":"_content/Bookstore/js/bookdetails.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11911"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022m9Unn9UmX/itM6VHuJ1q7pWWt6sE1TE\u002BDa35zYah4Ro=\u0022"},{"Name":"Last-Modified","Value":"Fri, 06 Jun 2025 16:12:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/js/books.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\books.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-I82nb4Np0Dzf8kPng0bWA\u002B5/SpxMd1xM\u002B\u002BE2crrMvWQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"14118"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022I82nb4Np0Dzf8kPng0bWA\u002B5/SpxMd1xM\u002B\u002BE2crrMvWQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Jun 2025 12:32:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/js/books.pxaugsimua.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\books.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"pxaugsimua"},{"Name":"integrity","Value":"sha256-I82nb4Np0Dzf8kPng0bWA\u002B5/SpxMd1xM\u002B\u002BE2crrMvWQ="},{"Name":"label","Value":"_content/Bookstore/js/books.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"14118"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022I82nb4Np0Dzf8kPng0bWA\u002B5/SpxMd1xM\u002B\u002BE2crrMvWQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Jun 2025 12:32:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/js/signup.5ythx6kkj3.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\signup.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5ythx6kkj3"},{"Name":"integrity","Value":"sha256-I3X8g6UPLgCQal3PgG30m0azozyVInDShIV7Jt6L1c4="},{"Name":"label","Value":"_content/Bookstore/js/signup.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9721"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022I3X8g6UPLgCQal3PgG30m0azozyVInDShIV7Jt6L1c4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 08 Jun 2025 13:38:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bookstore/js/signup.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\signup.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-I3X8g6UPLgCQal3PgG30m0azozyVInDShIV7Jt6L1c4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"9721"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022I3X8g6UPLgCQal3PgG30m0azozyVInDShIV7Jt6L1c4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 08 Jun 2025 13:38:22 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Bookstore/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

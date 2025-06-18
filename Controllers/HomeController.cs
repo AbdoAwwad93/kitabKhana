@@ -8,9 +8,9 @@ namespace Bookstore.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IRepository bookRepo;
+        private readonly IRepository<Book> bookRepo;
 
-        public HomeController(ILogger<HomeController> logger, IRepository bookRepo)
+        public HomeController(ILogger<HomeController> logger, IRepository<Book> bookRepo)
         {
             _logger = logger;
             this.bookRepo=bookRepo;

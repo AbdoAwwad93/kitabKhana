@@ -1,0 +1,327 @@
+﻿@model Author
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/authordetails.css" asp-append-version="true" />
+}
+
+<!-- Breadcrumb -->
+<section class="breadcrumb-section">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">الرئيسية</a></li>
+                <li class="breadcrumb-item"><a href="@Url.Action("Index", "Author")">المؤلفون</a></li>
+                <li class="breadcrumb-item active" aria-current="page">@Model.Name</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<!-- Author Hero Section -->
+<section class="author-hero-section">
+    <div class="hero-background"></div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 col-md-5 text-center">
+                <div class="author-image-wrapper">
+                    @{
+                        var imageUrl = ResolveImageUrl(Model.ImageURL);
+                    }
+                    <img src="@imageUrl" alt="@Model.Name" class="author-main-image" 
+                         onerror="this.src='@Url.Content("~/Images/default-author.jpg")'">
+                    <div class="author-badge">
+                        <i class="fas fa-user-edit"></i>
+                        <span>مؤلف</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-7">
+                <div class="author-hero-info">
+                    <h1 class="author-name">@Model.Name</h1>
+                    
+                    <div class="author-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-book"></i>
+                            <span class="stat-number">@(Model.Books?.Count ?? 0)</span>
+                            <span class="stat-label">كتاب</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Author About Section -->
+<section class="author-about-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="about-card">
+                    <h2 class="section-title">
+                        <i class="fas fa-info-circle"></i> نبذة عن المؤلف
+                    </h2>
+                    <div class="about-content">
+                        @if (!string.IsNullOrEmpty(Model.About))
+                        {
+                            <p class="about-text">@Model.About</p>
+                        }
+                        else
+                        {
+                            <p class="about-text text-muted">لا توجد معلومات متاحة عن هذا المؤلف حالياً.</p>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Author Books Section -->
+@if (Model.Books != null && Model.Books.Any())
+{
+    <section class="author-books-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="books-header">
+                        <h2 class="section-title">
+                            <i class="fas fa-book-open"></i> كتب المؤلف
+                            <span class="books-count">(@Model.Books.Count)</span>
+                        </h2>
+                        <div class="books-filters">
+                            <button class="filter-btn active" data-filter="all">جميع الكتب</button>
+                            @{
+                                var categories = Model.Books.GroupBy(b => b.Category).ToList();
+                            }
+                            @foreach (var categoryGroup in categories)
+                            {
+                                <button class="filter-btn" data-filter="@((int)categoryGroup.Key)">
+                                    @GetCategoryDisplayName(categoryGroup.Key)
+                                    <span class="count">(@categoryGroup.Count())</span>
+                                </button>
+                            }
+                        </div>
+                    </div>
+                    
+                    <div class="books-grid" id="booksGrid">
+                        @foreach (var book in Model.Books)
+                        {
+                            <div class="book-item" data-category="@((int)book.Category)">
+                                <div class="book-card">
+                                    <div class="book-image-container">
+                                        @{
+                                            var bookImageUrl = ResolveImageUrl(book.ImageURL);
+                                        }
+                                        <img src="@bookImageUrl" alt="@book.Title" class="book-image" 
+                                             onerror="this.src='@Url.Content("~/Images/default-book.jpg")'">
+                                        <div class="book-overlay">
+                                            <a href="@Url.Action("Details", "Book", new { id = book.Id })" 
+                                               class="btn btn-primary btn-sm">
+                                                <i class="fas fa-eye"></i> عرض التفاصيل
+                                            </a>
+                                            <button class="btn btn-success btn-sm add-to-cart" data-book-id="@book.Id">
+                                                <i class="fas fa-cart-plus"></i> أضف للسلة
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="book-info">
+                                        <h5 class="book-title">@book.Title</h5>
+                                        <p class="book-description">
+                                            @(book.Description.Length > 80 ? book.Description.Substring(0, 80) + "..." : book.Description)
+                                        </p>
+                                        <div class="book-meta">
+                                            <span class="pages-count">
+                                                <i class="fas fa-file-alt"></i>
+                                                @book.NumberOfPages صفحة
+                                            </span>
+                                            <span class="category-badge">@GetCategoryDisplayName(book.Category)</span>
+                                        </div>
+                                        @if (book.Comments != null && book.Comments.Any())
+                                        {
+                                            <div class="book-rating">
+                                                <div class="stars">
+                                                    @for (int i = 1; i <= 5; i++)
+                                                    {
+                                                        <i class="fas fa-star @(i <= 4 ? "filled" : "")"></i>
+                                                    }
+                                                </div>
+                                                <span class="rating-text">(@book.Comments.Count تقييم)</span>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+else
+{
+    <section class="no-books-section">
+        <div class="container">
+            <div class="text-center">
+                <i class="fas fa-book-open fa-3x mb-3"></i>
+                <h3>لا توجد كتب متاحة</h3>
+                <p>لم يتم نشر أي كتب لهذا المؤلف بعد.</p>
+            </div>
+        </div>
+    </section>
+}
+
+<!-- Author Statistics Section -->
+<section class="author-statistics-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">
+                    <i class="fas fa-chart-bar"></i> إحصائيات المؤلف
+                </h2>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 class="stat-number">@(Model.Books?.Count ?? 0)</h3>
+                                <p class="stat-label">إجمالي الكتب</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 class="stat-number">@(Model.Books?.Sum(b => b.NumberOfPages) ?? 0)</h3>
+                                <p class="stat-label">إجمالي الصفحات</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 class="stat-number">@(Model.Books?.Sum(b => b.Comments?.Count ?? 0) ?? 0)</h3>
+                                <p class="stat-label">إجمالي التعليقات</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 class="stat-number">4.8</h3>
+                                <p class="stat-label">متوسط التقييم</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Related Authors Section -->
+<section class="related-authors-section">
+    <div class="container">
+        <h2 class="section-title">
+            <i class="fas fa-users"></i> مؤلفون آخرون قد تهتم بهم
+        </h2>
+        <div class="related-authors-slider">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center text-muted">سيتم عرض المؤلفين ذوي الصلة هنا</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Share Modal -->
+<div class="modal fade" id="shareModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">مشاركة المؤلف</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="share-options">
+                    <button class="share-btn facebook" data-platform="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>فيسبوك</span>
+                    </button>
+                    <button class="share-btn twitter" data-platform="twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span>تويتر</span>
+                    </button>
+                    <button class="share-btn whatsapp" data-platform="whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>واتساب</span>
+                    </button>
+                    <button class="share-btn copy-link" data-platform="copy">
+                        <i class="fas fa-link"></i>
+                        <span>نسخ الرابط</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/authordetails.js" asp-append-version="true"></script>
+}
+
+@functions {
+    private string ResolveImageUrl(string imageUrl)
+    {
+        if (string.IsNullOrEmpty(imageUrl))
+        {
+            return Url.Content("~/Images/default-author.jpg");
+        }
+        
+        if (imageUrl.StartsWith("~/"))
+        {
+            return Url.Content(imageUrl);
+        }
+        
+        if (imageUrl.StartsWith("http://") || imageUrl.StartsWith("https://"))
+        {
+            return imageUrl;
+        }
+        
+        if (!imageUrl.StartsWith("/"))
+        {
+            return Url.Content("~/" + imageUrl);
+        }
+        
+        return imageUrl;
+    }
+
+    private string GetCategoryDisplayName(Bookstore.Models.Category category)
+    {
+        return category switch
+        {
+            Bookstore.Models.Category.Religious => "الكتب الدينية",
+            Bookstore.Models.Category.Literature => "الأدب العربي",
+            Bookstore.Models.Category.History => "التاريخ",
+            _ => category.ToString()
+        };
+    }
+}

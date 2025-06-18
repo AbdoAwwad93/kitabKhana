@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+TT+KpMUg6LxQDCAV3rnp3Fz/d4wb+iPxcbQWDQLSNw=",
+  "Hash": "7p2Ks2HaKO15l9ExPAhYUwD387uxWji6oMxa7U1qBMI=",
   "Source": "Bookstore",
   "BasePath": "_content/Bookstore",
   "Mode": "Default",
@@ -59,6 +59,111 @@
       "OriginalItemSpec": "E:\\projects\\Bookstore\\Bookstore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Bookstore.bundle.scp.css"
     },
     {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\authordetails.css",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "css/authordetails#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wf2mw6uqxy",
+      "Integrity": "3A1D+UIAvOkTpkaLXDQ55qqBH/yHeqdWEane83hP8tI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\authordetails.css"
+    },
+    {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\Authors.css",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "css/Authors#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uornore8iu",
+      "Integrity": "EtDJ4WAM9XH+VMFy8USCqIKnSaFcv4qBscRbYLXPxok=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Authors.css"
+    },
+    {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\bookdetails.css",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "css/bookdetails#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dfsdjnq6me",
+      "Integrity": "KaBgsac5ApoI6pX0nZOAKTMPrF1WJ4exlD+CpRfVa8U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bookdetails.css"
+    },
+    {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\books.css",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "css/books#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yv0xtvbd2o",
+      "Integrity": "QnSGkcct6WST1Qd1upG5W8aSPTqyAr26dpdulk+nAyY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\books.css"
+    },
+    {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\signup.css",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "css/signup#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "j2xmbagayk",
+      "Integrity": "6yOG++McUExRkCA5sy4AiZKqmHbhMWWszvd15EtDEkA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\signup.css"
+    },
+    {
       "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\site.css",
       "SourceId": "Bookstore",
       "SourceType": "Discovered",
@@ -73,8 +178,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "4e6ay2kqu2",
-      "Integrity": "JFdGgVdyDu/TQSL7SwNPO1TQPwC9WKVGP9KUaj8Tf+8=",
+      "Fingerprint": "6aogt50xum",
+      "Integrity": "7o/UsUVysFAqW+AW3bAqsjfaAhwBJ/2c/x7UPBHdjcI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -164,6 +269,27 @@
       "OriginalItemSpec": "wwwroot\\Images\\Authors\\أحمد_خالد_توفيق.jpg"
     },
     {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Authors\\محمد بن صالح العثيمين.jpg",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "Images/Authors/محمد بن صالح العثيمين#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "09cr5vnsvp",
+      "Integrity": "PBg26CyDX4+yThuJT395R996Kcy742b4hjhx9aOvMbA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Authors\\محمد بن صالح العثيمين.jpg"
+    },
+    {
       "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Authors\\مصطفى محمود.jpg",
       "SourceId": "Bookstore",
       "SourceType": "Discovered",
@@ -227,6 +353,48 @@
       "OriginalItemSpec": "wwwroot\\Images\\Books\\Al-Feel_al-Azraq.jpg"
     },
     {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\default-book.jpg",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "Images/Books/default-book#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "81be4ylkn1",
+      "Integrity": "XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Books\\default-book.jpg"
+    },
+    {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\الان أفهم.webp",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "Images/Books/الان أفهم#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3ojvfioi7r",
+      "Integrity": "rZOc+EWB2LORRXuC9UpRVHk64/iX9EIl6cO8tEaBG9o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Books\\الان أفهم.webp"
+    },
+    {
       "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\الماجريات.webp",
       "SourceId": "Bookstore",
       "SourceType": "Discovered",
@@ -267,6 +435,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Books\\تراب الماس.webp"
+    },
+    {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\حظك اليم.webp",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "Images/Books/حظك اليم#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qzamnbtbxh",
+      "Integrity": "2gtXx163RQCSFRPm3nkV/Qcua3ZZelnszWNCodwMIE4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Books\\حظك اليم.webp"
     },
     {
       "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\حكايات الغرفة 207.webp",
@@ -311,12 +500,12 @@
       "OriginalItemSpec": "wwwroot\\Images\\Books\\رجال في الشمس.jpg"
     },
     {
-      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رحلتي من الشك إلى الأيمان.jpg",
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رحلتي من الشك إلى الإيمان.jpg",
       "SourceId": "Bookstore",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
       "BasePath": "_content/Bookstore",
-      "RelativePath": "Images/Books/رحلتي من الشك إلى الأيمان#[.{fingerprint}]?.jpg",
+      "RelativePath": "Images/Books/رحلتي من الشك إلى الإيمان#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -329,7 +518,7 @@
       "Integrity": "+rIsvgXWDfKKZdGm4LxjLqibt6ge+Iy04M/ki2Vd19c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Books\\رحلتي من الشك إلى الأيمان.jpg"
+      "OriginalItemSpec": "wwwroot\\Images\\Books\\رحلتي من الشك إلى الإيمان.jpg"
     },
     {
       "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رفقاء الليل.webp",
@@ -353,12 +542,12 @@
       "OriginalItemSpec": "wwwroot\\Images\\Books\\رفقاء الليل.webp"
     },
     {
-      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رقائق القرأن.webp",
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رقائق القرآن.webp",
       "SourceId": "Bookstore",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
       "BasePath": "_content/Bookstore",
-      "RelativePath": "Images/Books/رقائق القرأن#[.{fingerprint}]?.webp",
+      "RelativePath": "Images/Books/رقائق القرآن#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -371,7 +560,7 @@
       "Integrity": "8O7kRW5ZuU0OZ8XHMWcmlBQNSUdJB4DLldWQAtFhk8I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Books\\رقائق القرأن.webp"
+      "OriginalItemSpec": "wwwroot\\Images\\Books\\رقائق القرآن.webp"
     },
     {
       "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رواية_العنكبوت.jpg",
@@ -414,6 +603,111 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Books\\رياض الصالحين.webp"
+    },
+    {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح الأربعين النووية.webp",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "Images/Books/شرح الأربعين النووية#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tubyqkqkc0",
+      "Integrity": "e8WHWIdGC4vWIg8yDSyK0P7Qz0DSpHqMM78yPdwL91M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Books\\شرح الأربعين النووية.webp"
+    },
+    {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح ألفية ابن مالك.webp",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "Images/Books/شرح ألفية ابن مالك#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ddfst3kpyg",
+      "Integrity": "LxpRjCCFBvOHiGMDGCUDqJgf6eTp7eS88jjqXBWjdq0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Books\\شرح ألفية ابن مالك.webp"
+    },
+    {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح ثلاثة الأصول.webp",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "Images/Books/شرح ثلاثة الأصول#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7ogf6xbrff",
+      "Integrity": "J1yVjHMMivtS1DZG2Ew2vl88olDCXolppHGaJrfpx1w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Books\\شرح ثلاثة الأصول.webp"
+    },
+    {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح رياض الصالحين.webp",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "Images/Books/شرح رياض الصالحين#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ss5wp3r56e",
+      "Integrity": "pIUcyyIE+3/Qu/jz9XkT4vMRanj+MYbDvAMLpkOkQsk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Books\\شرح رياض الصالحين.webp"
+    },
+    {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح صحيح البخاري.webp",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "Images/Books/شرح صحيح البخاري#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4bk8jgpx46",
+      "Integrity": "MOS97IVnDeWl8MZXGfn+egUNUvbmc1i9ldTIWjav0Ng=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Books\\شرح صحيح البخاري.webp"
     },
     {
       "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\عقل بلا جسد.webp",
@@ -479,6 +773,27 @@
       "OriginalItemSpec": "wwwroot\\Images\\Books\\في ممر الفئران.webp"
     },
     {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\فيرتيجو.webp",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "Images/Books/فيرتيجو#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "95wlmfro4c",
+      "Integrity": "A0gsT8vVcA3w7n9FdQL8lHCyU+e+l0ZSckGlqjuIPi8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Books\\فيرتيجو.webp"
+    },
+    {
       "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مدارج السالكين.jpg",
       "SourceId": "Bookstore",
       "SourceType": "Discovered",
@@ -500,12 +815,33 @@
       "OriginalItemSpec": "wwwroot\\Images\\Books\\مدارج السالكين.jpg"
     },
     {
-      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مسلكيات.avif",
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مسلكيات.jpeg",
       "SourceId": "Bookstore",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
       "BasePath": "_content/Bookstore",
-      "RelativePath": "Images/Books/مسلكيات#[.{fingerprint}]?.avif",
+      "RelativePath": "Images/Books/مسلكيات#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zfo29dvvb8",
+      "Integrity": "P5Uqf9tYkd9xxRijm3cVswuNcEhybqtLME2YXIEDf9g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Books\\مسلكيات.jpeg"
+    },
+    {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مسلكيات.jpg",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "Images/Books/مسلكيات#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -518,7 +854,28 @@
       "Integrity": "u/niKK0HKmkdNhIyozUuhqsAA4XCsRWy8xEVLmawbQI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Books\\مسلكيات.avif"
+      "OriginalItemSpec": "wwwroot\\Images\\Books\\مسلكيات.jpg"
+    },
+    {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مصطلح الحديث.webp",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "Images/Books/مصطلح الحديث#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "voiab72n2l",
+      "Integrity": "H8RX2cJRUu18Yx7YTtYU8g9fZLyxrLJK/ghIpNHjek8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Books\\مصطلح الحديث.webp"
     },
     {
       "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\يوتوبيا.webp",
@@ -540,6 +897,132 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Books\\يوتوبيا.webp"
+    },
+    {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\default-book.jpg",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "Images/default-book#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "81be4ylkn1",
+      "Integrity": "XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\default-book.jpg"
+    },
+    {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\authordetails.js",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "js/authordetails#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wth3yt4qwj",
+      "Integrity": "/My2eQZZRB6mndmZT8U+wfZDnY9q4NXdcxNoPjPI63s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\authordetails.js"
+    },
+    {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\Authors.js",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "js/Authors#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0nb5bqth1u",
+      "Integrity": "1JJNOnl7fq2Hz+ZlV6O09fxx0vtNUAx2ln0F4AAymZ0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Authors.js"
+    },
+    {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\bookdetails.js",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "js/bookdetails#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xhi3u79zoa",
+      "Integrity": "m9Unn9UmX/itM6VHuJ1q7pWWt6sE1TE+Da35zYah4Ro=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bookdetails.js"
+    },
+    {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\books.js",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "js/books#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pxaugsimua",
+      "Integrity": "I82nb4Np0Dzf8kPng0bWA+5/SpxMd1xM++E2crrMvWQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\books.js"
+    },
+    {
+      "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\signup.js",
+      "SourceId": "Bookstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\",
+      "BasePath": "_content/Bookstore",
+      "RelativePath": "js/signup#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5ythx6kkj3",
+      "Integrity": "I3X8g6UPLgCQal3PgG30m0azozyVInDShIV7Jt6L1c4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\signup.js"
     },
     {
       "Identity": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\site.js",
@@ -1926,8 +2409,8 @@
       ]
     },
     {
-      "Route": "css/site.4e6ay2kqu2.css",
-      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\site.css",
+      "Route": "css/authordetails.css",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\authordetails.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1936,7 +2419,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10253"
+          "Value": "12603"
         },
         {
           "Name": "Content-Type",
@@ -1944,11 +2427,48 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"JFdGgVdyDu/TQSL7SwNPO1TQPwC9WKVGP9KUaj8Tf+8=\""
+          "Value": "\"3A1D+UIAvOkTpkaLXDQ55qqBH/yHeqdWEane83hP8tI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 01 Jun 2025 07:16:22 GMT"
+          "Value": "Sat, 07 Jun 2025 16:40:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3A1D+UIAvOkTpkaLXDQ55qqBH/yHeqdWEane83hP8tI="
+        }
+      ]
+    },
+    {
+      "Route": "css/authordetails.wf2mw6uqxy.css",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\authordetails.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12603"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3A1D+UIAvOkTpkaLXDQ55qqBH/yHeqdWEane83hP8tI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 16:40:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1958,7 +2478,380 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4e6ay2kqu2"
+          "Value": "wf2mw6uqxy"
+        },
+        {
+          "Name": "label",
+          "Value": "css/authordetails.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3A1D+UIAvOkTpkaLXDQ55qqBH/yHeqdWEane83hP8tI="
+        }
+      ]
+    },
+    {
+      "Route": "css/Authors.css",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\Authors.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EtDJ4WAM9XH+VMFy8USCqIKnSaFcv4qBscRbYLXPxok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 14:15:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EtDJ4WAM9XH+VMFy8USCqIKnSaFcv4qBscRbYLXPxok="
+        }
+      ]
+    },
+    {
+      "Route": "css/Authors.uornore8iu.css",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\Authors.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EtDJ4WAM9XH+VMFy8USCqIKnSaFcv4qBscRbYLXPxok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 14:15:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uornore8iu"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Authors.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EtDJ4WAM9XH+VMFy8USCqIKnSaFcv4qBscRbYLXPxok="
+        }
+      ]
+    },
+    {
+      "Route": "css/bookdetails.css",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\bookdetails.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9930"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KaBgsac5ApoI6pX0nZOAKTMPrF1WJ4exlD+CpRfVa8U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 06 Jun 2025 16:12:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KaBgsac5ApoI6pX0nZOAKTMPrF1WJ4exlD+CpRfVa8U="
+        }
+      ]
+    },
+    {
+      "Route": "css/bookdetails.dfsdjnq6me.css",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\bookdetails.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9930"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KaBgsac5ApoI6pX0nZOAKTMPrF1WJ4exlD+CpRfVa8U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 06 Jun 2025 16:12:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dfsdjnq6me"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bookdetails.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KaBgsac5ApoI6pX0nZOAKTMPrF1WJ4exlD+CpRfVa8U="
+        }
+      ]
+    },
+    {
+      "Route": "css/books.css",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\books.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9171"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QnSGkcct6WST1Qd1upG5W8aSPTqyAr26dpdulk+nAyY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 16:22:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QnSGkcct6WST1Qd1upG5W8aSPTqyAr26dpdulk+nAyY="
+        }
+      ]
+    },
+    {
+      "Route": "css/books.yv0xtvbd2o.css",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\books.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9171"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QnSGkcct6WST1Qd1upG5W8aSPTqyAr26dpdulk+nAyY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 16:22:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yv0xtvbd2o"
+        },
+        {
+          "Name": "label",
+          "Value": "css/books.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QnSGkcct6WST1Qd1upG5W8aSPTqyAr26dpdulk+nAyY="
+        }
+      ]
+    },
+    {
+      "Route": "css/signup.css",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\signup.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9122"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6yOG++McUExRkCA5sy4AiZKqmHbhMWWszvd15EtDEkA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 13:38:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6yOG++McUExRkCA5sy4AiZKqmHbhMWWszvd15EtDEkA="
+        }
+      ]
+    },
+    {
+      "Route": "css/signup.j2xmbagayk.css",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\signup.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9122"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6yOG++McUExRkCA5sy4AiZKqmHbhMWWszvd15EtDEkA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 13:38:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j2xmbagayk"
+        },
+        {
+          "Name": "label",
+          "Value": "css/signup.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6yOG++McUExRkCA5sy4AiZKqmHbhMWWszvd15EtDEkA="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.6aogt50xum.css",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12047"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7o/UsUVysFAqW+AW3bAqsjfaAhwBJ/2c/x7UPBHdjcI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 19:24:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6aogt50xum"
         },
         {
           "Name": "label",
@@ -1966,7 +2859,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-JFdGgVdyDu/TQSL7SwNPO1TQPwC9WKVGP9KUaj8Tf+8="
+          "Value": "sha256-7o/UsUVysFAqW+AW3bAqsjfaAhwBJ/2c/x7UPBHdjcI="
         }
       ]
     },
@@ -1981,7 +2874,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10253"
+          "Value": "12047"
         },
         {
           "Name": "Content-Type",
@@ -1989,11 +2882,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"JFdGgVdyDu/TQSL7SwNPO1TQPwC9WKVGP9KUaj8Tf+8=\""
+          "Value": "\"7o/UsUVysFAqW+AW3bAqsjfaAhwBJ/2c/x7UPBHdjcI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 01 Jun 2025 07:16:22 GMT"
+          "Value": "Sat, 07 Jun 2025 19:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2003,7 +2896,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-JFdGgVdyDu/TQSL7SwNPO1TQPwC9WKVGP9KUaj8Tf+8="
+          "Value": "sha256-7o/UsUVysFAqW+AW3bAqsjfaAhwBJ/2c/x7UPBHdjcI="
         }
       ]
     },
@@ -2336,6 +3229,88 @@
       ]
     },
     {
+      "Route": "Images/Authors/محمد بن صالح العثيمين.09cr5vnsvp.jpg",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Authors\\محمد بن صالح العثيمين.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22421"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PBg26CyDX4+yThuJT395R996Kcy742b4hjhx9aOvMbA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 12:02:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "09cr5vnsvp"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Authors/محمد بن صالح العثيمين.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PBg26CyDX4+yThuJT395R996Kcy742b4hjhx9aOvMbA="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Authors/محمد بن صالح العثيمين.jpg",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Authors\\محمد بن صالح العثيمين.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22421"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PBg26CyDX4+yThuJT395R996Kcy742b4hjhx9aOvMbA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 12:02:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PBg26CyDX4+yThuJT395R996Kcy742b4hjhx9aOvMbA="
+        }
+      ]
+    },
+    {
       "Route": "Images/Authors/مصطفى محمود.jpg",
       "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Authors\\مصطفى محمود.jpg",
       "Selectors": [],
@@ -2582,6 +3557,170 @@
       ]
     },
     {
+      "Route": "Images/Books/default-book.81be4ylkn1.jpg",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\default-book.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "194708"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 09:34:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "81be4ylkn1"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/default-book.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/default-book.jpg",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\default-book.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "194708"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 09:34:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/الان أفهم.3ojvfioi7r.webp",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\الان أفهم.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8868"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rZOc+EWB2LORRXuC9UpRVHk64/iX9EIl6cO8tEaBG9o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 11:17:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3ojvfioi7r"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/الان أفهم.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rZOc+EWB2LORRXuC9UpRVHk64/iX9EIl6cO8tEaBG9o="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/الان أفهم.webp",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\الان أفهم.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8868"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rZOc+EWB2LORRXuC9UpRVHk64/iX9EIl6cO8tEaBG9o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 11:17:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rZOc+EWB2LORRXuC9UpRVHk64/iX9EIl6cO8tEaBG9o="
+        }
+      ]
+    },
+    {
       "Route": "Images/Books/الماجريات.duqcu5vmaf.webp",
       "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\الماجريات.webp",
       "Selectors": [],
@@ -2742,6 +3881,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/حظك اليم.qzamnbtbxh.webp",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\حظك اليم.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16222"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2gtXx163RQCSFRPm3nkV/Qcua3ZZelnszWNCodwMIE4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 11:17:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qzamnbtbxh"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/حظك اليم.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2gtXx163RQCSFRPm3nkV/Qcua3ZZelnszWNCodwMIE4="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/حظك اليم.webp",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\حظك اليم.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16222"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2gtXx163RQCSFRPm3nkV/Qcua3ZZelnszWNCodwMIE4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 11:17:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2gtXx163RQCSFRPm3nkV/Qcua3ZZelnszWNCodwMIE4="
         }
       ]
     },
@@ -2910,8 +4131,8 @@
       ]
     },
     {
-      "Route": "Images/Books/رحلتي من الشك إلى الأيمان.jpg",
-      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رحلتي من الشك إلى الأيمان.jpg",
+      "Route": "Images/Books/رحلتي من الشك إلى الإيمان.jpg",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رحلتي من الشك إلى الإيمان.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2947,8 +4168,8 @@
       ]
     },
     {
-      "Route": "Images/Books/رحلتي من الشك إلى الأيمان.qz4fqnfy3g.jpg",
-      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رحلتي من الشك إلى الأيمان.jpg",
+      "Route": "Images/Books/رحلتي من الشك إلى الإيمان.qz4fqnfy3g.jpg",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رحلتي من الشك إلى الإيمان.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2983,7 +4204,7 @@
         },
         {
           "Name": "label",
-          "Value": "Images/Books/رحلتي من الشك إلى الأيمان.jpg"
+          "Value": "Images/Books/رحلتي من الشك إلى الإيمان.jpg"
         },
         {
           "Name": "integrity",
@@ -3074,8 +4295,8 @@
       ]
     },
     {
-      "Route": "Images/Books/رقائق القرأن.kvc76zwi7a.webp",
-      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رقائق القرأن.webp",
+      "Route": "Images/Books/رقائق القرآن.kvc76zwi7a.webp",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رقائق القرآن.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3110,7 +4331,7 @@
         },
         {
           "Name": "label",
-          "Value": "Images/Books/رقائق القرأن.webp"
+          "Value": "Images/Books/رقائق القرآن.webp"
         },
         {
           "Name": "integrity",
@@ -3119,8 +4340,8 @@
       ]
     },
     {
-      "Route": "Images/Books/رقائق القرأن.webp",
-      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رقائق القرأن.webp",
+      "Route": "Images/Books/رقائق القرآن.webp",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\رقائق القرآن.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3316,6 +4537,416 @@
         {
           "Name": "integrity",
           "Value": "sha256-SmVUp9HwDolwyZ8hj2HEyiYzi4FF1CiINwTkk7Za5ao="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/شرح الأربعين النووية.tubyqkqkc0.webp",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح الأربعين النووية.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18070"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e8WHWIdGC4vWIg8yDSyK0P7Qz0DSpHqMM78yPdwL91M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 11:18:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tubyqkqkc0"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/شرح الأربعين النووية.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-e8WHWIdGC4vWIg8yDSyK0P7Qz0DSpHqMM78yPdwL91M="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/شرح الأربعين النووية.webp",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح الأربعين النووية.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18070"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e8WHWIdGC4vWIg8yDSyK0P7Qz0DSpHqMM78yPdwL91M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 11:18:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-e8WHWIdGC4vWIg8yDSyK0P7Qz0DSpHqMM78yPdwL91M="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/شرح ألفية ابن مالك.ddfst3kpyg.webp",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح ألفية ابن مالك.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38844"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LxpRjCCFBvOHiGMDGCUDqJgf6eTp7eS88jjqXBWjdq0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 11:19:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ddfst3kpyg"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/شرح ألفية ابن مالك.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LxpRjCCFBvOHiGMDGCUDqJgf6eTp7eS88jjqXBWjdq0="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/شرح ألفية ابن مالك.webp",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح ألفية ابن مالك.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38844"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LxpRjCCFBvOHiGMDGCUDqJgf6eTp7eS88jjqXBWjdq0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 11:19:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LxpRjCCFBvOHiGMDGCUDqJgf6eTp7eS88jjqXBWjdq0="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/شرح ثلاثة الأصول.7ogf6xbrff.webp",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح ثلاثة الأصول.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29038"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J1yVjHMMivtS1DZG2Ew2vl88olDCXolppHGaJrfpx1w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 11:20:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7ogf6xbrff"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/شرح ثلاثة الأصول.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J1yVjHMMivtS1DZG2Ew2vl88olDCXolppHGaJrfpx1w="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/شرح ثلاثة الأصول.webp",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح ثلاثة الأصول.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29038"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J1yVjHMMivtS1DZG2Ew2vl88olDCXolppHGaJrfpx1w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 11:20:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J1yVjHMMivtS1DZG2Ew2vl88olDCXolppHGaJrfpx1w="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/شرح رياض الصالحين.ss5wp3r56e.webp",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح رياض الصالحين.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27132"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pIUcyyIE+3/Qu/jz9XkT4vMRanj+MYbDvAMLpkOkQsk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 11:18:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ss5wp3r56e"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/شرح رياض الصالحين.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pIUcyyIE+3/Qu/jz9XkT4vMRanj+MYbDvAMLpkOkQsk="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/شرح رياض الصالحين.webp",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح رياض الصالحين.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27132"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pIUcyyIE+3/Qu/jz9XkT4vMRanj+MYbDvAMLpkOkQsk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 11:18:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pIUcyyIE+3/Qu/jz9XkT4vMRanj+MYbDvAMLpkOkQsk="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/شرح صحيح البخاري.4bk8jgpx46.webp",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح صحيح البخاري.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MOS97IVnDeWl8MZXGfn+egUNUvbmc1i9ldTIWjav0Ng=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 11:19:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4bk8jgpx46"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/شرح صحيح البخاري.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MOS97IVnDeWl8MZXGfn+egUNUvbmc1i9ldTIWjav0Ng="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/شرح صحيح البخاري.webp",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\شرح صحيح البخاري.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MOS97IVnDeWl8MZXGfn+egUNUvbmc1i9ldTIWjav0Ng=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 11:19:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MOS97IVnDeWl8MZXGfn+egUNUvbmc1i9ldTIWjav0Ng="
         }
       ]
     },
@@ -3566,6 +5197,88 @@
       ]
     },
     {
+      "Route": "Images/Books/فيرتيجو.95wlmfro4c.webp",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\فيرتيجو.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13968"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A0gsT8vVcA3w7n9FdQL8lHCyU+e+l0ZSckGlqjuIPi8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 11:21:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "95wlmfro4c"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/فيرتيجو.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-A0gsT8vVcA3w7n9FdQL8lHCyU+e+l0ZSckGlqjuIPi8="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/فيرتيجو.webp",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\فيرتيجو.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13968"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A0gsT8vVcA3w7n9FdQL8lHCyU+e+l0ZSckGlqjuIPi8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 11:21:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-A0gsT8vVcA3w7n9FdQL8lHCyU+e+l0ZSckGlqjuIPi8="
+        }
+      ]
+    },
+    {
       "Route": "Images/Books/مدارج السالكين.jpg",
       "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مدارج السالكين.jpg",
       "Selectors": [],
@@ -3648,8 +5361,45 @@
       ]
     },
     {
-      "Route": "Images/Books/مسلكيات.avif",
-      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مسلكيات.avif",
+      "Route": "Images/Books/مسلكيات.jpeg",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مسلكيات.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "281474"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P5Uqf9tYkd9xxRijm3cVswuNcEhybqtLME2YXIEDf9g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 14:44:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-P5Uqf9tYkd9xxRijm3cVswuNcEhybqtLME2YXIEDf9g="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/مسلكيات.jpg",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مسلكيات.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3662,7 +5412,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "application/octet-stream"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
@@ -3674,7 +5424,7 @@
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=3600, must-revalidate"
         }
       ],
       "EndpointProperties": [
@@ -3685,8 +5435,8 @@
       ]
     },
     {
-      "Route": "Images/Books/مسلكيات.z60jehwbnx.avif",
-      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مسلكيات.avif",
+      "Route": "Images/Books/مسلكيات.z60jehwbnx.jpg",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مسلكيات.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3699,7 +5449,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "application/octet-stream"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
@@ -3721,11 +5471,138 @@
         },
         {
           "Name": "label",
-          "Value": "Images/Books/مسلكيات.avif"
+          "Value": "Images/Books/مسلكيات.jpg"
         },
         {
           "Name": "integrity",
           "Value": "sha256-u/niKK0HKmkdNhIyozUuhqsAA4XCsRWy8xEVLmawbQI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/مسلكيات.zfo29dvvb8.jpeg",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مسلكيات.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "281474"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P5Uqf9tYkd9xxRijm3cVswuNcEhybqtLME2YXIEDf9g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 14:44:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zfo29dvvb8"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/مسلكيات.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-P5Uqf9tYkd9xxRijm3cVswuNcEhybqtLME2YXIEDf9g="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/مصطلح الحديث.voiab72n2l.webp",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مصطلح الحديث.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9188"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H8RX2cJRUu18Yx7YTtYU8g9fZLyxrLJK/ghIpNHjek8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 11:19:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "voiab72n2l"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Books/مصطلح الحديث.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-H8RX2cJRUu18Yx7YTtYU8g9fZLyxrLJK/ghIpNHjek8="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Books/مصطلح الحديث.webp",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\Books\\مصطلح الحديث.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9188"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H8RX2cJRUu18Yx7YTtYU8g9fZLyxrLJK/ghIpNHjek8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 11:19:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-H8RX2cJRUu18Yx7YTtYU8g9fZLyxrLJK/ghIpNHjek8="
         }
       ]
     },
@@ -3808,6 +5685,498 @@
         {
           "Name": "integrity",
           "Value": "sha256-bRZynazCIwacjfVRHacGngW/A1V93mSU6ONW6TWeU6c="
+        }
+      ]
+    },
+    {
+      "Route": "Images/default-book.81be4ylkn1.jpg",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\default-book.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "194708"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 09:34:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "81be4ylkn1"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/default-book.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo="
+        }
+      ]
+    },
+    {
+      "Route": "Images/default-book.jpg",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\Images\\default-book.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "194708"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 09:34:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XMtOrVH3Sz8EmHc9d8bxs8uLiuuWwvEo38DSmdGGawo="
+        }
+      ]
+    },
+    {
+      "Route": "js/authordetails.js",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\authordetails.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12714"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/My2eQZZRB6mndmZT8U+wfZDnY9q4NXdcxNoPjPI63s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 16:40:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/My2eQZZRB6mndmZT8U+wfZDnY9q4NXdcxNoPjPI63s="
+        }
+      ]
+    },
+    {
+      "Route": "js/authordetails.wth3yt4qwj.js",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\authordetails.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12714"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/My2eQZZRB6mndmZT8U+wfZDnY9q4NXdcxNoPjPI63s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 16:40:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wth3yt4qwj"
+        },
+        {
+          "Name": "label",
+          "Value": "js/authordetails.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/My2eQZZRB6mndmZT8U+wfZDnY9q4NXdcxNoPjPI63s="
+        }
+      ]
+    },
+    {
+      "Route": "js/Authors.0nb5bqth1u.js",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\Authors.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11930"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1JJNOnl7fq2Hz+ZlV6O09fxx0vtNUAx2ln0F4AAymZ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 14:15:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0nb5bqth1u"
+        },
+        {
+          "Name": "label",
+          "Value": "js/Authors.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1JJNOnl7fq2Hz+ZlV6O09fxx0vtNUAx2ln0F4AAymZ0="
+        }
+      ]
+    },
+    {
+      "Route": "js/Authors.js",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\Authors.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11930"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1JJNOnl7fq2Hz+ZlV6O09fxx0vtNUAx2ln0F4AAymZ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 14:15:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1JJNOnl7fq2Hz+ZlV6O09fxx0vtNUAx2ln0F4AAymZ0="
+        }
+      ]
+    },
+    {
+      "Route": "js/bookdetails.js",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\bookdetails.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11911"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m9Unn9UmX/itM6VHuJ1q7pWWt6sE1TE+Da35zYah4Ro=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 06 Jun 2025 16:12:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-m9Unn9UmX/itM6VHuJ1q7pWWt6sE1TE+Da35zYah4Ro="
+        }
+      ]
+    },
+    {
+      "Route": "js/bookdetails.xhi3u79zoa.js",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\bookdetails.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11911"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m9Unn9UmX/itM6VHuJ1q7pWWt6sE1TE+Da35zYah4Ro=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 06 Jun 2025 16:12:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xhi3u79zoa"
+        },
+        {
+          "Name": "label",
+          "Value": "js/bookdetails.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-m9Unn9UmX/itM6VHuJ1q7pWWt6sE1TE+Da35zYah4Ro="
+        }
+      ]
+    },
+    {
+      "Route": "js/books.js",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\books.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14118"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I82nb4Np0Dzf8kPng0bWA+5/SpxMd1xM++E2crrMvWQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Jun 2025 12:32:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-I82nb4Np0Dzf8kPng0bWA+5/SpxMd1xM++E2crrMvWQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/books.pxaugsimua.js",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\books.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14118"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I82nb4Np0Dzf8kPng0bWA+5/SpxMd1xM++E2crrMvWQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Jun 2025 12:32:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pxaugsimua"
+        },
+        {
+          "Name": "label",
+          "Value": "js/books.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-I82nb4Np0Dzf8kPng0bWA+5/SpxMd1xM++E2crrMvWQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/signup.5ythx6kkj3.js",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\signup.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9721"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I3X8g6UPLgCQal3PgG30m0azozyVInDShIV7Jt6L1c4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 13:38:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ythx6kkj3"
+        },
+        {
+          "Name": "label",
+          "Value": "js/signup.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-I3X8g6UPLgCQal3PgG30m0azozyVInDShIV7Jt6L1c4="
+        }
+      ]
+    },
+    {
+      "Route": "js/signup.js",
+      "AssetFile": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\js\\signup.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9721"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I3X8g6UPLgCQal3PgG30m0azozyVInDShIV7Jt6L1c4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 13:38:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-I3X8g6UPLgCQal3PgG30m0azozyVInDShIV7Jt6L1c4="
         }
       ]
     },

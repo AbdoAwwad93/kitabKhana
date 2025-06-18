@@ -6,10 +6,12 @@ namespace Bookstore.Models
     [PrimaryKey("Id")]
     public class Comment
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         [Column(TypeName ="nVarChar(max)")]
         public string CommentText { get; set; }
-        public Book Book { get; set; }
-        public int BookId { get; set; }
+        public int Rate { get; set; }
+
+        public virtual Book Book { get; set; }
+        public string BookId { get; set; }
     }
 }

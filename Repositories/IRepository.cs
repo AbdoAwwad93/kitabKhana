@@ -2,13 +2,13 @@
 
 namespace Bookstore.Repositories
 {
-    public interface IRepository
+    public interface IRepository<T> where T :class 
     {
-        List<Book> GetAll();
-        Book GetById(int id);
-        void Add(Book entity);
-        void Update(Book entity);
-        void Delete(int id);
+        List<T> GetAll();
+        T GetById(string id);
+        void Add(T entity);
+        void Update(T entity);
+        void Delete(string id);
         void SaveChanges();
     }
 }

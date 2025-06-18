@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - مكتبة الحكمة</title>
+    <title>@ViewData["Title"] - كتابخانة</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
             <div class="container">
                 <a class="navbar-brand arabic-logo" asp-area="" asp-controller="Home" asp-action="Index">
                     <i class="fas fa-book-open"></i>
-                    <span>مكتبة الحكمة</span>
+                    <span>كتابخانة</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -30,35 +30,50 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#books">
+                            <a class="nav-link" href="@Url.Action("Index","Book")">
                                 <i class="fas fa-book"></i> الكتب
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#authors">
+                            <a class="nav-link" href="@Url.Action("Index","Author")">
                                 <i class="fas fa-user-edit"></i> المؤلفون
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#categories">
-                                <i class="fas fa-list"></i> التصنيفات
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">
-                                <i class="fas fa-shield-alt"></i> الخصوصية
                             </a>
                         </li>
                     </ul>
                     <div class="navbar-nav">
-                        <a class="nav-link search-btn" href="#search">
-                            <i class="fas fa-search"></i>
-                        </a>
-                        <a class="nav-link cart-btn" href="#cart">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span class="cart-count">0</span>
-                        </a>
+                        @if (ViewData["HideAuthNav"] == null)
+                        {
+                            <a class="nav-link cart-btn" href="@Url.Action("Index", "Cart")">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart-count">0</span>
+                            </a>
+                            @if (!User.Identity!.IsAuthenticated)
+                            {
+                                <div class="auth-buttons">
+                                    <a href="@Url.Action("LoginView","Account")" class="btn btn-outline-light login-btn">
+                                        <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+                                    </a>
+                                    <a href="@Url.Action("SignUpView","Account")" class="btn btn-primary signup-btn">
+                                        <i class="fas fa-user-plus"></i> إنشاء حساب
+                                    </a>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="dropdown">
+                                    <button class="btn btn-outline-light btn-sm dropdown-toggle profile-btn" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-user-circle"></i> @User.Identity!.Name
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                                        <li><a class="dropdown-item" href="@Url.Action("Profile","Account")"><i class="fas fa-user"></i> الملف الشخصي</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="@Url.Action("Logout","Account")"><i class="fas fa-sign-out-alt"></i> تسجيل الخروج</a></li>
+                                    </ul>
+                                </div>
+                            }
+                        }
                     </div>
+
                 </div>
             </div>
         </nav>
@@ -72,16 +87,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h5>مكتبة الحكمة</h5>
+                    <h5>كتابخانة</h5>
                     <p>وجهتك المثلى لاكتشاف عالم الكتب والمعرفة. نقدم لك مجموعة متنوعة من الكتب العربية والعالمية.</p>
                 </div>
                 <div class="col-md-4">
                     <h5>روابط سريعة</h5>
                     <ul class="footer-links">
-                        <li><a href="#books">الكتب</a></li>
-                        <li><a href="#authors">المؤلفون</a></li>
+                        <li><a asp-action="Index" asp-controller="Book">الكتب</a></li>
+                        <li><a href="@Url.Action("Index","Author")">المؤلفون</a></li>
                         <li><a href="#categories">التصنيفات</a></li>
-                        <li><a asp-controller="Home" asp-action="Privacy">الخصوصية</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -96,7 +110,7 @@
             </div>
             <hr class="footer-divider">
             <div class="text-center">
-                <p>&copy; 2025 - مكتبة الحكمة - جميع الحقوق محفوظة</p>
+                <p>&copy; 2025 - كتابخانة - جميع الحقوق محفوظة</p>
             </div>
         </div>
     </footer>
@@ -105,5 +119,6 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    @await RenderSectionAsync("Styles", required: false)
 </body>
 </html>

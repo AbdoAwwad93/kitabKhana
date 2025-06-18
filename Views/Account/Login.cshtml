@@ -1,0 +1,112 @@
+﻿@model LoginViewModel
+@{
+    ViewData["Title"] = "تسجيل الدخول";
+    ViewData["HideAuthNav"] = true;
+}
+
+<link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+
+<div class="login-container">
+    <div class="login-wrapper">
+        <div class="login-card">
+            <!-- Header Section -->
+            <div class="login-header">
+                <div class="login-logo">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h1 class="login-title">تسجيل الدخول</h1>
+                <p class="login-subtitle">مرحباً بعودتك إلى كتابخانة</p>
+            </div>
+
+            <!-- Form Section -->
+            <div class="login-form-container">
+                <form asp-action="Login" method="post" class="login-form" id="loginForm">
+                    <div asp-validation-summary="ModelOnly" class="validation-summary"></div>
+
+                    <!-- Email Field -->
+                    <div class="form-group">
+                        <label asp-for="Email" class="form-label">
+                            <i class="fas fa-envelope"></i>
+                            @Html.DisplayNameFor(m => m.Email)
+                        </label>
+                        <div class="input-wrapper">
+                            <input asp-for="Email" class="form-control" placeholder="example@domain.com" />
+                        </div>
+                        <span asp-validation-for="Email" class="validation-error"></span>
+                    </div>
+
+                    <!-- Password Field -->
+                    <div class="form-group">
+                        <label asp-for="Password" class="form-label">
+                            <i class="fas fa-lock"></i>
+                            @Html.DisplayNameFor(m => m.Password)
+                        </label>
+                        <div class="input-wrapper">
+                            <input asp-for="Password" class="form-control password-input" placeholder="أدخل كلمة المرور" />
+                            <button type="button" class="password-toggle" data-target="Password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <span asp-validation-for="Password" class="validation-error"></span>
+                    </div>
+
+                    <!-- Remember Me -->
+                    <div class="remember-me">
+                        <input asp-for="RememberMe" type="checkbox" />
+                        <label asp-for="RememberMe">تذكرني</label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-group">
+                        <button type="submit" class="login-btn" id="submitBtn">
+                            <span class="btn-text">
+                                <i class="fas fa-sign-in-alt"></i>
+                                تسجيل الدخول
+                            </span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                جاري تسجيل الدخول...
+                            </span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Social Login -->
+                <div class="social-login">
+                    <div class="divider">
+                        <span>أو سجل باستخدام</span>
+                    </div>
+                    <div class="social-buttons">
+                        <button class="social-btn facebook" type="button">
+                            <i class="fab fa-facebook-f"></i>
+                            فيسبوك
+                        </button>
+                        <button class="social-btn google" type="button">
+                            <i class="fab fa-google"></i>
+                            جوجل
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Signup Link -->
+                <div class="signup-link">
+                    <p>ليس لديك حساب؟ <a asp-action="SignUpView" class="signup-link-btn">إنشاء حساب جديد</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Side Image -->
+        <div class="login-image">
+            <img src="~/Images/lib.jpg" />
+            <div class="overlay-content">
+                <h2>مرحباً بعودتك!</h2>
+                <p>سجل دخولك للوصول إلى مكتبتك الشخصية</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/login.js" asp-append-version="true"></script>
+}
+
