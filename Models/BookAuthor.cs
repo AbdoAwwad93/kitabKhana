@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-namespace Bookstore.Models
+﻿namespace Bookstore.Models
 {
     public class BookAuthor
     {

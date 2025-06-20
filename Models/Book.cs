@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace Bookstore.Models
+﻿namespace Bookstore.Models
 {
     public class Book
     {
@@ -11,8 +9,9 @@ namespace Bookstore.Models
         public int NumberOfPages { get; set; }
         public Category Category { get; set; }
         public int Price { get; set; }
-        public virtual List<Author> Authors{ get; set; }
+        public virtual List<Author> Authors { get; set; }
         public virtual List<Comment> Comments { get; set; }
-        public virtual List<Order> Orders { get; set; }
+        public virtual List<Cart> Carts { get; set; }
+
     }
 }

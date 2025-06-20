@@ -68,42 +68,17 @@ function toggleFollowAuthor(authorId, btn) {
             btn.classList.remove('following');
             btn.innerHTML = '<i class="fas fa-user-plus"></i> متابعة المؤلف';
             showNotification('تم إلغاء متابعة المؤلف', 'info');
-            updateFollowersCount(-1);
         } else {
             // Follow
             btn.classList.add('following');
             btn.innerHTML = '<i class="fas fa-user-check"></i> متابع';
             showNotification('تم متابعة المؤلف بنجاح', 'success');
-            updateFollowersCount(1);
         }
 
         btn.disabled = false;
     }, 1000);
 
     console.log(`Author ${authorId} follow toggled: ${!isFollowing}`);
-}
-
-function updateFollowersCount(change) {
-    const followersElement = document.querySelector('.stat-item:nth-child(3) .stat-number');
-    if (followersElement) {
-        const currentText = followersElement.textContent;
-        let currentCount = parseFloat(currentText.replace('K', '')) * (currentText.includes('K') ? 1000 : 1);
-        currentCount += change;
-
-        if (currentCount >= 1000) {
-            followersElement.textContent = (currentCount / 1000).toFixed(1) + 'K';
-        } else {
-            followersElement.textContent = currentCount.toString();
-        }
-
-        // Add animation
-        followersElement.style.transform = 'scale(1.2)';
-        followersElement.style.color = 'var(--emerald)';
-        setTimeout(() => {
-            followersElement.style.transform = 'scale(1)';
-            followersElement.style.color = '';
-        }, 300);
-    }
 }
 
 function initializeBookFiltering() {
@@ -163,42 +138,48 @@ function initializeBookInteractions() {
 function addToCart(bookId, btn) {
     const originalContent = btn.innerHTML;
 
-    // Show loading state
     btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
     btn.disabled = true;
 
-    // Simulate API call
-    setTimeout(() => {
-        // Show success state
-        btn.innerHTML = '<i class="fas fa-check"></i> تم الإضافة';
-        btn.classList.remove('btn-success');
-        btn.classList.add('btn-success');
-
-        // Update cart count in header
-        updateCartCount();
-
-        // Show notification
-        showNotification('تم إضافة الكتاب إلى السلة بنجاح', 'success');
-
-        // Reset button after 3 seconds
+    fetch('/Cart/AddToCart', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(bookId)
+    })
+    .then(response => {
+        if (!response.ok) throw new Error('Network response was not ok');
+        return response.json();
+    })
+    .then(data => {
+        if (data.success) {
+            btn.innerHTML = '<i class="fas fa-check"></i> تم الإضافة';
+            btn.classList.add('btn-success');
+            updateCartCount(data.count);
+            showNotification('تم إضافة الكتاب إلى السلة بنجاح', 'success');
+        } else {
+            btn.innerHTML = originalContent;
+            showNotification(data.message || 'حدث خطأ أثناء الإضافة', 'error');
+        }
         setTimeout(() => {
             btn.innerHTML = originalContent;
             btn.classList.remove('btn-success');
             btn.disabled = false;
-        }, 3000);
-
-    }, 1000);
-
-    console.log(`Book ${bookId} added to cart`);
+        }, 2000);
+    })
+    .catch(() => {
+        btn.innerHTML = originalContent;
+        btn.disabled = false;
+        showNotification('حدث خطأ أثناء الإضافة', 'error');
+    });
 }
 
-function updateCartCount() {
+function updateCartCount(newCount) {
     const cartCount = document.querySelector('.cart-count');
-    if (cartCount) {
-        let currentCount = parseInt(cartCount.textContent) || 0;
-        cartCount.textContent = currentCount + 1;
-
-        // Add animation
+    if (cartCount && typeof newCount === 'number') {
+        cartCount.textContent = newCount;
         cartCount.style.transform = 'scale(1.3)';
         cartCount.style.background = 'var(--emerald)';
         setTimeout(() => {
@@ -283,7 +264,7 @@ function initializeAnimations() {
     }, observerOptions);
 
     // Observe sections
-    document.querySelectorAll('.about-card, .book-card, .stat-card').forEach(element => {
+    document.querySelectorAll('.about-card, .book-card').forEach(element => {
         observer.observe(element);
     });
 

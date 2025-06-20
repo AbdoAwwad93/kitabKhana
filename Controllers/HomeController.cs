@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Bookstore.Models;
 using Bookstore.Repositories;
+using Bookstore.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bookstore.Controllers
@@ -17,6 +18,15 @@ namespace Bookstore.Controllers
         }
         public IActionResult Index()
         {
+            var userId = User.Identity.IsAuthenticated ? User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value : null;
+            int cartCount = 0;
+            if (!string.IsNullOrEmpty(userId))
+            {
+                var customerRepo = (Bookstore.Repositories.IRepository<Bookstore.Models.Customer>)HttpContext.RequestServices.GetService(typeof(Bookstore.Repositories.IRepository<Bookstore.Models.Customer>));
+                var user = customerRepo?.GetById(userId);
+                cartCount = user?.Cart?.Books?.Count ?? 0;
+            }
+            ViewBag.CartCount = cartCount;
             return View(bookRepo.GetAll());
         }
 

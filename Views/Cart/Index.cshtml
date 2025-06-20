@@ -1,7 +1,171 @@
-﻿@model Customer 
+﻿@model Customer
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "سلة المشتريات";
 }
 
-<h1>@Model.Email</h1>
+<section class="books-header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="page-title">سلة المشتريات</h1>
+                <p class="page-subtitle">استعرض الكتب التي أضفتها إلى السلة وقم بإتمام عملية الشراء</p>
+            </div>
+        </div>
+    </div>
+</section>
 
+<section class="books-content">
+    <div class="container">
+        @if (Model.Cart?.Books != null && Model.Cart.Books.Any())
+        {
+            <div class="row books-grid">
+                @foreach (var book in Model.Cart.Books)
+                {
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="book-card" data-book-id="@book.Id">
+                            <div class="book-image-container">
+                                @{
+                                    var imageURL = ResolveImageUrl(book.ImageURL);
+                                }
+                                <img src="@imageURL" alt="@book.Title" class="book-image" onerror="this.src='@Url.Content("~/Images/default-book.jpg")'">
+                            </div>
+                            <div class="book-info p-3">
+                                <h5 class="book-title">@book.Title</h5>
+                                @if (book.Authors != null && book.Authors.Any())
+                                {
+                                    <div class="book-authors">
+                                        <i class="fas fa-user-edit"></i>
+                                        @string.Join("، ", book.Authors.Select(a => a.Name))
+                                    </div>
+                                }
+                                <div class="book-price mt-2">
+                                    <i class="fas fa-tag"></i>
+                                    <span>@book.Price جنية</span>
+                                </div>
+                               
+                                <button class="btn btn-danger btn-sm w-100 mt-3 remove-from-cart" data-book-id="@book.Id">
+                                    <i class="fas fa-trash"></i> إزالة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="cart-summary bg-white rounded-4 shadow p-4 mt-4 text-center">
+                <h4 class="mb-3">إجمالي السعر: <span class="text-gold">@Model.Cart.Books.Sum(b => b.Price) جنية</span></h4>
+                <button class="btn btn-primary btn-lg px-5" style="border-radius: 30px; font-weight: 600; background: linear-gradient(45deg, var(--primary-gold), var(--secondary-gold)); color: white;">
+                    <i class="fas fa-credit-card"></i> إتمام الشراء
+                </button>
+            </div>
+        }
+        else
+        {
+            <div class="no-results text-center py-5">
+                <i class="fas fa-shopping-cart fa-3x mb-3"></i>
+                <h3>سلة المشتريات فارغة</h3>
+                <p>لم تقم بإضافة أي كتب إلى السلة بعد.</p>
+                <a href="@Url.Action("Index", "Book")" class="btn btn-primary mt-3">
+                    <i class="fas fa-book"></i> تصفح الكتب
+                </a>
+            </div>
+        }
+    </div>
+</section>
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/books.css" asp-append-version="true" />
+}
+@section Scripts {
+    <script>
+        document.addEventListener('click', function (e) {
+            if (e.target.classList.contains('remove-from-cart') || e.target.closest('.remove-from-cart')) {
+                e.preventDefault();
+                const btn = e.target.classList.contains('remove-from-cart') ? e.target : e.target.closest('.remove-from-cart');
+                const bookId = btn.getAttribute('data-book-id');
+                btn.disabled = true;
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري الحذف...';
+                fetch('/Cart/RemoveFromCart', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(bookId)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        // Remove the book card from the UI
+                        const card = btn.closest('.col-lg-3, .col-md-4, .col-sm-6, .mb-4');
+                        if (card) card.remove();
+                        // Update cart count in navbar
+                        const cartCount = document.querySelector('.cart-count');
+                        if (cartCount) {
+                            cartCount.textContent = data.count;
+                        }
+                        // Update cart summary
+                        const priceSpans = document.querySelectorAll('.book-card .book-price span');
+                        let total = 0;
+                        priceSpans.forEach(span => {
+                            const price = parseInt(span.textContent);
+                            if (!isNaN(price)) total += price;
+                        });
+                        const summary = document.querySelector('.cart-summary .text-gold');
+                        if (summary) summary.textContent = total + ' جنية';
+                        // If no books left, show empty cart message
+                        if (document.querySelectorAll('.book-card').length === 0) {
+                            document.querySelector('.books-grid').remove();
+                            document.querySelector('.cart-summary').remove();
+                            document.querySelector('.books-content').innerHTML += `
+                                <div class="no-results text-center py-5">
+                                    <i class="fas fa-shopping-cart fa-3x mb-3"></i>
+                                    <h3>سلة المشتريات فارغة</h3>
+                                    <p>لم تقم بإضافة أي كتب إلى السلة بعد.</p>
+                                    <a href="@Url.Action("Index", "Book")" class="btn btn-primary mt-3">
+                                        <i class="fas fa-book"></i> تصفح الكتب
+                                    </a>
+                                </div>
+                            `;
+                        }
+                       
+                    } else {
+                        btn.innerHTML = '<i class="fas fa-trash"></i> إزالة';
+                        btn.disabled = false;
+                        alert(data.message || 'حدث خطأ أثناء الحذف');
+                    }
+                })
+                .catch(() => {
+                    btn.innerHTML = '<i class="fas fa-trash"></i> إزالة';
+                    btn.disabled = false;
+                    alert('حدث خطأ أثناء الحذف');
+                });
+            }
+        });
+    </script>
+}
+@functions{
+        private string ResolveImageUrl(string imageUrl)
+        {
+            if (string.IsNullOrEmpty(imageUrl))
+            {
+                return Url.Content("~/Images/default-author.jpg");
+            }
+
+            if (imageUrl.StartsWith("~/"))
+            {
+                return Url.Content(imageUrl);
+            }
+
+            if (imageUrl.StartsWith("http://") || imageUrl.StartsWith("https://"))
+            {
+                return imageUrl;
+            }
+
+            if (!imageUrl.StartsWith("/"))
+            {
+                return Url.Content("~/" + imageUrl);
+            }
+
+            return imageUrl;
+        }
+}

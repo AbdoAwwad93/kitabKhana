@@ -235,7 +235,7 @@ function initializeBookInteractions() {
             e.preventDefault();
             const btn = e.target.classList.contains('add-to-cart') ? e.target : e.target.closest('.add-to-cart');
             const bookId = btn.getAttribute('data-book-id');
-            addToCart(bookId);
+            addToCart(bookId, btn);
         }
     });
 }
@@ -271,43 +271,50 @@ function showQuickView(bookId) {
     modal.show();
 }
 
-function addToCart(bookId) {
-    // Get book information
-    const bookCard = document.querySelector(`[data-book-id="${bookId}"]`);
-    const title = bookCard.querySelector('.book-title').getAttribute('data-original-text') ||
-        bookCard.querySelector('.book-title').textContent;
-
-    // Add animation to button
-    const btn = bookCard.querySelector('.add-to-cart');
+function addToCart(bookId, btn) {
     const originalContent = btn.innerHTML;
-    btn.innerHTML = '<i class="fas fa-check"></i> تم الإضافة';
-    btn.classList.remove('btn-success');
-    btn.classList.add('btn-success');
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
     btn.disabled = true;
 
-    // Reset button after 2 seconds
-    setTimeout(() => {
+    fetch('/Cart/AddToCart', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(bookId)
+    })
+    .then(response => {
+        if (!response.ok) throw new Error('Network response was not ok');
+        return response.json();
+    })
+    .then(data => {
+        if (data.success) {
+            btn.innerHTML = '<i class="fas fa-check"></i> تم الإضافة';
+            btn.classList.add('btn-success');
+            updateCartCount(data.count);
+            showNotification('تم إضافة الكتاب إلى السلة بنجاح');
+        } else {
+            btn.innerHTML = originalContent;
+            showNotification(data.message || 'حدث خطأ أثناء الإضافة');
+        }
+        setTimeout(() => {
+            btn.innerHTML = originalContent;
+            btn.classList.remove('btn-success');
+            btn.disabled = false;
+        }, 2000);
+    })
+    .catch(() => {
         btn.innerHTML = originalContent;
-        btn.classList.remove('btn-success');
         btn.disabled = false;
-    }, 2000);
-
-    // Update cart count
-    updateCartCount();
-
-    // Show notification
-    showNotification(`تم إضافة "${title}" إلى السلة بنجاح`);
-
-    //console.log(`Book ${bookId} added to cart`);
+        showNotification('حدث خطأ أثناء الإضافة');
+    });
 }
 
-function updateCartCount() {
+function updateCartCount(newCount) {
     const cartCount = document.querySelector('.cart-count');
-    if (cartCount) {
-        let currentCount = parseInt(cartCount.textContent) || 0;
-        cartCount.textContent = currentCount + 1;
-
-        // Add animation
+    if (cartCount && typeof newCount === 'number') {
+        cartCount.textContent = newCount;
         cartCount.style.transform = 'scale(1.3)';
         setTimeout(() => {
             cartCount.style.transform = 'scale(1)';

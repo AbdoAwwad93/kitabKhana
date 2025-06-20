@@ -16,12 +16,24 @@ namespace Bookstore.Controllers
             this.userManager=userManager;
             this.signInManager=signInManager;
         }
+        private async Task SetCartCountAsync()
+        {
+            int cartCount = 0;
+            var user = await userManager.GetUserAsync(User);
+            if (user != null)
+            {
+                cartCount = user.Cart?.Books?.Count ?? 0;
+            }
+            ViewBag.CartCount = cartCount;
+        }
         public IActionResult SignUpView()
         {
+            SetCartCountAsync().Wait();
             return View("SignUp");
         }
         public async Task<IActionResult> SignUp(SignUpViewModel signUpModel)
         {
+            SetCartCountAsync().Wait();
             var user = await userManager.FindByEmailAsync(signUpModel.Email);
             if(user != null)
             {
@@ -42,6 +54,7 @@ namespace Bookstore.Controllers
               var result= await userManager.CreateAsync(Customer,signUpModel.Password);
                 if (result.Succeeded)
                 {
+
                     return View("Login");  
                 }
                 else
@@ -58,10 +71,12 @@ namespace Bookstore.Controllers
         }
         public IActionResult LoginView()
         {
+            SetCartCountAsync().Wait();
             return View("Login");
         }
         public async Task<IActionResult> Login(LoginViewModel loginModel)
         {
+            SetCartCountAsync().Wait();
             if (ModelState.IsValid)
             {
                 var user  = await userManager.FindByEmailAsync(loginModel.Email);
@@ -77,6 +92,7 @@ namespace Bookstore.Controllers
                     return View("Login", loginModel);
                 }
                 await signInManager.SignInAsync(user, isPersistent: loginModel.RememberMe);
+                
                 return RedirectToAction("Index", "Home"); 
             }
             return View("Login", loginModel);
@@ -88,6 +104,7 @@ namespace Bookstore.Controllers
         }
         public async Task<IActionResult> Profile()
         {
+            SetCartCountAsync().Wait();
             var user = await userManager.GetUserAsync(User);
             if (user == null)
             {
@@ -107,6 +124,7 @@ namespace Bookstore.Controllers
         }
         public async Task<IActionResult> EditView()
         {
+            SetCartCountAsync().Wait();
             var user = await userManager.GetUserAsync(User);
             if (user == null)
             {
@@ -124,6 +142,7 @@ namespace Bookstore.Controllers
         }
         public async Task<IActionResult> Edit(ProfileViewModel profileModel)
         {
+            SetCartCountAsync().Wait();
             var user = await userManager.GetUserAsync(User);
             if(user == null)
             {

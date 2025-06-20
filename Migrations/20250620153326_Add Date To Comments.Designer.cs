@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bookstore.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20250617232106_Init")]
-    partial class Init
+    [Migration("20250620153326_Add Date To Comments")]
+    partial class AddDateToComments
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,6 +27,21 @@ namespace Bookstore.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("BookCart", b =>
+                {
+                    b.Property<string>("BooksId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("CartsId")
+                        .HasColumnType("int");
+
+                    b.HasKey("BooksId", "CartsId");
+
+                    b.HasIndex("CartsId");
+
+                    b.ToTable("BookCart");
+                });
 
             modelBuilder.Entity("Bookstore.Models.Author", b =>
                 {
@@ -54,7 +69,7 @@ namespace Bookstore.Migrations
                         {
                             Id = "1",
                             About = "هو طبيب وأديب مصري، ويعتبر من أشهر الكتاب في مجال أدب الرعب وأدب الشباب. ولد في مدينة طنطا عاصمة محافظة الغربية في مصر. متزوج وأب لطفلين هما محمد (12 سنة) ومريم (8 سنوات).\r\nتخرج أحمد خالد توفيق في كلية الطب في جامعة طنطا عام 1985 م وحصل على الدكتوراه في طب المناطق الحارة عام 1997 م. يقدم أحمد خالد توفيق ستة سلاسل للروايات وصلت إلى ما يقرب من 236 عددا، وقد قام بترجمة عدد من الروايات الأجنبية ضمن سلسلة روايات عالمية للجيب. كما قدّم الترجمة العربية الوحيدة لرواية نادي القتال (fight club) للروائي الأمريكي تشاك بولانيك. كما أن له بعض التجارب الشعرية.\r\nوتُوفى إلى رحمة الله تعالى عن عمر يناهز 55 عامًا أثر أزمة صحية ألمت به(عليه رحمة الله تعالى وأسكنه الله فسيح جناته وأبدله سيئاته حسنات إن شاء الله)",
-                            ImageURL = "~/images/Authors/أحمد_خالد_توفيق.jpg",
+                            ImageURL = "/images/Authors/أحمد_خالد_توفيق.jpg",
                             Name = "أحمد خالد توفيق"
                         },
                         new
@@ -748,6 +763,29 @@ namespace Bookstore.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Bookstore.Models.Cart", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CustomerId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CustomerId")
+                        .IsUnique();
+
+                    b.ToTable("Carts");
+                });
+
             modelBuilder.Entity("Bookstore.Models.Comment", b =>
                 {
                     b.Property<string>("Id")
@@ -760,6 +798,13 @@ namespace Bookstore.Migrations
                     b.Property<string>("CommentText")
                         .IsRequired()
                         .HasColumnType("nVarChar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CustomerName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Rate")
                         .HasColumnType("int");
@@ -845,55 +890,6 @@ namespace Bookstore.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
-                });
-
-            modelBuilder.Entity("Bookstore.Models.Order", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("CustomerId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<DateTime>("OrderDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("TotalAmount")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("TotalPrice")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CustomerId");
-
-                    b.ToTable("Orders");
-                });
-
-            modelBuilder.Entity("Bookstore.Models.OrderItem", b =>
-                {
-                    b.Property<string>("BookId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("OrderId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("SubTotal")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("UnitPrice")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("BookId", "OrderId");
-
-                    b.HasIndex("OrderId");
-
-                    b.ToTable("OrderItems");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -1029,6 +1025,21 @@ namespace Bookstore.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("BookCart", b =>
+                {
+                    b.HasOne("Bookstore.Models.Book", null)
+                        .WithMany()
+                        .HasForeignKey("BooksId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Bookstore.Models.Cart", null)
+                        .WithMany()
+                        .HasForeignKey("CartsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("Bookstore.Models.BookAuthor", b =>
                 {
                     b.HasOne("Bookstore.Models.Author", "Author")
@@ -1048,6 +1059,17 @@ namespace Bookstore.Migrations
                     b.Navigation("Book");
                 });
 
+            modelBuilder.Entity("Bookstore.Models.Cart", b =>
+                {
+                    b.HasOne("Bookstore.Models.Customer", "Customer")
+                        .WithOne("Cart")
+                        .HasForeignKey("Bookstore.Models.Cart", "CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
+                });
+
             modelBuilder.Entity("Bookstore.Models.Comment", b =>
                 {
                     b.HasOne("Bookstore.Models.Book", "Book")
@@ -1057,36 +1079,6 @@ namespace Bookstore.Migrations
                         .IsRequired();
 
                     b.Navigation("Book");
-                });
-
-            modelBuilder.Entity("Bookstore.Models.Order", b =>
-                {
-                    b.HasOne("Bookstore.Models.Customer", "Customer")
-                        .WithMany("Orders")
-                        .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Customer");
-                });
-
-            modelBuilder.Entity("Bookstore.Models.OrderItem", b =>
-                {
-                    b.HasOne("Bookstore.Models.Book", "Book")
-                        .WithMany()
-                        .HasForeignKey("BookId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Bookstore.Models.Order", "Order")
-                        .WithMany("OrderItems")
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Book");
-
-                    b.Navigation("Order");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -1147,12 +1139,8 @@ namespace Bookstore.Migrations
 
             modelBuilder.Entity("Bookstore.Models.Customer", b =>
                 {
-                    b.Navigation("Orders");
-                });
-
-            modelBuilder.Entity("Bookstore.Models.Order", b =>
-                {
-                    b.Navigation("OrderItems");
+                    b.Navigation("Cart")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

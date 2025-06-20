@@ -524,7 +524,40 @@
         opacity: 1;
     }
 }
+/* Remove all text decorations from author card links */
+.authors-content a,
+.authors-content a:hover,
+.authors-content a:focus,
+.authors-content a:active,
+.authors-content a:visited {
+    text-decoration: none !important;
+    border: none !important;
+    outline: none !important;
+}
 
+/* Ensure no underlines on any text within author cards */
+.author-card *,
+.author-card *:hover,
+.author-card *:focus,
+.author-card *:active {
+    text-decoration: none !important;
+}
+
+.author-name,
+.author-about,
+.books-title,
+.book-tag,
+.more-books {
+    text-decoration: none !important;
+}
+
+.authors-content .text-decoration-none {
+    text-decoration: none !important;
+}
+
+    .authors-content .text-decoration-none:hover {
+        text-decoration: none !important;
+    }
 /* Custom Scrollbar */
 .modal-body::-webkit-scrollbar {
     width: 6px;

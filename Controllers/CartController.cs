@@ -2,161 +2,74 @@
 using Bookstore.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace Bookstore.Controllers
 {
     public class CartController : Controller
     {
-        private readonly IRepository<Customer> _customerRepo;
-        private readonly IRepository<Cart> _cartRepo;
-        private readonly IRepository<CartItem> _cartItemRepo;
-        private readonly IRepository<Book> _bookRepo;
+        private readonly IRepository<Customer> customerRepo;
+        private readonly IRepository<Book> bookRepo;
 
-        public CartController(
-            IRepository<Customer> customerRepo,
-            IRepository<Cart> cartRepo,
-            IRepository<CartItem> cartItemRepo,
-            IRepository<Book> bookRepo)
+        public CartController(IRepository<Customer> customerRepo,IRepository<Book> BookRepo)
         {
-            _customerRepo = customerRepo;
-            _cartRepo = cartRepo;
-            _cartItemRepo = cartItemRepo;
-            _bookRepo = bookRepo;
-        }
+            this.customerRepo=customerRepo;
+            bookRepo=BookRepo;
 
+        }
         public IActionResult Index()
         {
-            string? userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (userId == null)
+            var userId = User.Identity.IsAuthenticated ? User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value : null;
+            if(userId == null)
             {
-                return RedirectToAction("Login", "Account");
+              return RedirectToAction("LoginView", "Account");
             }
-            
-            var cart = GetOrCreateCart(userId);
-            return View(cart);
+            var user = customerRepo.GetById(userId);
+            if(user == null)
+            {
+              return RedirectToAction("LoginView", "Account");
+            }
+            var cartCount = user?.Cart?.Books?.Count ?? 0;
+            ViewBag.CartCount = cartCount;
+            return View(user); 
         }
-
         [HttpPost]
-        public IActionResult AddToCart(string bookId, int quantity = 1)
+        public IActionResult AddToCart([FromBody] string id)
         {
-            if (!User.Identity?.IsAuthenticated ?? true)
+            var book = bookRepo.GetById(id);
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var user = customerRepo.GetById(userId);
+            if (user == null)
             {
-                return Json(new { success = false, message = "يرجى تسجيل الدخول أولاً" });
+                Response.StatusCode = 401;
+                return Json(new { success = false, message = "User not logged in" });
             }
-
-            string? userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (userId == null)
+            if (user.Cart == null)
             {
-                return Json(new { success = false, message = "يرجى تسجيل الدخول أولاً" });
+                user.Cart = new Cart { CustomerId = user.Id, Books = new List<Book>() };
             }
-
-            var book = _bookRepo.GetById(bookId);
-            if (book == null)
+            if (user.Cart.Books == null)
             {
-                return Json(new { success = false, message = "الكتاب غير موجود" });
+                user.Cart.Books = new List<Book>();
             }
-
-            var cart = GetOrCreateCart(userId);
-            var existingItem = cart.CartItems.FirstOrDefault(i => i.BookId == bookId);
-
-            if (existingItem != null)
+            if (!user.Cart.Books.Any(b => b.Id == id))
             {
-                existingItem.Quantity += quantity;
-                existingItem.SubTotal = existingItem.Quantity * existingItem.UnitPrice;
+                user.Cart.Books.Add(book);
+                customerRepo.SaveChanges();
             }
-            else
-            {
-                var cartItem = new CartItem
-                {
-                    Id = Guid.NewGuid().ToString(),
-                    CartId = cart.Id,
-                    BookId = bookId,
-                    Quantity = quantity,
-                    UnitPrice = book.Price,
-                    SubTotal = book.Price * quantity
-                };
-                cart.CartItems.Add(cartItem);
-            }
-
-            UpdateCartTotal(cart);
-            _cartRepo.Update(cart);
-
-            return Json(new { success = true, message = "تمت إضافة الكتاب إلى السلة" });
+            var count = user.Cart.Books.Count;
+            return Json(new { success = true, count });
         }
-
         [HttpPost]
-        public IActionResult RemoveFromCart(string cartItemId)
+        public IActionResult RemoveFromCart([FromBody] string id)
         {
-            var cartItem = _cartItemRepo.GetById(cartItemId);
-            if (cartItem == null)
-            {
-                return Json(new { success = false, message = "العنصر غير موجود في السلة" });
-            }
-
-            var cart = _cartRepo.GetById(cartItem.CartId);
-            if (cart == null)
-            {
-                return Json(new { success = false, message = "السلة غير موجودة" });
-            }
-
-            cart.CartItems.Remove(cartItem);
-            _cartItemRepo.Delete(cartItemId);
-            
-            UpdateCartTotal(cart);
-            _cartRepo.Update(cart);
-
-            return Json(new { success = true, message = "تم حذف العنصر من السلة" });
-        }
-
-        [HttpPost]
-        public IActionResult UpdateQuantity(string cartItemId, int quantity)
-        {
-            var cartItem = _cartItemRepo.GetById(cartItemId);
-            if (cartItem == null)
-            {
-                return Json(new { success = false, message = "العنصر غير موجود في السلة" });
-            }
-
-            cartItem.Quantity = quantity;
-            cartItem.SubTotal = cartItem.Quantity * cartItem.UnitPrice;
-            _cartItemRepo.Update(cartItem);
-
-            var cart = _cartRepo.GetById(cartItem.CartId);
-            if (cart == null)
-            {
-                return Json(new { success = false, message = "السلة غير موجودة" });
-            }
-
-            UpdateCartTotal(cart);
-            _cartRepo.Update(cart);
-
-            return Json(new { success = true, message = "تم تحديث الكمية" });
-        }
-
-        private Cart GetOrCreateCart(string userId)
-        {
-            var cart = _cartRepo.GetAll()
-                .FirstOrDefault(c => c.CustomerId == userId);
-
-            if (cart == null)
-            {
-                cart = new Cart
-                {
-                    Id = Guid.NewGuid().ToString(),
-                    CustomerId = userId,
-                    CartItems = new List<CartItem>(),
-                    CreatedAt = DateTime.UtcNow
-                };
-                _cartRepo.Add(cart);
-            }
-
-            return cart;
-        }
-
-        private void UpdateCartTotal(Cart cart)
-        {
-            cart.TotalPrice = cart.CartItems.Sum(item => item.SubTotal);
-            cart.UpdatedAt = DateTime.UtcNow;
+            var user = customerRepo.GetById(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+            var book = bookRepo.GetById(id);
+            user.Cart.Books.Remove(book);
+            customerRepo.SaveChanges();
+            var count = user.Cart.Books.Count;
+            return Json(new { success = true, count });
         }
     }
 }

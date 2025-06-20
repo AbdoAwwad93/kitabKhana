@@ -7,9 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize interactions
     initializeBookActions();
 
-    // Initialize comment form
-    initializeCommentForm();
-
     // Initialize animations
     initializeAnimations();
 
@@ -56,32 +53,6 @@ function initializeBookActions() {
     }
 }
 
-async function handleAddToCart(event) {
-    const button = event.currentTarget;
-    const bookId = button.dataset.bookId;
-    
-    try {
-        const response = await fetch('/Cart/AddToCart', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
-            },
-            body: JSON.stringify({ bookId: bookId, quantity: 1 })
-        });
-
-        const result = await response.json();
-        
-        if (result.success) {
-            showNotification(result.message, 'success');
-        } else {
-            showNotification(result.message, 'error');
-        }
-    } catch (error) {
-        showNotification('حدث خطأ أثناء إضافة الكتاب إلى السلة', 'error');
-    }
-}
-
 function toggleFavorite(bookId, btn) {
     const isActive = btn.classList.contains('active');
 
@@ -100,123 +71,59 @@ function toggleFavorite(bookId, btn) {
     console.log(`Book ${bookId} favorite toggled: ${!isActive}`);
 }
 
-function updateCartCount() {
-    const cartCount = document.querySelector('.cart-count');
-    if (cartCount) {
-        let currentCount = parseInt(cartCount.textContent) || 0;
-        cartCount.textContent = currentCount + 1;
+function handleAddToCart(e) {
+    e.preventDefault();
+    const btn = e.target.closest('.add-to-cart-btn');
+    const bookId = btn.getAttribute('data-book-id');
+    const originalContent = btn.innerHTML;
 
-        // Add animation
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+    btn.disabled = true;
+
+    fetch('/Cart/AddToCart', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(bookId)
+    })
+    .then(response => {
+        if (!response.ok) throw new Error('Network response was not ok');
+        return response.json();
+    })
+    .then(data => {
+        if (data.success) {
+            btn.innerHTML = '<i class="fas fa-check"></i> تم الإضافة';
+            btn.classList.add('btn-success');
+            updateCartCount(data.count);
+            showNotification('تم إضافة الكتاب إلى السلة بنجاح', 'success');
+        } else {
+            btn.innerHTML = originalContent;
+            showNotification(data.message || 'حدث خطأ أثناء الإضافة', 'error');
+        }
+        setTimeout(() => {
+            btn.innerHTML = originalContent;
+            btn.classList.remove('btn-success');
+            btn.disabled = false;
+        }, 2000);
+    })
+    .catch(() => {
+        btn.innerHTML = originalContent;
+        btn.disabled = false;
+        showNotification('حدث خطأ أثناء الإضافة', 'error');
+    });
+}
+
+function updateCartCount(newCount) {
+    const cartCount = document.querySelector('.cart-count');
+    if (cartCount && typeof newCount === 'number') {
+        cartCount.textContent = newCount;
         cartCount.style.transform = 'scale(1.3)';
         cartCount.style.background = 'var(--emerald)';
         setTimeout(() => {
             cartCount.style.transform = 'scale(1)';
         }, 200);
-    }
-}
-
-function initializeCommentForm() {
-    const commentForm = document.getElementById('commentForm');
-    if (commentForm) {
-        commentForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            submitComment();
-        });
-    }
-}
-
-function submitComment() {
-    const rating = document.querySelector('input[name="rating"]:checked');
-    const commentText = document.getElementById('commentText');
-
-    if (!rating) {
-        showNotification('يرجى اختيار تقييم للكتاب', 'warning');
-        return;
-    }
-
-    if (!commentText.value.trim()) {
-        showNotification('يرجى كتابة تعليق', 'warning');
-        return;
-    }
-
-    const commentForm = document.getElementById('commentForm');
-    const submitBtn = commentForm.querySelector('button[type="submit"]');
-    const originalContent = submitBtn.innerHTML;
-
-    // Show loading state
-    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري الإرسال...';
-    submitBtn.disabled = true;
-
-    // Simulate API call
-    setTimeout(() => {
-        // Add comment to the list
-        addCommentToList({
-            rating: parseInt(rating.value),
-            content: commentText.value.trim(),
-            date: new Date()
-        });
-
-        // Reset form
-        commentForm.reset();
-
-        // Reset button
-        submitBtn.innerHTML = originalContent;
-        submitBtn.disabled = false;
-
-        // Show success message
-        showNotification('تم إرسال تعليقك بنجاح', 'success');
-
-        // Scroll to comments section
-        document.querySelector('.comments-section').scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-
-    }, 1500);
-}
-
-function addCommentToList(comment) {
-    const commentsList = document.querySelector('.comments-list');
-    if (!commentsList) return;
-
-    const commentCard = document.createElement('div');
-    commentCard.className = 'comment-card fade-in-up';
-
-    const starsHtml = Array.from({ length: 5 }, (_, i) =>
-        `<i class="fas fa-star ${i < comment.rating ? 'filled' : ''}"></i>`
-    ).join('');
-
-    commentCard.innerHTML = `
-        <div class="comment-header">
-            <div class="commenter-info">
-                <div class="commenter-avatar">
-                    <i class="fas fa-user-circle"></i>
-                </div>
-                <div class="commenter-details">
-                    <h5 class="commenter-name">أنت</h5>
-                    <div class="comment-rating">
-                        ${starsHtml}
-                    </div>
-                </div>
-            </div>
-            <div class="comment-date">
-                <i class="fas fa-clock"></i>
-                <span>الآن</span>
-            </div>
-        </div>
-        <div class="comment-content">
-            <p>${comment.content}</p>
-        </div>
-    `;
-
-    // Add to top of comments list
-    commentsList.insertBefore(commentCard, commentsList.firstChild);
-
-    // Update comments count
-    const commentsCount = document.querySelector('.comments-count');
-    if (commentsCount) {
-        const currentCount = parseInt(commentsCount.textContent.match(/\d+/)[0]) || 0;
-        commentsCount.textContent = `(${currentCount + 1})`;
     }
 }
 
@@ -319,6 +226,5 @@ function formatDate(date) {
 window.BookDetails = {
     handleAddToCart,
     toggleFavorite,
-    submitComment,
     showNotification
 };

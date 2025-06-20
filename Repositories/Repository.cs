@@ -2,6 +2,7 @@
 using Bookstore.DBContext;
 using Bookstore.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace Bookstore.Repositories
 {
@@ -26,9 +27,14 @@ namespace Bookstore.Repositories
             Dbset.Remove(GetById(id));
         }
 
-        public List<T> GetAll()
+        public List<T> GetAll(params Expression<Func<T, object>>[] includes)
         {
-            return Dbset.ToList();
+            IQueryable<T> query = Dbset;
+            foreach (var include in includes)
+            {
+                query = query.Include(include);
+            }
+            return query.ToList();
         }
 
         public T GetById(string id)

@@ -4,7 +4,7 @@ namespace Bookstore.Models
 {
     public enum Category
     {
-        [Display (Name ="كتب تاريخ")]
+        [Display(Name = "كتب تاريخ")]
         History,
         [Display(Name = "كتب دينية")]
         Religious,

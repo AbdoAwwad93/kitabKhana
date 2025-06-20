@@ -33,9 +33,11 @@
                     <img src="@imageUrl" alt="@Model.Title" class="book-main-image"
                          onerror="this.src='@Url.Content("~/Images/default-book.jpg")'">
                     <div class="book-actions">
+                        <a href="@Url.Action("AddToCart","Cart",new {id= Model.Id})">
                         <button class="btn btn-primary btn-lg add-to-cart-btn" data-book-id="@Model.Id">
-                            <i class="fas fa-cart-plus"><a href="@Url.Action("AddToCart","Cart")">أضف إلى السلة</a> </i> 
+                            <i class="fas fa-cart-plus"></i>أضف إلى السلة
                         </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -129,7 +131,7 @@
 </section>
 
 <!-- Comments Section -->
-@if (Model.Comments != null && Model.Comments.Any())
+@if (Model.Comments.Any())
 {
     <section class="comments-section">
         <div class="container">
@@ -150,7 +152,7 @@
                                             <i class="fas fa-user-circle"></i>
                                         </div>
                                         <div class="commenter-details">
-                                            <h5 class="commenter-name">مستخدم مجهول</h5>
+                                            <h5 class="commenter-name">@comment.CustomerName</h5>
                                             <div class="comment-rating">
                                                 @for (int i = 1; i <= 5; i++)
                                                 {
@@ -161,7 +163,7 @@
                                     </div>
                                     <div class="comment-date">
                                         <i class="fas fa-clock"></i>
-                                        <span>منذ يومين</span>
+                                        <span>@comment.CreatedAt</span>
                                     </div>
                                 </div>
                                 <div class="comment-content">
@@ -185,27 +187,28 @@
                     <h3 class="section-title">
                         <i class="fas fa-plus-circle"></i> أضف تعليقك
                     </h3>
-                    <form id="commentForm" class="comment-form">
+                    <form id="commentForm" class="comment-form" asp-action="AddComment" asp-route-BookId="@Model.Id" method="post">
                         <div class="rating-input">
                             <label class="form-label">تقييمك للكتاب:</label>
                             <div class="star-rating">
-                                <input type="radio" name="rating" value="5" id="star5">
+                                <input type="radio" name="Rate" value="5" id="star5">
                                 <label for="star5"><i class="fas fa-star"></i></label>
-                                <input type="radio" name="rating" value="4" id="star4">
+                                <input type="radio" name="Rate" value="4" id="star4">
                                 <label for="star4"><i class="fas fa-star"></i></label>
-                                <input type="radio" name="rating" value="3" id="star3">
+                                <input type="radio" name="Rate" value="3" id="star3">
                                 <label for="star3"><i class="fas fa-star"></i></label>
-                                <input type="radio" name="rating" value="2" id="star2">
+                                <input type="radio" name="Rate" value="2" id="star2">
                                 <label for="star2"><i class="fas fa-star"></i></label>
-                                <input type="radio" name="rating" value="1" id="star1">
+                                <input type="radio" name="Rate" value="1" id="star1">
                                 <label for="star1"><i class="fas fa-star"></i></label>
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="commentText" class="form-label">تعليقك:</label>
-                            <textarea class="form-control" id="commentText" rows="4"
+                            <textarea class="form-control" id="commentText" name="CommentText" rows="4"
                                       placeholder="شاركنا رأيك في هذا الكتاب..."></textarea>
                         </div>
+                        
                         <button type="submit" class="btn btn-primary">
                             <i class="fas fa-paper-plane"></i> إرسال التعليق
                         </button>

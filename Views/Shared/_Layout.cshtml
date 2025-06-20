@@ -45,7 +45,7 @@
                         {
                             <a class="nav-link cart-btn" href="@Url.Action("Index", "Cart")">
                                 <i class="fas fa-shopping-cart"></i>
-                                <span class="cart-count">0</span>
+                                <span class="cart-count">@((ViewBag.CartCount ?? 0).ToString())</span>
                             </a>
                             @if (!User.Identity!.IsAuthenticated)
                             {

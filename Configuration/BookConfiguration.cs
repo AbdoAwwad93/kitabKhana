@@ -22,11 +22,8 @@ namespace Bookstore.Configuration
             builder.HasMany(book => book.Comments)
                 .WithOne(comment => comment.Book)
                 .HasForeignKey(comment => comment.BookId);
-
-            builder.HasMany(book => book.Orders)
-                .WithMany(order => order.Books)
-                .UsingEntity<OrderItem>();
-
+            builder.HasMany(book => book.Carts)
+                 .WithMany(cart => cart.Books);
             builder.HasData(BooksData());
         }
 

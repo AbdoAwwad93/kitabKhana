@@ -4,6 +4,7 @@ using Bookstore.DBContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bookstore.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    partial class AppDBContextModelSnapshot : ModelSnapshot
+    [Migration("20250620090836_Init")]
+    partial class Init
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -66,7 +69,7 @@ namespace Bookstore.Migrations
                         {
                             Id = "1",
                             About = "هو طبيب وأديب مصري، ويعتبر من أشهر الكتاب في مجال أدب الرعب وأدب الشباب. ولد في مدينة طنطا عاصمة محافظة الغربية في مصر. متزوج وأب لطفلين هما محمد (12 سنة) ومريم (8 سنوات).\r\nتخرج أحمد خالد توفيق في كلية الطب في جامعة طنطا عام 1985 م وحصل على الدكتوراه في طب المناطق الحارة عام 1997 م. يقدم أحمد خالد توفيق ستة سلاسل للروايات وصلت إلى ما يقرب من 236 عددا، وقد قام بترجمة عدد من الروايات الأجنبية ضمن سلسلة روايات عالمية للجيب. كما قدّم الترجمة العربية الوحيدة لرواية نادي القتال (fight club) للروائي الأمريكي تشاك بولانيك. كما أن له بعض التجارب الشعرية.\r\nوتُوفى إلى رحمة الله تعالى عن عمر يناهز 55 عامًا أثر أزمة صحية ألمت به(عليه رحمة الله تعالى وأسكنه الله فسيح جناته وأبدله سيئاته حسنات إن شاء الله)",
-                            ImageURL = "/images/Authors/أحمد_خالد_توفيق.jpg",
+                            ImageURL = "~/images/Authors/أحمد_خالد_توفيق.jpg",
                             Name = "أحمد خالد توفيق"
                         },
                         new
@@ -795,13 +798,6 @@ namespace Bookstore.Migrations
                     b.Property<string>("CommentText")
                         .IsRequired()
                         .HasColumnType("nVarChar(max)");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("CustomerName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Rate")
                         .HasColumnType("int");
