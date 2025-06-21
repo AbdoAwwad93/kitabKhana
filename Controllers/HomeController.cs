@@ -10,22 +10,20 @@ namespace Bookstore.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IRepository<Book> bookRepo;
+        private readonly IRepository<Customer> customerRepo;
 
-        public HomeController(ILogger<HomeController> logger, IRepository<Book> bookRepo)
+        public HomeController(ILogger<HomeController> logger, IRepository<Book> bookRepo,IRepository<Customer> customerRepo)
         {
             _logger = logger;
             this.bookRepo=bookRepo;
+            this.customerRepo=customerRepo;
         }
         public IActionResult Index()
         {
             var userId = User.Identity.IsAuthenticated ? User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value : null;
             int cartCount = 0;
-            if (!string.IsNullOrEmpty(userId))
-            {
-                var customerRepo = (Bookstore.Repositories.IRepository<Bookstore.Models.Customer>)HttpContext.RequestServices.GetService(typeof(Bookstore.Repositories.IRepository<Bookstore.Models.Customer>));
-                var user = customerRepo?.GetById(userId);
-                cartCount = user?.Cart?.Books?.Count ?? 0;
-            }
+            var user = customerRepo?.GetById(userId);
+            cartCount = user?.Cart?.Books?.Count ?? 0;
             ViewBag.CartCount = cartCount;
             return View(bookRepo.GetAll());
         }

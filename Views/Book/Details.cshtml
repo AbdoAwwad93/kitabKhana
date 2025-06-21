@@ -1,6 +1,6 @@
-﻿@model Book
+﻿@model BookDetailsViewModel
 @{
-    ViewData["Title"] = Model.Title;
+    ViewData["Title"] = Model.Book.Title;
 }
 
 @section Styles {
@@ -14,7 +14,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">الرئيسية</a></li>
                 <li class="breadcrumb-item"><a href="@Url.Action("Index", "Book")">الكتب</a></li>
-                <li class="breadcrumb-item active" aria-current="page">@Model.Title</li>
+                <li class="breadcrumb-item active" aria-current="page">@Model.Book.Title</li>
             </ol>
         </nav>
     </div>
@@ -28,13 +28,13 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="book-image-wrapper">
                     @{
-                        var imageUrl = ResolveImageUrl(Model.ImageURL);
+                        var imageUrl = ResolveImageUrl(Model.Book.ImageURL);
                     }
-                    <img src="@imageUrl" alt="@Model.Title" class="book-main-image"
+                    <img src="@imageUrl" alt="@Model.Book.Title" class="book-main-image"
                          onerror="this.src='@Url.Content("~/Images/default-book.jpg")'">
                     <div class="book-actions">
-                        <a href="@Url.Action("AddToCart","Cart",new {id= Model.Id})">
-                        <button class="btn btn-primary btn-lg add-to-cart-btn" data-book-id="@Model.Id">
+                        <a href="@Url.Action("AddToCart","Cart",new {id= Model.Book.Id})">
+                        <button class="btn btn-primary btn-lg add-to-cart-btn" data-book-id="@Model.Book.Id">
                             <i class="fas fa-cart-plus"></i>أضف إلى السلة
                         </button>
                         </a>
@@ -46,21 +46,21 @@
             <div class="col-lg-8 col-md-6">
                 <div class="book-info-wrapper">
                     <div class="book-header">
-                        <h1 class="book-title">@Model.Title</h1>
+                        <h1 class="book-title">@Model.Book.Title</h1>
                         <div class="book-category">
-                            <span class="category-badge">@GetCategoryDisplayName(Model.Category)</span>
+                            <span class="category-badge">@GetCategoryDisplayName(Model.Book.Category)</span>
                         </div>
                     </div>
 
                     <!-- Authors Section -->
-                    @if (Model.Authors != null && Model.Authors.Any())
+                    @if (Model.Book.Authors != null && Model.Book.Authors.Any())
                     {
                         <div class="authors-section">
                             <h3 class="section-title">
                                 <i class="fas fa-user-edit"></i> المؤلفون
                             </h3>
                             <div class="authors-list">
-                                @foreach (var author in Model.Authors)
+                                @foreach (var author in Model.Book.Authors)
                                 {
                                     <div class="author-card">
                                         <div class="author-image">
@@ -85,19 +85,19 @@
                         <div class="meta-item">
                             <i class="fas fa-file-alt"></i>
                             <span class="meta-label">عدد الصفحات:</span>
-                            <span class="meta-value">@Model.NumberOfPages صفحة</span>
+                            <span class="meta-value">@Model.Book.NumberOfPages صفحة</span>
                         </div>
                         <div class="meta-item">
                             <i class="fas fa-bookmark"></i>
                             <span class="meta-label">التصنيف:</span>
-                            <span class="meta-value">@GetCategoryDisplayName(Model.Category)</span>
+                            <span class="meta-value">@GetCategoryDisplayName(Model.Book.Category)</span>
                         </div>
                         <div class="meta-item">
                             <i class="fas fa-tag"></i>
                             <span class="meta-label">السعر:</span>
-                            <span class="meta-value">@Model.Price جنية</span>
+                            <span class="meta-value">@Model.Book.Price جنية</span>
                         </div>
-                        @if (Model.Comments != null && Model.Comments.Any())
+                        @if (Model.Book.Comments != null && Model.Book.Comments.Any())
                         {
                             <div class="meta-item">
                                 <i class="fas fa-star"></i>
@@ -109,7 +109,7 @@
                                             <i class="fas fa-star @(i <= 4 ? "filled" : "")"></i>
                                         }
                                     </div>
-                                    <span class="rating-text">(@Model.Comments.Count تقييم)</span>
+                                    <span class="rating-text">(@Model.Book.Comments.Count تقييم)</span>
                                 </div>
                             </div>
                         }
@@ -121,7 +121,7 @@
                             <i class="fas fa-align-right"></i> وصف الكتاب
                         </h3>
                         <div class="book-description">
-                            <p>@Model.Description</p>
+                            <p>@Model.Book.Description</p>
                         </div>
                     </div>
                 </div>
@@ -131,7 +131,7 @@
 </section>
 
 <!-- Comments Section -->
-@if (Model.Comments.Any())
+@if (Model.Book.Comments.Any())
 {
     <section class="comments-section">
         <div class="container">
@@ -139,11 +139,11 @@
                 <div class="col-12">
                     <h3 class="section-title">
                         <i class="fas fa-comments"></i> التعليقات والمراجعات
-                        <span class="comments-count">(@Model.Comments.Count)</span>
+                        <span class="comments-count">(@Model.Book.Comments.Count)</span>
                     </h3>
 
                     <div class="comments-list">
-                        @foreach (var comment in Model.Comments)
+                        @foreach (var comment in Model.Book.Comments)
                         {
                             <div class="comment-card">
                                 <div class="comment-header">
@@ -187,7 +187,7 @@
                     <h3 class="section-title">
                         <i class="fas fa-plus-circle"></i> أضف تعليقك
                     </h3>
-                    <form id="commentForm" class="comment-form" asp-action="AddComment" asp-route-BookId="@Model.Id" method="post">
+                    <form id="commentForm" class="comment-form" asp-action="AddComment" asp-route-BookId="@Model.Book.Id" method="post">
                         <div class="rating-input">
                             <label class="form-label">تقييمك للكتاب:</label>
                             <div class="star-rating">
@@ -225,12 +225,43 @@
         <h3 class="section-title">
             <i class="fas fa-book-open"></i> كتب ذات صلة
         </h3>
-        <div class="related-books-slider">
-            <!-- This would be populated with related books from the same category -->
+        <div class="related-books-grid">
             <div class="row">
-                <div class="col-12">
-                    <p class="text-center text-muted">سيتم عرض الكتب ذات الصلة هنا</p>
-                </div>
+                @if (Model.RelatedBooks.Any())
+                {
+                    @foreach (var book in Model.RelatedBooks)
+                    {
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <a href="@Url.Action("Details", "Book", new { id = book.Id })" class="book-card-link">
+                                <div class="book-card h-100">
+                                    <div class="book-image-container">
+                                        <img src="@ResolveImageUrl(book.ImageURL)" alt="@book.Title" class="book-image" onerror="this.src='@Url.Content("~/Images/default-book.jpg")'">
+                                    </div>
+                                    <div class="book-info">
+                                        <h5 class="related-book-title">@book.Title</h5>
+                                        @if (book.Authors != null && book.Authors.Any())
+                                        {
+                                            <div class="book-authors">
+                                                <i class="fas fa-user-edit"></i>
+                                                @string.Join("، ", book.Authors.Select(a => a.Name))
+                                            </div>
+                                        }
+                                        <div class="book-price">
+                                            <i class="fas fa-tag"></i>
+                                            <span>@book.Price جنية</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="col-12">
+                        <p class="text-center text-muted">لا توجد كتب ذات صلة حالياً.</p>
+                    </div>
+                }
             </div>
         </div>
     </div>

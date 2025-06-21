@@ -505,52 +505,95 @@ body {
         background: var(--secondary-gold);
     }
 
-/* Auth Buttons Styles - Theme Matching Only */
 .auth-buttons {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    margin-right: 1rem;
-}
-
-.login-btn, .signup-btn {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.5rem 1.2rem;
-    border-radius: 25px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: all 0.3s ease;
-    text-decoration: none;
+}
+
+.signup-btn, .profile-btn {
+    padding: 8px 18px !important;
+    border-radius: 20px !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease !important;
 }
 
 .login-btn {
-    background: transparent;
-    border: 2px solid white;
-    color: white;
+    background: transparent !important;
+    border: 1px solid white !important;
+    color: white !important;
+    padding: 8px 18px !important;
+    border-radius: 20px !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease !important;
 }
 
-.login-btn:hover {
-    background: white;
-    color: var(--deep-blue);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
-}
+    .login-btn:hover {
+        background: white !important;
+        color: var(--deep-blue) !important;
+        transform: translateY(-2px);
+    }
 
-.signup-btn {
-    background: linear-gradient(135deg, var(--primary-gold), var(--emerald));
+.btn-theme-primary {
+    background: linear-gradient(45deg, var(--primary-gold), var(--secondary-gold));
     border: none;
     color: white;
 }
 
-.signup-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+    .btn-theme-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+    }
+
+.profile-btn {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
-.login-btn i, .signup-btn i {
-    font-size: 1rem;
+    .profile-btn:hover {
+        background: rgba(255, 255, 255, 0.2) !important;
+    }
+
+.dropdown-menu {
+    background-color: rgba(27, 54, 93, 0.85) !important;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(212, 175, 55, 0.5) !important;
+    border-radius: 10px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    padding: 0.5rem 0 !important;
+    min-width: 200px;
+}
+
+    .dropdown-menu .dropdown-item {
+        color: white !important;
+        padding: 0.6rem 1.2rem !important;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        transition: all 0.2s ease;
+    }
+
+        .dropdown-menu .dropdown-item:hover {
+            background-color: rgba(212, 175, 55, 0.2) !important;
+            color: white !important;
+        }
+
+        .dropdown-menu .dropdown-item i {
+            width: 16px;
+        }
+
+.dropdown-divider {
+    border-top: 1px solid rgba(212, 175, 55, 0.5) !important;
 }
 
 @media (max-width: 992px) {

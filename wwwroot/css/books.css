@@ -523,3 +523,16 @@
     color: var(--primary-gold);
     font-size: 1.1rem;
 }
+
+.book-card .btn-remove-from-cart {
+    background: transparent;
+    border: 1px solid #c93a40;
+    color: #c93a40;
+    transition: all 0.3s ease;
+}
+
+    .book-card .btn-remove-from-cart:hover {
+        background: #c93a40;
+        color: white;
+        transform: translateY(-1px);
+    }

@@ -53,7 +53,7 @@
                                     <a href="@Url.Action("LoginView","Account")" class="btn btn-outline-light login-btn">
                                         <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
                                     </a>
-                                    <a href="@Url.Action("SignUpView","Account")" class="btn btn-primary signup-btn">
+                                    <a href="@Url.Action("SignUpView","Account")" class="btn btn-theme-primary signup-btn">
                                         <i class="fas fa-user-plus"></i> إنشاء حساب
                                     </a>
                                 </div>
@@ -61,7 +61,7 @@
                             else
                             {
                                 <div class="dropdown">
-                                    <button class="btn btn-outline-light btn-sm dropdown-toggle profile-btn" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button class="btn dropdown-toggle profile-btn" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fas fa-user-circle"></i> @User.Identity!.Name
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">

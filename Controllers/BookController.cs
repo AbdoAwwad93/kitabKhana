@@ -1,6 +1,9 @@
 ﻿using Bookstore.Models;
 using Bookstore.Repositories;
+using Bookstore.ViewModel;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Linq;
 using System.Security.Claims;
 
 namespace Bookstore.Controllers
@@ -19,11 +22,9 @@ namespace Bookstore.Controllers
         {
             var userId = User.Identity.IsAuthenticated ? User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value : null;
             int cartCount = 0;
-            if (!string.IsNullOrEmpty(userId))
-            {
-                var user = customerRepo.GetById(userId);
-                cartCount = user?.Cart?.Books?.Count ?? 0;
-            }
+            var user = customerRepo.GetById(userId);
+            cartCount = user?.Cart?.Books?.Count ?? 0;
+
             ViewBag.CartCount = cartCount;
             var books = bookRepo.GetAll();
             return View(books);
@@ -32,18 +33,23 @@ namespace Bookstore.Controllers
         {
             var userId = User.Identity.IsAuthenticated ? User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value : null;
             int cartCount = 0;
-            if (!string.IsNullOrEmpty(userId))
-            {
-                var user = customerRepo.GetById(userId);
-                cartCount = user?.Cart?.Books?.Count ?? 0;
-            }
+            var user = customerRepo.GetById(userId);
+            cartCount = user?.Cart?.Books?.Count ?? 0;
             ViewBag.CartCount = cartCount;
             var book = bookRepo.GetById(Id);
-            if(book == null)
+            if (book == null)
             {
                 return Content("Not found");
             }
-            return View(book);
+            var relatedBooks = bookRepo.GetAll()
+            .Where(b => b.Category == book.Category && b.Id != book.Id).ToList();
+
+            var bookDetails = new BookDetailsViewModel
+            {
+                Book = book,
+                RelatedBooks = relatedBooks
+            };
+            return View(bookDetails);
         }
         [HttpPost]
         public IActionResult AddComment(string commentText,int Rate,string BookId)
@@ -66,7 +72,7 @@ namespace Bookstore.Controllers
             }
             book.Comments.Add(comment);
             bookRepo.SaveChanges();
-            return RedirectToAction("Details",book);
+            return RedirectToAction("Details", new { Id = BookId });
         }
     }
 }

@@ -54,7 +54,7 @@ namespace Bookstore.Controllers
                 {
                     PriceData = new SessionLineItemPriceDataOptions
                     {
-                        UnitAmount = (long)(book.Price * 100), // Amount in cents
+                        UnitAmount = book.Price * 100,
                         Currency = "usd",
                         ProductData = new SessionLineItemPriceDataProductDataOptions
                         {
@@ -82,25 +82,21 @@ namespace Bookstore.Controllers
 
         public IActionResult Success()
         {
-            // Logic to handle successful payment, e.g., clear the cart
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var customer = _customerRepo.GetById(userId);
-            if (customer?.Cart != null)
-            {
-                customer.Cart.Books.Clear();
-                _customerRepo.SaveChanges();
-            }
+
+            customer.Cart.Books.Clear();
+            _customerRepo.SaveChanges();
+
             return View();
         }
 
         public IActionResult Cancel()
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (!string.IsNullOrEmpty(userId))
-            {
-                var customer = _customerRepo.GetById(userId);
-                ViewBag.CartCount = customer?.Cart?.Books?.Count ?? 0;
-            }
+            var customer = _customerRepo.GetById(userId);
+            ViewBag.CartCount = customer?.Cart?.Books?.Count ?? 0;
+
             return View();
         }
     }

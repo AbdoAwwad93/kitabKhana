@@ -158,7 +158,7 @@
     cursor: pointer;
 }
 
-.login-btn {
+.form-login-btn {
     width: 100%;
     padding: 15px;
     background: linear-gradient(135deg, var(--primary-gold), var(--emerald));
@@ -174,12 +174,12 @@
     overflow: hidden;
 }
 
-.login-btn:hover {
+.form-login-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
 }
 
-.login-btn:active {
+.form-login-btn:active {
     transform: translateY(0);
 }
 

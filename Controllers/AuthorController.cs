@@ -20,11 +20,10 @@ namespace Bookstore.Controllers
         {
             var userId = User.Identity.IsAuthenticated ? User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value : null;
             int cartCount = 0;
-            if (!string.IsNullOrEmpty(userId))
-            {
-                var user = customerRepo.GetById(userId);
-                cartCount = user?.Cart?.Books?.Count ?? 0;
-            }
+
+            var user = customerRepo.GetById(userId);
+            cartCount = user?.Cart?.Books?.Count ?? 0;
+
             ViewBag.CartCount = cartCount;
             var authors = repo.GetAll();
             return View(authors);
@@ -33,14 +32,13 @@ namespace Bookstore.Controllers
         {
             var userId = User.Identity.IsAuthenticated ? User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value : null;
             int cartCount = 0;
-            if (!string.IsNullOrEmpty(userId))
-            {
-                var user = customerRepo.GetById(userId);
-                cartCount = user?.Cart?.Books?.Count ?? 0;
-            }
+
+            var user = customerRepo.GetById(userId);
+            cartCount = user?.Cart?.Books?.Count ?? 0;
+
             ViewBag.CartCount = cartCount;
             var author = repo.GetById(id);
-            var relatedAuthors = repo.GetAll(author=>author.Books)
+            var relatedAuthors = repo.GetAll(author => author.Books)
                 .Where(author => author.Id != id).Take(6).ToList();
             AuthorDetailsViewModel authorDetails = new AuthorDetailsViewModel()
             {
