@@ -53,9 +53,9 @@
             </div>
             <div class="cart-summary bg-white rounded-4 shadow p-4 mt-4 text-center">
                 <h4 class="mb-3">إجمالي السعر: <span class="text-gold">@Model.Cart.Books.Sum(b => b.Price) جنية</span></h4>
-                <button class="btn btn-primary btn-lg px-5" style="border-radius: 30px; font-weight: 600; background: linear-gradient(45deg, var(--primary-gold), var(--secondary-gold)); color: white;">
+                <a href="@Url.Action("CreateCheckoutSession", "Payment")" class="btn btn-primary btn-lg px-5" style="border-radius: 30px; font-weight: 600; background: linear-gradient(45deg, var(--primary-gold), var(--secondary-gold)); color: white;">
                     <i class="fas fa-credit-card"></i> إتمام الشراء
-                </button>
+                </a>
             </div>
         }
         else
@@ -95,15 +95,13 @@
                 .then(response => response.json())
                 .then(data => {
                     if (data.success) {
-                        // Remove the book card from the UI
+                        
                         const card = btn.closest('.col-lg-3, .col-md-4, .col-sm-6, .mb-4');
                         if (card) card.remove();
-                        // Update cart count in navbar
                         const cartCount = document.querySelector('.cart-count');
                         if (cartCount) {
                             cartCount.textContent = data.count;
                         }
-                        // Update cart summary
                         const priceSpans = document.querySelectorAll('.book-card .book-price span');
                         let total = 0;
                         priceSpans.forEach(span => {
@@ -112,7 +110,6 @@
                         });
                         const summary = document.querySelector('.cart-summary .text-gold');
                         if (summary) summary.textContent = total + ' جنية';
-                        // If no books left, show empty cart message
                         if (document.querySelectorAll('.book-card').length === 0) {
                             document.querySelector('.books-grid').remove();
                             document.querySelector('.cart-summary').remove();

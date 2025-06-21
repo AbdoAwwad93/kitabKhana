@@ -15,14 +15,18 @@
       "launchBrowser": true,
       "applicationUrl": "http://localhost:5135",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "Stripe__PublishableKey": "your_publishable_key",
+        "Stripe__SecretKey": "your_secret_key"
       }
     },
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "Stripe__PublishableKey": "your_publishable_key",
+        "Stripe__SecretKey": "your_secret_key"
       }
     }
   }

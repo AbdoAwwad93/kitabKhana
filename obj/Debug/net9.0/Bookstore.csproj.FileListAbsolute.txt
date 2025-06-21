@@ -347,3 +347,9 @@ E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\wqgh62ne6m-ztkgpuxen
 E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\fw738rdlf4-mvri1kroja.gz
 E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\uvnqsrv822-0x282gfb9c.gz
 E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\vagz1u2a96-v5cxrj9058.gz
+E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\Bookstore.sourcelink.json
+E:\projects\Bookstore\Bookstore\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\projects\Bookstore\Bookstore\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\projects\Bookstore\Bookstore\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
+E:\projects\Bookstore\Bookstore\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
+E:\projects\Bookstore\Bookstore\bin\Debug\net9.0\Stripe.net.dll
