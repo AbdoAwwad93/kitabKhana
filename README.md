@@ -1,6 +1,6 @@
-# Bookstore
+# KitabKhana
 
-**Bookstore** is a learning project built with ASP.NET Core MVC, Entity Framework Core, and Stripe integration. It simulates an online bookstore where users can browse books and authors, manage a shopping cart, register and manage their profiles, and complete purchases with online payment. The project is designed for educational purposes to demonstrate full-stack web development with .NET technologies.
+**KitabKhana** is a learning project built with ASP.NET Core MVC, Entity Framework Core, and Stripe integration. It simulates an online bookstore where users can browse books and authors, manage a shopping cart, register and manage their profiles, and complete purchases with online payment. The project is designed for educational purposes to demonstrate full-stack web development with .NET technologies.
 
 ---
 
@@ -61,7 +61,7 @@
 ## Project Structure
 
 ```
-Bookstore/
+KitabKhana/
 │
 ├── Controllers/         # MVC controllers (Account, Book, Author, Cart, Payment, Home)
 ├── Models/              # Entity models (Book, Author, Customer, Cart, Comment, etc.)
