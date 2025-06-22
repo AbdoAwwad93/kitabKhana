@@ -23,12 +23,12 @@ namespace Bookstore.Controllers
             var userId = User.Identity.IsAuthenticated ? User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value : null;
             if(userId == null)
             {
-              return RedirectToAction("LoginView", "Account");
+              return RedirectToAction("Login", "Account", new { ReturnUrl = Url.Action("Index", "Cart") });
             }
             var user = customerRepo.GetById(userId);
             if(user == null)
             {
-              return RedirectToAction("LoginView", "Account");
+              return RedirectToAction("Login", "Account", new { ReturnUrl = Url.Action("Index", "Cart") });
             }
             var cartCount = user?.Cart?.Books?.Count ?? 0;
             ViewBag.CartCount = cartCount;

@@ -7,5 +7,7 @@ namespace Bookstore.ViewModel
     {
         public Book Book { get; set; }
         public List<Book> RelatedBooks { get; set; }
+        public bool IsInCart { get; set; }
     }
 }
+    

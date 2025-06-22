@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Bookstore.Models;
+using System.Collections.Generic;
 
 namespace Bookstore.ViewModel
 {
@@ -20,6 +22,6 @@ namespace Bookstore.ViewModel
         [Required(ErrorMessage = "يجب إدخال العنوان")]
         [Display(Name = "العنوان")]
         public string Address { get; set; }
-
+        public List<Book> PurchasedBooks { get; set; }
     }
 }

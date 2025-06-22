@@ -12,6 +12,7 @@
         public virtual List<Author> Authors { get; set; }
         public virtual List<Comment> Comments { get; set; }
         public virtual List<Cart> Carts { get; set; }
+        public virtual List<Customer> Customers { get; set; }
 
     }
 }

@@ -41,21 +41,39 @@ namespace Bookstore.Controllers
             {
                 return Content("Not found");
             }
-            var relatedBooks = bookRepo.GetAll()
-            .Where(b => b.Category == book.Category && b.Id != book.Id).ToList();
 
-            var bookDetails = new BookDetailsViewModel
+            bool isInCart = false;
+            if (user?.Cart?.Books != null)
+            {
+                isInCart = user.Cart.Books.Any(b => b.Id == Id);
+            }
+         
+            var relatedBooks = bookRepo.GetAll()
+                .Where(b => b.Category == book.Category && b.Id != book.Id)
+                .ToList();
+            var viewModel = new BookDetailsViewModel
             {
                 Book = book,
-                RelatedBooks = relatedBooks
+                RelatedBooks = relatedBooks,
+                IsInCart = isInCart
             };
-            return View(bookDetails);
+            return View(viewModel);
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult AddComment(string commentText,int Rate,string BookId)
         {
-            var book = bookRepo.GetById(BookId);
             var user = customerRepo.GetById(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+            if (user == null)
+            {
+                return Unauthorized();
+            }
+
+            var book = bookRepo.GetById(BookId);
+            if (book == null)
+            {
+                return NotFound();
+            }
 
             var comment = new Comment
             {
@@ -72,7 +90,7 @@ namespace Bookstore.Controllers
             }
             book.Comments.Add(comment);
             bookRepo.SaveChanges();
-            return RedirectToAction("Details", new { Id = BookId });
+            return PartialView("_CommentPartial", comment);
         }
     }
 }

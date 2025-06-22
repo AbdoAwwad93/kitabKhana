@@ -1,4 +1,6 @@
 ﻿@model BookDetailsViewModel
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<Customer> SignInManager
 @{
     ViewData["Title"] = Model.Book.Title;
 }
@@ -33,11 +35,29 @@
                     <img src="@imageUrl" alt="@Model.Book.Title" class="book-main-image"
                          onerror="this.src='@Url.Content("~/Images/default-book.jpg")'">
                     <div class="book-actions">
-                        <a href="@Url.Action("AddToCart","Cart",new {id= Model.Book.Id})">
-                        <button class="btn btn-primary btn-lg add-to-cart-btn" data-book-id="@Model.Book.Id">
-                            <i class="fas fa-cart-plus"></i>أضف إلى السلة
-                        </button>
-                        </a>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <button type="button" class="btn btn-lg @(Model.IsInCart ? "btn-remove-from-cart" : "btn-add-to-cart")" data-book-id="@Model.Book.Id">
+                                @if (Model.IsInCart)
+                                {
+                                    <i class="fas fa-trash"></i>
+                                    <span>إزالة من السلة</span>
+                                }
+                                else
+                                {
+                                    <i class="fas fa-cart-plus"></i>
+                                    <span>أضف إلى السلة</span>
+                                }
+                            </button>
+                        }
+                        else
+                        {
+                            var returnUrl = Context.Request.Path + Context.Request.QueryString;
+                            <a href="@Url.Action("Login", "Account", new { ReturnUrl = returnUrl })" class="btn btn-primary btn-lg">
+                                <i class="fas fa-sign-in-alt"></i>
+                                <span>سجل الدخول للإضافة إلى السلة </span>
+                            </a>
+                        }
                     </div>
                 </div>
             </div>
@@ -104,9 +124,12 @@
                                 <span class="meta-label">التقييم:</span>
                                 <div class="rating-display">
                                     <div class="stars">
+                                        @{
+                                            var averageRating = Model.Book.Comments.Any() ? Model.Book.Comments.Average(c => c.Rate) : 0;
+                                        }
                                         @for (int i = 1; i <= 5; i++)
                                         {
-                                            <i class="fas fa-star @(i <= 4 ? "filled" : "")"></i>
+                                            <i class="fas fa-star @(i <= averageRating ? "filled" : "")"></i>
                                         }
                                     </div>
                                     <span class="rating-text">(@Model.Book.Comments.Count تقييم)</span>
@@ -131,89 +154,88 @@
 </section>
 
 <!-- Comments Section -->
-@if (Model.Book.Comments.Any())
-{
-    <section class="comments-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h3 class="section-title">
-                        <i class="fas fa-comments"></i> التعليقات والمراجعات
-                        <span class="comments-count">(@Model.Book.Comments.Count)</span>
-                    </h3>
+<section class="comments-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="section-title">
+                    <i class="fas fa-comments"></i> التعليقات والمراجعات
+                    <span class="comments-count">(@(Model.Book.Comments?.Count ?? 0))</span>
+                </h3>
 
-                    <div class="comments-list">
-                        @foreach (var comment in Model.Book.Comments)
+                <div class="comments-list" id="commentsList">
+                    @if (Model.Book.Comments != null && Model.Book.Comments.Any())
+                    {
+                        @foreach (var comment in Model.Book.Comments.OrderByDescending(c => c.CreatedAt))
                         {
-                            <div class="comment-card">
-                                <div class="comment-header">
-                                    <div class="commenter-info">
-                                        <div class="commenter-avatar">
-                                            <i class="fas fa-user-circle"></i>
-                                        </div>
-                                        <div class="commenter-details">
-                                            <h5 class="commenter-name">@comment.CustomerName</h5>
-                                            <div class="comment-rating">
-                                                @for (int i = 1; i <= 5; i++)
-                                                {
-                                                    <i class="fas fa-star @(i <= 4 ? "filled" : "")"></i>
-                                                }
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment-date">
-                                        <i class="fas fa-clock"></i>
-                                        <span>@comment.CreatedAt</span>
-                                    </div>
-                                </div>
-                                <div class="comment-content">
-                                    <p>@comment.CommentText</p>
-                                </div>
-                            </div>
+                            <partial name="_CommentPartial" model="comment" />
                         }
-                    </div>
+                    }
+                    else
+                    {
+                        <p id="noCommentsMessage" class="text-center text-muted py-4">لا توجد تعليقات حتى الآن. كن أول من يعلق!</p>
+                    }
                 </div>
             </div>
         </div>
-    </section>
-}
+    </div>
+</section>
 
 <!-- Add Comment Section -->
 <section class="add-comment-section">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
-                <div class="add-comment-card">
-                    <h3 class="section-title">
-                        <i class="fas fa-plus-circle"></i> أضف تعليقك
-                    </h3>
-                    <form id="commentForm" class="comment-form" asp-action="AddComment" asp-route-BookId="@Model.Book.Id" method="post">
-                        <div class="rating-input">
-                            <label class="form-label">تقييمك للكتاب:</label>
-                            <div class="star-rating">
-                                <input type="radio" name="Rate" value="5" id="star5">
-                                <label for="star5"><i class="fas fa-star"></i></label>
-                                <input type="radio" name="Rate" value="4" id="star4">
-                                <label for="star4"><i class="fas fa-star"></i></label>
-                                <input type="radio" name="Rate" value="3" id="star3">
-                                <label for="star3"><i class="fas fa-star"></i></label>
-                                <input type="radio" name="Rate" value="2" id="star2">
-                                <label for="star2"><i class="fas fa-star"></i></label>
-                                <input type="radio" name="Rate" value="1" id="star1">
-                                <label for="star1"><i class="fas fa-star"></i></label>
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <div class="add-comment-card">
+                        <h3 class="section-title">
+                            <i class="fas fa-plus-circle"></i> أضف تعليقك
+                        </h3>
+                        <form id="commentForm" class="comment-form" asp-action="AddComment" asp-route-BookId="@Model.Book.Id" method="post">
+                            @Html.AntiForgeryToken()
+                            <div class="rating-input">
+                                <label class="form-label">تقييمك للكتاب:</label>
+                                <div class="star-rating">
+                                    <input type="radio" name="Rate" value="5" id="star5">
+                                    <label for="star5"><i class="fas fa-star"></i></label>
+                                    <input type="radio" name="Rate" value="4" id="star4">
+                                    <label for="star4"><i class="fas fa-star"></i></label>
+                                    <input type="radio" name="Rate" value="3" id="star3">
+                                    <label for="star3"><i class="fas fa-star"></i></label>
+                                    <input type="radio" name="Rate" value="2" id="star2">
+                                    <label for="star2"><i class="fas fa-star"></i></label>
+                                    <input type="radio" name="Rate" value="1" id="star1">
+                                    <label for="star1"><i class="fas fa-star"></i></label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="commentText" class="form-label">تعليقك:</label>
-                            <textarea class="form-control" id="commentText" name="CommentText" rows="4"
-                                      placeholder="شاركنا رأيك في هذا الكتاب..."></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i> إرسال التعليق
-                        </button>
-                    </form>
-                </div>
+                            <div class="mb-3">
+                                <label for="commentText" class="form-label">تعليقك:</label>
+                                <textarea class="form-control" id="commentText" name="CommentText" rows="4"
+                                          placeholder="شاركنا رأيك في هذا الكتاب..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> إرسال التعليق
+                            </button>
+                        </form>
+                    </div>
+                }
+                else
+                {
+                    <div class="add-comment-card text-center">
+                        <h3 class="section-title">
+                            <i class="fas fa-plus-circle"></i> أضف تعليقك
+                        </h3>
+                        <p>يجب عليك تسجيل الدخول لتتمكن من إضافة تعليق.</p>
+                        @{
+                            var returnUrl = Context.Request.Path + Context.Request.QueryString;
+                        }
+                            <a href="@Url.Action("Login", "Account", new { ReturnUrl = returnUrl })" class="btn btn-primary">
+                            <i class="fas fa-sign-in-alt"></i> تسجيل الدخول للتعليق
+                        </a>
+                    </div>
+                }
             </div>
         </div>
     </div>

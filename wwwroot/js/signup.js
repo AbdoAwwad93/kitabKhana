@@ -3,6 +3,37 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeSignupForm();
 });
 
+function validateUserName(userName) {
+    const field = document.getElementById('UserName');
+    const userNameRegex = /^[a-zA-Z0-9_-]{3,20}$/;
+
+    if (!userName) {
+        showFieldError('UserName', 'اسم المستخدم مطلوب');
+        field.style.borderColor = '#dc3545';
+        return false;
+    }
+
+    if (!userNameRegex.test(userName)) {
+        showFieldError('UserName', 'اسم المستخدم يجب أن يحتوي على أحرف إنجليزية وأرقام وعلامات - _ فقط');
+        field.style.borderColor = '#dc3545';
+        return false;
+    }
+
+    // Check username availability via AJAX
+    $.get('/Account/CheckUserNameAvailability', { userName: userName })
+        .done(function(isAvailable) {
+            if (!isAvailable) {
+                showFieldError('UserName', 'اسم المستخدم مستخدم بالفعل');
+                field.style.borderColor = '#dc3545';
+            } else {
+                hideFieldError('UserName');
+                field.style.borderColor = '#28a745';
+            }
+        });
+
+    return true;
+}
+
 function initializeSignupForm() {
     const form = document.getElementById('signupForm');
     const passwordInput = document.getElementById('Password');
@@ -36,6 +67,17 @@ function initializeSignupForm() {
 
     // Social buttons
     initializeSocialButtons();
+    const userNameInput = document.getElementById('UserName');
+    if (userNameInput) {
+        userNameInput.addEventListener('input', function() {
+            validateUserName(this.value.trim());
+        });
+
+        // Add blur event for immediate validation
+        userNameInput.addEventListener('blur', function() {
+            validateUserName(this.value.trim());
+        });
+    }
 }
 
 function initializePasswordToggle() {

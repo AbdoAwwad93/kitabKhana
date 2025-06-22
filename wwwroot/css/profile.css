@@ -1,23 +1,24 @@
+body {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8e8e8 100%);
+}
+
 .profile-container {
-    min-height: calc(100vh - 200px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    background: linear-gradient(135deg, var(--cream) 0%, #E8E8E8 100%);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
-.profile-wrapper {
-    width: 100%;
-    max-width: 800px;
-}
-
-.profile-card {
+.profile-card, .purchased-books-card {
     background: white;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    padding: 2rem;
-    border-top: 4px solid var(--primary-gold);
+    border-radius: 18px;
+    border: none;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.08);
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    transition: box-shadow 0.3s;
+}
+
+.profile-card:hover, .purchased-books-card:hover {
+    box-shadow: 0 16px 40px rgba(44, 62, 80, 0.13);
 }
 
 .profile-header {
@@ -26,115 +27,159 @@
 }
 
 .profile-avatar {
-    width: 100px;
-    height: 100px;
-    background: linear-gradient(45deg, var(--deep-blue), var(--primary-gold));
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(135deg, var(--primary-gold), var(--deep-blue));
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1.5rem;
     color: white;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    border: 5px solid #fff;
+    margin: 0 auto 1.2rem auto;
+    box-shadow: 0 4px 16px rgba(212,175,55,0.10);
 }
 
-.profile-title {
+.profile-name {
     color: var(--deep-blue);
-    font-size: 2rem;
-    margin: 0;
-    font-weight: 600;
-    font-family: 'Amiri', serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.profile-username {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 0.5rem;
 }
 
 .profile-info {
-    display: grid;
-    gap: 1.5rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-.info-group {
-    display: grid;
-    gap: 0.5rem;
-}
-
-.info-label {
-    color: var(--deep-blue);
-    font-size: 0.9rem;
+.info-item {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    font-weight: 500;
-}
-
-.info-label i {
-    color: var(--primary-gold);
-    width: 20px;
-}
-
-.info-value {
-    color: var(--dark-text);
-    font-size: 1.1rem;
-    padding: 0.75rem;
-    background-color: var(--cream);
+    gap: 0.7rem;
+    font-size: 1.05rem;
+    color: #444;
+    margin-bottom: 1.1rem;
+    padding: 0.7rem 1rem;
+    background: #f7f6f2;
     border-radius: 10px;
-    border: 1px solid rgba(139, 69, 19, 0.1);
-    transition: all 0.3s ease;
+    border: 1px solid #f0e6d2;
 }
 
-.info-value:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-}
-
-.profile-actions {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+.info-icon {
+    color: var(--primary-gold);
+    font-size: 1.2rem;
+    width: 22px;
+    text-align: center;
 }
 
 .edit-profile-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    padding: 0.7rem 2rem;
     font-weight: 600;
-    transition: all 0.3s ease;
     background: linear-gradient(45deg, var(--primary-gold), var(--secondary-gold));
     border: none;
     color: white;
-    border-radius: 30px;
+    font-size: 1.1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(212,175,55,0.10);
 }
 
 .edit-profile-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(212,175,55,0.18);
 }
 
-.edit-profile-btn i {
-    font-size: 1.1rem;
+.purchased-books-card .card-header {
+    background: linear-gradient(90deg, var(--deep-blue) 80%, var(--primary-gold) 100%);
+    color: white;
+    font-weight: 700;
+    border-radius: 15px 15px 0 0 !important;
+    padding: 1.2rem 1.5rem;
+    margin: -2.5rem -2rem 1.5rem -2rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.07);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+.purchased-books-card .card-header i {
+    margin-left: 0.7rem;
+}
+
+.book-card-purchased {
+    border: 1px solid #f0e6d2;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px rgba(212,175,55,0.07);
+}
+
+.book-card-purchased:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(44,62,80,0.13);
+}
+
+.book-img-purchased {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-bottom: 1px solid #f0e6d2;
+}
+
+.book-info-purchased {
+    padding: 1rem 0.7rem 0.7rem 0.7rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book-title-purchased {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+    color: var(--deep-blue);
+    min-height: 2.2em;
+}
+
+.btn-outline-primary {
+    border-radius: 30px;
+    border: 1.5px solid var(--primary-gold);
+    color: var(--primary-gold);
+    font-weight: 500;
+    background: #fff;
+    transition: all 0.2s;
+}
+
+.btn-outline-primary:hover {
+    background: linear-gradient(45deg, var(--primary-gold), var(--secondary-gold));
+    color: #fff;
+    border-color: var(--primary-gold);
+}
+
+@media (max-width: 991.98px) {
     .profile-container {
-        padding: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
-
-    .profile-card {
-        padding: 1.5rem;
+    .col-lg-8 {
+        margin-top: 2rem;
     }
-
+    .profile-card, .purchased-books-card {
+        padding: 1.2rem 0.7rem;
+    }
     .profile-avatar {
         width: 80px;
         height: 80px;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
-
-    .profile-title {
-        font-size: 1.75rem;
-    }
-
-    .info-value {
-        font-size: 1rem;
-    }
-} 
+}

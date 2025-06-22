@@ -1,0 +1,27 @@
+@model Comment
+
+<div class="comment-card scale-in">
+    <div class="comment-header">
+        <div class="commenter-info">
+            <div class="commenter-avatar">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="commenter-details">
+                <h5 class="commenter-name">@Model.CustomerName</h5>
+                <div class="comment-rating">
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        <i class="fas fa-star @(i <= Model.Rate ? "filled" : "")"></i>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="comment-date">
+            <i class="fas fa-clock"></i>
+            <span>@Model.CreatedAt.ToString("g")</span>
+        </div>
+    </div>
+    <div class="comment-content">
+        <p>@Model.CommentText</p>
+    </div>
+</div> 

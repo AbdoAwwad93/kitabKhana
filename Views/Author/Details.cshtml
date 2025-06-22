@@ -131,9 +131,6 @@
                                                     @string.Join("، ", Authors.Select(a => a.Name))
                                                 </div>
                                             }
-                                            <p class="book-description">
-                                                @(book.Description.Length > 100 ? book.Description.Substring(0, 100) + "..." : book.Description)
-                                            </p>
                                             <div class="book-meta">
                                                 <span class="pages-count">
                                                     <i class="fas fa-file-alt"></i>
@@ -145,7 +142,7 @@
                                                 <i class="fas fa-tag"></i>
                                                 <span>@book.Price جنية</span>
                                             </div>
-                                            @if (book.Comments != null)
+                                            @if (book.Comments != null && book.Comments.Any())
                                             {
                                                 <div class="book-rating">
                                                     <div class="stars">
@@ -290,6 +287,7 @@ else
             Bookstore.Models.Category.Religious => "الكتب الدينية",
             Bookstore.Models.Category.Literature => "الأدب العربي",
             Bookstore.Models.Category.History => "التاريخ",
+            Bookstore.Models.Category.Miscellaneous=> "كتب متنوعة",
             _ => category.ToString()
         };
     }

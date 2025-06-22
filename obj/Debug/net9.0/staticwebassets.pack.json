@@ -237,6 +237,14 @@
       "PackagePath": "staticwebassets\\css\\books.css"
     },
     {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\delivery.css",
+      "PackagePath": "staticwebassets\\css\\delivery.css"
+    },
+    {
+      "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\edit-profile.css",
+      "PackagePath": "staticwebassets\\css\\edit-profile.css"
+    },
+    {
       "Id": "E:\\projects\\Bookstore\\Bookstore\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
     },

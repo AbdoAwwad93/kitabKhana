@@ -259,12 +259,10 @@ E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\Bookstore.MvcApplicationPartsAs
 E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\Bookstore.RazorAssemblyInfo.cache
 E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\Bookstore.RazorAssemblyInfo.cs
 E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\scopedcss\bundle\Bookstore.styles.css
-E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\6kfbl931pe-9akt04yjkw.gz
 E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\f1cyehfxdj-d94tpo430d.gz
 E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\49oy9vutrs-61n19gt1b8.gz
 E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\dm606w297m-0nb5bqth1u.gz
 E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\9d2q3o6fer-x1qs2xdeto.gz
-E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\luitznbnhf-tooz01oye1.gz
 E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\54czpksafq-purv8z9qyp.gz
 E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\q6ds46a8gn-agp80tu62r.gz
 E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\i7av3jehxp-st1cbwfwo5.gz
@@ -339,7 +337,6 @@ E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\f7tmptr3ja-9b9oa1qrm
 E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\rq11kgjkkw-ay5nd8zt9x.gz
 E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\q5dazybjni-9oaff4kq20.gz
 E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\cslyneh1nk-pgpfmq67qi.gz
-E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\wqgh62ne6m-ztkgpuxeng.gz
 E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\fw738rdlf4-mvri1kroja.gz
 E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\uvnqsrv822-0x282gfb9c.gz
 E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\vagz1u2a96-v5cxrj9058.gz
@@ -349,7 +346,12 @@ E:\projects\Bookstore\Bookstore\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptograp
 E:\projects\Bookstore\Bookstore\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
 E:\projects\Bookstore\Bookstore\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
 E:\projects\Bookstore\Bookstore\bin\Debug\net9.0\Stripe.net.dll
-E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\sogxv29epd-l3r7uxhi0t.gz
 E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\gn7fh89rwl-4twfzy67mr.gz
 E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\mxnpz3kfbg-ew55s06o2c.gz
-E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\g4nwe2e5eh-23n1udw89f.gz
+E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\xxc414wixp-39cbnjkvg4.gz
+E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\g4nwe2e5eh-0dviev0fnx.gz
+E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\sogxv29epd-n0lg90ido6.gz
+E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\wqgh62ne6m-3268o4zi7n.gz
+E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\bekh7l6y2h-kd0n370akp.gz
+E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\6kfbl931pe-xcorc832h8.gz
+E:\projects\Bookstore\Bookstore\obj\Debug\net9.0\compressed\luitznbnhf-ol91bgv9vs.gz

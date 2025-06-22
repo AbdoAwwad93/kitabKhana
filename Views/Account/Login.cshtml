@@ -21,6 +21,7 @@
             <!-- Form Section -->
             <div class="login-form-container">
                 <form asp-action="Login" method="post" class="login-form" id="loginForm">
+                    <input type="hidden" asp-for="ReturnUrl" />
                     <div asp-validation-summary="ModelOnly" class="validation-summary"></div>
 
                     <!-- Email Field -->
@@ -70,31 +71,12 @@
                         </button>
                     </div>
                 </form>
-
-                <!-- Social Login -->
-                <div class="social-login">
-                    <div class="divider">
-                        <span>أو سجل باستخدام</span>
-                    </div>
-                    <div class="social-buttons">
-                        <button class="social-btn facebook" type="button">
-                            <i class="fab fa-facebook-f"></i>
-                            فيسبوك
-                        </button>
-                        <button class="social-btn google" type="button">
-                            <i class="fab fa-google"></i>
-                            جوجل
-                        </button>
-                    </div>
-                </div>
-
                 <!-- Signup Link -->
                 <div class="signup-link">
                     <p>ليس لديك حساب؟ <a asp-action="SignUpView" class="signup-link-btn">إنشاء حساب جديد</a></p>
                 </div>
             </div>
         </div>
-
         <!-- Side Image -->
         <div class="login-image">
             <img src="~/Images/lib.jpg" />

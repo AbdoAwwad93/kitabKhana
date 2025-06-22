@@ -4,6 +4,7 @@ using Bookstore.DBContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bookstore.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    partial class AppDBContextModelSnapshot : ModelSnapshot
+    [Migration("20250621203743_Add Delivery")]
+    partial class AddDelivery
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -38,21 +41,6 @@ namespace Bookstore.Migrations
                     b.HasIndex("CartsId");
 
                     b.ToTable("BookCart");
-                });
-
-            modelBuilder.Entity("BookCustomer", b =>
-                {
-                    b.Property<string>("CustomersId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("PurchasedBooksId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("CustomersId", "PurchasedBooksId");
-
-                    b.HasIndex("PurchasedBooksId");
-
-                    b.ToTable("BookCustomer");
                 });
 
             modelBuilder.Entity("Bookstore.Models.Author", b =>
@@ -1048,21 +1036,6 @@ namespace Bookstore.Migrations
                     b.HasOne("Bookstore.Models.Cart", null)
                         .WithMany()
                         .HasForeignKey("CartsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("BookCustomer", b =>
-                {
-                    b.HasOne("Bookstore.Models.Customer", null)
-                        .WithMany()
-                        .HasForeignKey("CustomersId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Bookstore.Models.Book", null)
-                        .WithMany()
-                        .HasForeignKey("PurchasedBooksId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

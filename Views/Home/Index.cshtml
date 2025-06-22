@@ -108,11 +108,7 @@
                                         @string.Join("، ", book.Authors.Select(a => a.Name))
                                     </div>
                                 }
-                                
-                                <p class="book-description">
-                                    @(book.Description.Length > 100 ? book.Description.Substring(0, 100) + "..." : book.Description)
-                                </p>
-             
+      
                                 <div class="book-meta">
                                     <span class="pages-count">
                                         <i class="fas fa-file-alt"></i>

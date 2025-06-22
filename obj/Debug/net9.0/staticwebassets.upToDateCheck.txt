@@ -18,6 +18,7 @@ E:\projects\Bookstore\Bookstore\wwwroot\css\profile.css
 E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
 E:\projects\Bookstore\Bookstore\wwwroot\js\login.js
 E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+E:\projects\Bookstore\Bookstore\wwwroot\css\edit-profile.css
 E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap.css
 E:\projects\Bookstore\Bookstore\wwwroot\js\books.js
 E:\projects\Bookstore\Bookstore\wwwroot\js\Authors.js
@@ -67,6 +68,7 @@ E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.
 E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
 E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
 E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+E:\projects\Bookstore\Bookstore\wwwroot\css\delivery.css
 E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
 E:\projects\Bookstore\Bookstore\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
 E:\projects\Bookstore\Bookstore\wwwroot\lib\jquery-validation\LICENSE.md
@@ -74,6 +76,8 @@ wwwroot\css\authordetails.css
 wwwroot\css\Authors.css
 wwwroot\css\bookdetails.css
 wwwroot\css\books.css
+wwwroot\css\delivery.css
+wwwroot\css\edit-profile.css
 wwwroot\css\login.css
 wwwroot\css\profile.css
 wwwroot\css\signup.css

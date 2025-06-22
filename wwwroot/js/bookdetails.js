@@ -12,6 +12,129 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Initialize rating system
     initializeRatingSystem();
+
+    // AJAX for Add/Remove from Cart
+    const bookActionBtn = document.querySelector('.book-actions button');
+    if (bookActionBtn) {
+        bookActionBtn.addEventListener('click', function () {
+            const bookId = this.getAttribute('data-book-id');
+            const isAdding = this.classList.contains('btn-add-to-cart');
+            const url = isAdding ? '/Cart/AddToCart' : '/Cart/RemoveFromCart';
+
+            this.disabled = true;
+            this.innerHTML = `<i class="fas fa-spinner fa-spin"></i> <span>...</span>`;
+
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'RequestVerificationToken': getAntiForgeryToken()
+                },
+                body: JSON.stringify(bookId)
+            })
+            .then(response => {
+                if (response.status === 401) {
+                    window.location.href = '/Account/LoginView';
+                    return null;
+                }
+                if (!response.ok) throw new Error('Request failed');
+                return response.json();
+            })
+            .then(data => {
+                if (data && data.success) {
+                    const cartCount = document.querySelector('.cart-count');
+                    if (cartCount) {
+                        cartCount.textContent = data.count;
+                    }
+
+                    this.disabled = false;
+                    const icon = this.querySelector('i');
+                    const text = this.querySelector('span');
+
+                    if (isAdding) {
+                        this.classList.remove('btn-add-to-cart');
+                        this.classList.add('btn-remove-from-cart');
+                        icon.className = 'fas fa-trash';
+                        text.textContent = 'إزالة من السلة';
+                    } else {
+                        this.classList.remove('btn-remove-from-cart');
+                        this.classList.add('btn-add-to-cart');
+                        icon.className = 'fas fa-cart-plus';
+                        text.textContent = 'أضف إلى السلة';
+                    }
+                }
+            })
+            .catch(() => {
+                window.location.reload(); // Fallback
+            });
+        });
+    }
+
+    // AJAX for Add Comment
+    const commentForm = document.getElementById('commentForm');
+    if (commentForm) {
+        commentForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalBtnHtml = submitBtn.innerHTML;
+
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `<i class="fas fa-spinner fa-spin"></i> إرسال...`;
+
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Request-Verification-Token': getAntiForgeryToken()
+                }
+            })
+            .then(response => {
+                if (response.status === 401) {
+                    window.location.href = '/Account/LoginView';
+                    return null;
+                }
+                if (!response.ok) throw new Error('Network response was not ok.');
+                return response.text();
+            })
+            .then(html => {
+                if (html) {
+                    const commentsList = document.getElementById('commentsList');
+                    const noCommentsMessage = document.getElementById('noCommentsMessage');
+                    if (noCommentsMessage) {
+                        noCommentsMessage.remove();
+                    }
+
+                    commentsList.insertAdjacentHTML('afterbegin', html);
+                    
+                    const commentsCountSpan = document.querySelector('.comments-count');
+                    if (commentsCountSpan) {
+                        const currentCount = parseInt(commentsCountSpan.textContent.match(/\d+/)[0], 10);
+                        commentsCountSpan.textContent = `(${currentCount + 1})`;
+                    }
+
+                    this.reset();
+                    const stars = this.querySelectorAll('.star-rating input');
+                    stars.forEach(s => s.checked = false);
+                }
+            })
+            .catch(error => {
+                console.error('Error submitting comment:', error);
+                alert('حدث خطأ أثناء إضافة التعليق.');
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnHtml;
+            });
+        });
+    }
+
+    function getAntiForgeryToken() {
+        const tokenInput = document.querySelector('input[name="__RequestVerificationToken"]');
+        return tokenInput ? tokenInput.value : '';
+    }
 });
 
 function initializeBookDetails() {

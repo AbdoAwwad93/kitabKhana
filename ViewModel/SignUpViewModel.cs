@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace Bookstore.ViewModel
 {
@@ -13,6 +14,7 @@ namespace Bookstore.ViewModel
         public string Email { get; set; }
         [Required(ErrorMessage = "يجب إدخال اسم المستخدم")]
         [Display(Name ="(Username)اسم المستخدم")]
+        [Remote("CheckUserNameAvailability", "Account", ErrorMessage = "اسم المستخدم مستخدم بالفعل")]
         public string UserName { get; set; }
         [Required(ErrorMessage = "يجب إدخال رقم الهاتف")]
         [Display(Name ="رقم الهاتف")]

@@ -55,7 +55,7 @@ namespace Bookstore.Controllers
                 if (result.Succeeded)
                 {
 
-                    return View("Login");  
+                    return RedirectToAction("Login");  
                 }
                 else
                 {
@@ -69,11 +69,13 @@ namespace Bookstore.Controllers
             return View("SignUp",signUpModel);
           
         }
-        public IActionResult LoginView()
+        [HttpGet]
+        public IActionResult Login(string returnUrl = null)
         {
             SetCartCountAsync().Wait();
-            return View("Login");
+            return View("Login", new LoginViewModel { ReturnUrl = returnUrl });
         }
+        [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel loginModel)
         {
             SetCartCountAsync().Wait();
@@ -92,8 +94,15 @@ namespace Bookstore.Controllers
                     return View("Login", loginModel);
                 }
                 await signInManager.SignInAsync(user, isPersistent: loginModel.RememberMe);
-                
-                return RedirectToAction("Index", "Home"); 
+
+                if (!string.IsNullOrEmpty(loginModel.ReturnUrl) && Url.IsLocalUrl(loginModel.ReturnUrl))
+                {
+                    return Redirect(loginModel.ReturnUrl);
+                }
+                else
+                {
+                    return RedirectToAction("Index", "Home");
+                }
             }
             return View("Login", loginModel);
         }
@@ -108,7 +117,7 @@ namespace Bookstore.Controllers
             var user = await userManager.GetUserAsync(User);
             if (user == null)
             {
-                return RedirectToAction("LoginView");
+                return RedirectToAction("Login");
             }
             var profileModel = new ProfileViewModel()
             {
@@ -116,7 +125,8 @@ namespace Bookstore.Controllers
                 Address = user.Address,
                 PhoneNumber = user.PhoneNumber,
                 Email = user.Email,
-                UserName=user.UserName
+                UserName=user.UserName,
+                PurchasedBooks = user.PurchasedBooks.ToList()
             };
 
 
@@ -128,7 +138,7 @@ namespace Bookstore.Controllers
             var user = await userManager.GetUserAsync(User);
             if (user == null)
             {
-                return RedirectToAction("LoginView");
+                return RedirectToAction("Login");
             }
             var profileModel = new ProfileViewModel()
             {
@@ -146,7 +156,7 @@ namespace Bookstore.Controllers
             var user = await userManager.GetUserAsync(User);
             if(user == null)
             {
-                return RedirectToAction("LoginView");
+                return RedirectToAction("Login");
             }
             if(ModelState.IsValid)
             {
@@ -172,6 +182,14 @@ namespace Bookstore.Controllers
 
             
         }
-       
+       [HttpGet]
+        public async Task<IActionResult> CheckUserNameAvailability(string userName)
+        {
+            if (string.IsNullOrWhiteSpace(userName))
+                return Json(false);
+        
+            var user = await userManager.FindByNameAsync(userName);
+            return Json(user == null);
+        }
     }
 }

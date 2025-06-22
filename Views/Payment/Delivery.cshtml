@@ -1,0 +1,214 @@
+@model DeliveryViewModel
+@{
+    ViewData["Title"] = "معلومات التوصيل";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/delivery.css" asp-append-version="true" />
+}
+
+<section class="delivery-header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="page-title">معلومات التوصيل</h1>
+                <p class="page-subtitle">أدخل معلومات التوصيل واختر طريقة الشحن المناسبة</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="delivery-content">
+    <div class="container">
+        <div class="row">
+            <!-- Delivery Form -->
+            <div class="col-lg-8">
+                <div class="delivery-form-card">
+                    <h3 class="section-title">
+                        <i class="fas fa-truck"></i> معلومات التوصيل
+                    </h3>
+                    
+                    <form asp-action="Delivery" method="post" class="delivery-form">
+                        <div asp-validation-summary="ModelOnly" class="validation-summary"></div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="FullName" class="form-label">
+                                        <i class="fas fa-user"></i>
+                                        @Html.DisplayNameFor(m => m.FullName)
+                                    </label>
+                                    <input asp-for="FullName" class="form-control" />
+                                    <span asp-validation-for="FullName" class="validation-error"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="PhoneNumber" class="form-label">
+                                        <i class="fas fa-phone"></i>
+                                        @Html.DisplayNameFor(m => m.PhoneNumber)
+                                    </label>
+                                    <input asp-for="PhoneNumber" class="form-control" />
+                                    <span asp-validation-for="PhoneNumber" class="validation-error"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Address" class="form-label">
+                                <i class="fas fa-map-marker-alt"></i>
+                                @Html.DisplayNameFor(m => m.Address)
+                            </label>
+                            <textarea asp-for="Address" class="form-control" rows="3"></textarea>
+                            <span asp-validation-for="Address" class="validation-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="City" class="form-label">
+                                <i class="fas fa-city"></i>
+                                @Html.DisplayNameFor(m => m.City)
+                            </label>
+                            <select asp-for="City" class="form-control">
+                                <option value="القاهرة">القاهرة</option>
+                                <option value="الإسكندرية">الإسكندرية</option>
+                                <option value="الجيزة">الجيزة</option>
+                                <option value="الشرقية">الشرقية</option>
+                                <option value="الغربية">الغربية</option>
+                                <option value="أخرى">أخرى</option>
+                            </select>
+                            <span asp-validation-for="City" class="validation-error"></span>
+                        </div>
+
+                        <div class="delivery-methods">
+                            <label class="form-label">
+                                <i class="fas fa-shipping-fast"></i>
+                                طريقة التوصيل
+                            </label>
+                            <div class="delivery-options">
+                                <div class="delivery-option">
+                                    <input type="radio" asp-for="DeliveryMethod" value="@DeliveryMethod.Standard" id="standard" />
+                                    <label for="standard" class="delivery-option-label">
+                                        <div class="delivery-option-content">
+                                            <div class="delivery-option-header">
+                                                <i class="fas fa-truck"></i>
+                                                <span class="delivery-name">التوصيل العادي</span>
+                                                <span class="delivery-price">25 جنية</span>
+                                            </div>
+                                            <div class="delivery-details">
+                                                <span class="delivery-time">3-5 أيام عمل</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="delivery-option">
+                                    <input type="radio" asp-for="DeliveryMethod" value="@DeliveryMethod.Express" id="express" />
+                                    <label for="express" class="delivery-option-label">
+                                        <div class="delivery-option-content">
+                                            <div class="delivery-option-header">
+                                                <i class="fas fa-rocket"></i>
+                                                <span class="delivery-name">التوصيل السريع</span>
+                                                <span class="delivery-price">50 جنية</span>
+                                            </div>
+                                            <div class="delivery-details">
+                                                <span class="delivery-time">1-2 يوم عمل</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="delivery-option">
+                                    <input type="radio" asp-for="DeliveryMethod" value="@DeliveryMethod.SameDay" id="sameday" />
+                                    <label for="sameday" class="delivery-option-label">
+                                        <div class="delivery-option-content">
+                                            <div class="delivery-option-header">
+                                                <i class="fas fa-bolt"></i>
+                                                <span class="delivery-name">نفس اليوم</span>
+                                                <span class="delivery-price">100 جنية</span>
+                                            </div>
+                                            <div class="delivery-details">
+                                                <span class="delivery-time">نفس اليوم (متاح في القاهرة)</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <span asp-validation-for="DeliveryMethod" class="validation-error"></span>
+                        </div>
+
+                        <div class="form-actions">
+                            <a href="@Url.Action("Index", "Cart")" class="btn btn-secondary">
+                                <i class="fas fa-arrow-right"></i> العودة للسلة
+                            </a>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-credit-card"></i> متابعة للدفع
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="col-lg-4">
+                <div class="order-summary-card">
+                    <h3 class="section-title">
+                        <i class="fas fa-receipt"></i> ملخص الطلب
+                    </h3>
+                    
+                    <div class="order-summary">
+                        <div class="summary-item">
+                            <span>محموع أسعار الكتب:</span>
+                            <span>@Model.Subtotal جنية</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>التوصيل:</span>
+                            <span id="deliveryCost">@Model.DeliveryCost جنية</span>
+                        </div>
+                        <div class="summary-divider"></div>
+                        <div class="summary-item total">
+                            <span>الإجمالي:</span>
+                            <span id="totalAmount">@Model.Total جنية</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const deliveryOptions = document.querySelectorAll('input[name="DeliveryMethod"]');
+            const deliveryCostEl = document.getElementById('deliveryCost');
+            const totalAmountEl = document.getElementById('totalAmount');
+            const subtotal = parseFloat('@Model.Subtotal.ToString(System.Globalization.CultureInfo.InvariantCulture)');
+
+            const deliveryCosts = {
+                'Standard': 25,
+                'Express': 50,
+                'SameDay': 100
+            };
+
+            function updateCosts() {
+                const selectedOption = document.querySelector('input[name="DeliveryMethod"]:checked');
+                if (!selectedOption) return;
+
+                const deliveryCost = deliveryCosts[selectedOption.value];
+                
+                if (deliveryCost !== undefined) {
+                    const total = subtotal + deliveryCost;
+                    deliveryCostEl.textContent = deliveryCost + ' جنية';
+                    totalAmountEl.textContent = total + ' جنية';
+                }
+            }
+
+            deliveryOptions.forEach(radio => {
+                radio.addEventListener('change', updateCosts);
+            });
+
+            // Initial calculation on page load
+            updateCosts();
+        });
+    </script>
+} 

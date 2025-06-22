@@ -50,7 +50,7 @@
                             @if (!User.Identity!.IsAuthenticated)
                             {
                                 <div class="auth-buttons">
-                                    <a href="@Url.Action("LoginView","Account")" class="btn btn-outline-light login-btn">
+                                    <a href="@Url.Action("Login","Account")" class="btn btn-outline-light login-btn">
                                         <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
                                     </a>
                                     <a href="@Url.Action("SignUpView","Account")" class="btn btn-theme-primary signup-btn">
